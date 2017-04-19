@@ -1,7 +1,0 @@
-<div class="ux-tabs {class}" r-class={{'z-dis': disabled}} r-hide={!visible}>
-    <ul class="ux-tabs_hd">
-        {#list tabs as item}
-        <li style="width: {100/tabs.length}%" r-class={{'z-crt': (item.id | judgeSelect), 'z-dis': item.disabled}} on-click={this.select(item)}>{#if @(titleTemplate)}{#inc @(titleTemplate)}{#else}{item.title}{/if}</li>
-        {/list}
-    </ul>
-</div>

@@ -1,9 +1,0 @@
-/* main video */
-.u-edu-h5player-mainvideo{
-    @extend %basesize;
-    z-index:2;
-
-    video{
-        @extend %basesize;
-    }
-}

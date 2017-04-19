@@ -1,9 +1,0 @@
-<div class="ux-filter-search {class}">
-    {#list source as item}
-        <div class="block">
-            <span class="block-name">{item.labelName}</span>
-            <span class="block-value">{#if item.type == 'input'} <ux-input value={item.value} />{#elseif item.type == 'dropdown'}<ux-dropdown source={item.source} value={item.value} key={item.key} selected={item.selected} placeholder={item.placeholder}/>{#else}''{/if}</span>
-        </div>
-    {/list}
-    <ux-button value={btnText} class='filter-btn' on-click={this.doSearch()}/>
-</div>
