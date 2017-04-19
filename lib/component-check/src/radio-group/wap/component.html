@@ -1,0 +1,19 @@
+<div class="ux-radio2-group {class}" r-hide={!visible}>
+    <ux-validation rules={rules} value={selected} ref="validation">
+        {#list source as item}
+        <label class="ux-radio" title={item.name}
+               r-class={{'ux-radio-block': block, 'z-sel': selected && item[key||'name'] === selected[key || 'name'], 'z-dis': disabled }} on-tap={this.select(item)}>
+            <div class="radio_box">
+                <i class="ux-icon ux-icon-radio"></i>
+            </div>
+            {#if item.contentTemplate}
+                {#inc @(item.contentTemplate)}
+            {#else}
+                {item.name}
+            {/if}
+        </label>
+        {/list}
+    </ux-validation>
+</div>
+
+

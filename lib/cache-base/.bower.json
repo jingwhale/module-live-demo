@@ -1,0 +1,39 @@
+{
+  "name": "cache-base",
+  "version": "0.0.22",
+  "authors": [
+    "caijf <caijf@corp.netease.com>"
+  ],
+  "description": "cache base project ",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "module",
+    "component",
+    "cache"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "docs",
+    "test",
+    "tutorials"
+  ],
+  "dependencies": {
+    "nej": "git+https://g.hz.netease.com/edu-front-vendor/nej.git#0.3.8"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2",
+    "chai": "^3.5.0"
+  },
+  "_release": "0.0.22",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.22",
+    "commit": "d4cbfbe97f0d297057a1e0385de4d5ebae351278"
+  },
+  "_source": "https://g.hz.netease.com/edu-frontend/cache-base.git",
+  "_target": "0.0.22",
+  "_originalSource": "git+https://g.hz.netease.com/edu-frontend/cache-base.git"
+}

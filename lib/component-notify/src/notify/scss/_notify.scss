@@ -1,0 +1,56 @@
+// Variables
+// ========================================================================
+
+$ux-notify_z-index: 1040;
+$ux-notify_position: 10px;
+$ux-notify_width: 320px;
+
+
+
+// Component:       `ux-notify`
+// ========================================================================
+
+.ux-notify {
+    @include box-sizing(border-box);
+    position: fixed;
+
+    z-index: $ux-notify_z-index;
+    top: $ux-notify_position;
+    left: $ux-notify_position;
+    width: $ux-notify_width;
+
+    background-color: transparent;
+    text-align: center;
+
+}
+
+
+
+// Position Extend:
+// Description:    postion extend
+// ========================================================================
+
+.ux-notify-topright,
+.ux-notify-bottomright  {
+    left: auto;
+    right: $ux-notify_position;
+}
+
+.ux-notify-topcenter,
+.ux-notify-bottomcenter {
+    left: 50%;
+    margin-left: ($ux-notify_width / -2);
+}
+
+.ux-notify-bottomleft,
+.ux-notify-bottomright,
+.ux-notify-bottomcenter {
+    top: auto;
+    bottom: $ux-notify_position;
+}
+
+/* Static */
+.ux-notify-static {
+    position: static;
+    width: auto;
+}

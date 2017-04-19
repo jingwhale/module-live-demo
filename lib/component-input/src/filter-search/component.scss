@@ -1,0 +1,21 @@
+@import '../lib/res-base/scss/var';
+@import '../lib/res-base/scss/bourbon/bourbon';
+
+.ux-filter-search {
+    font-size: 14px;
+    background:#eef3f4;
+    height:40px;
+    .block{
+        display: inline-block;
+        padding-left: 20px;
+        padding-top: 2px;
+        .block-name{
+            margin-right: 5px;
+        }
+    }
+    .filter-btn{ 
+        width: 84px;
+        height: 34px;
+        float: right;
+    }
+}

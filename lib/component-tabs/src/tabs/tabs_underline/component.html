@@ -1,0 +1,7 @@
+<div class="ux-tabs-underline {class}" r-class={{'z-dis': disabled}} r-hide={!visible}>
+    <ul class="ux-tabs-underline_hd">
+        {#list tabs as item}
+        <li r-class={{'z-sel': item.id == selected.id, 'z-dis': item.disabled}} on-click={this.select(item)}>{#if @(titleTemplate)}{#inc @(titleTemplate)}{#else}{item.title}{/if}</li>
+        {/list}
+    </ul>
+</div>

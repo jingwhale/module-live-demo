@@ -1,0 +1,93 @@
+// TODO 加前缀
+@import "../var";
+
+/*========== popover组件 ==========*/
+.m-popover {
+    box-sizing: border-box;
+    //display: none;
+    visibility: hidden;
+    opacity:0;
+    position: absolute;
+    bottom: 34px;
+    left: 50%;
+    padding: 8px 0;
+    width: 64px;
+    line-height: 0; // 避免空行引起的高度
+    transform: translateX(-50%);
+    background: $bgBarColor;
+    font-size: 0;
+    text-align: left;
+    border-radius: 2px;
+    cursor: auto;
+    transition: .3s opacity;
+
+    // 扩大点击域
+    &:before{
+        content: '';
+        position: absolute;
+        left:50%;
+        bottom: -12px;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 12px;
+        opacity: 0;
+    }
+
+    &:after{
+        content: '';
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        bottom: -8px;
+        border: 4px solid transparent;
+        border-top-color:#333;
+    }
+
+    &.z-show{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    li{
+        box-sizing: border-box;
+        position: relative;
+        display: inline-block;
+        margin: 4px 2px;
+        padding-left: 8px;
+        width: 60px;
+        height: 19px;
+        line-height: 19px;
+        font-size: 14px;
+        color:#999;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $primaryColor;
+            color:$fontActiveColor;
+        }
+
+        &.z-sel{
+            color: $fontActiveColor;
+
+            &:hover{
+                background-color: transparent;
+            }
+        }
+    }
+
+    // 复选
+    &.m-popover-multi{
+        li{
+            padding-left: 1.2em;
+
+            &.z-sel{
+                &:before{
+                    content: '●';
+                    position: absolute;
+                    left: 5px;
+                    top: 0;
+                }
+            }
+        }
+    }
+}

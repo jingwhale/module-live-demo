@@ -1,0 +1,27 @@
+@import '../lib/res-base/scss/var';
+@import '../lib/res-base/scss/bourbon/bourbon';
+@import 'base/scss/mixin';
+
+$em-base: 75px;
+.ux-input2 {
+    &_unit {
+        position: relative;
+        right: rem(40px);
+    }
+}
+ 
+.ux-input {
+    &, &_base {
+        padding: rem(6px) rem(12px);
+    }
+}
+
+// Size Extends:
+// ========================================================================
+
+@include u-formctrl-extend_size(base, rem(12px) rem(24px), rem(68px), $u-formctrl_font-size);
+@include u-formctrl-extend_size(sm, rem(2px) rem(10px), rem(44px), $u-formctrl-sm_font-size);
+@include u-formctrl-extend_size(lg, rem(10px) rem(16px), rem(80px), $u-formctrl-lg_font-size);
+
+@include u-formctrl-extend_width(sm, rem(160px));
+@include u-formctrl-extend_width(lg, rem(400px));

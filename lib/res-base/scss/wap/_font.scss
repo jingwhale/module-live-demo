@@ -1,0 +1,19 @@
+@import 'theme/var';
+@import 'bourbon/bourbon';
+
+/* 字体类型 */
+/* 非衬线字体 */
+.f-f0{ font-family: $font-sans-serif; }
+/* 衬线字体 */
+.f-f1{ font-family: $font-serif; }
+
+/* 字体大小 */
+.f-fs12{ @include font-dpr($font-size-sm); }
+.f-fs14{ @include font-dpr($font-size-base); }
+.f-fs16{ @include font-dpr($font-size-lg); }
+.f-fs18{ @include font-dpr($font-size-xl); }
+
+/* 字体加粗 */
+.f-fw-n{font-weight: normal !important; }
+.f-fw-b{font-weight: bold !important; }
+.f-fw-br{font-weight: bolder !important; }

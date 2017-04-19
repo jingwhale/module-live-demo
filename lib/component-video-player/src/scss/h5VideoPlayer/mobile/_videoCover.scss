@@ -1,0 +1,48 @@
+/* 封面 */
+.u-edu-h5player-mobilecover{
+    display:none;
+    left: 0;
+    top: 0;
+    @extend %basesize;
+    cursor:pointer;
+    overflow:hidden;
+    text-align:center;
+    background:$bgColor;
+    z-index:99;  
+
+    .cimg{
+        top:50%;
+        left:50%;
+    }
+
+    .playbtnwrap{
+        width:rem(160px);
+        height:rem(160px);
+        top:50%;
+        left:50%;
+        margin:rem(-80px) 0 0 rem(-80px);
+
+        .cbg{
+            opacity:0.8;
+            background:$bgColor;
+            width:100%;
+            height:100%;
+            border-radius:rem(10px);
+        }
+
+        .playbtn{
+            width:rem(48px);
+            height:rem(64px);
+            background:url('../res/component-video-player/images/h5VideoPlayer/mobile/big_play_btn.png');
+            top:rem(48px);
+            left:rem(56px);
+            background-size:rem(48px) rem(64px);
+        }
+        
+        &:hover{
+            .playbtn{
+                background-image:url('../res/component-video-player/images/h5VideoPlayer/mobile/big_play_btn_hover.png');
+            }
+        }
+    }
+}

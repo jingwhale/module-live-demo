@@ -1,0 +1,68 @@
+@import "../lib/res-base/scss/bourbon/bourbon";
+@import "../lib/res-base/scss/var";
+
+.ux-tip {
+    display: inline-block;
+
+    font-size: 12px;
+    padding: 0 6px;
+    @include border-radius($border-radius-sm);
+
+    > .ux-icon{
+        border-radius: 50%;
+        padding: 2px;
+        margin-right: 2px;
+    }
+}
+
+
+// Color Extends:
+// ========================================================================
+
+@mixin ux-tip-extend_color($name, $background, $color) {
+    .ux-tip-#{$name} {
+        color: $color;
+
+        > .ux-icon{
+            color: $background;
+            background-color: $color;
+        }
+    }
+}
+
+// Color Extends:
+// ========================================================================
+
+@include ux-tip-extend_color(info, $brand-info-lighter, $brand-info);
+@include ux-tip-extend_color(success, $brand-success-lighter, $brand-success);
+@include ux-tip-extend_color(warning, $brand-warning-lighter, $brand-warning);
+@include ux-tip-extend_color(error, white, $color-red);
+
+
+.ux-tip-error{
+    font-family: 'ux-icon-edu' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    &:before{
+        color: white;
+        background-color: $color-red;
+        border-radius: 50%;
+        padding: 2px;
+        margin-right: 2px;
+    }
+    font-size: 12px;
+    padding: 0 6px;
+    border-radius: 2px;
+}
+
+.ux-input.ux-input_success,.ux-select.ux-select_success,.ux-textarea.ux-textarea_success{
+    color: #555 !important;
+    border-color: #e4e8e9 !important;
+
+}

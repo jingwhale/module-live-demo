@@ -1,0 +1,24 @@
+<div class="um-live-manage-balance th-bg7" r-hide={showNoService || !isAdmin}>
+    <p  class="th-fc7" r-hide={enable != '0' || price<=0 }>
+        <span class="ux-icon-surprise icon"></span> 
+        <span class="th-fc7">直播已被禁用，请核实情况后联系0571-89852362</span> <br/>
+        <span class="th-fs1"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;后台监测到直播异常情况，比如讲师正在发布反动、色情等，请核实情况后联系后台人员。</span>
+    </p>
+    <p  class="ui-live-top-balance-minus th-fc7fs2" r-hide={price>0} >
+        <span class="ux-icon-surprise icon"></span> 直播服务已欠费，
+        <a class="to-pay th-fc7" href="#/cloud/live?toPay=1">请续费</a>
+    </p>
+    <p r-hide={price<0 || enable == 0 || !price} class="ui-live-top-balance-success th-fs0fc5"><span class="ux-icon-success-circle icon"></span> 已开通直播</p>
+     <div class="balance-num-div">
+         <h3 class="balance-num th-fs5fc7">充值余额：{priceText}</h3>
+     </div>
+     <p class="balance-explain th-fs1fc3">直播费用计算公式：总费用=直播耗费总时长 * 单价2元</p>
+     <p class="balance-explain th-fs1fc3">计费根据每个人实际观看时间计算，看多少算多少（付费标准单价：1人1小时2元）</p>
+</div>
+<div class="um-live-manage-no-service" r-hide={!showNoService}>
+    <span class="ux-icon-surprise f-fl"></span>
+    <div class="f-fr to-live th-fs3fc3">
+        <p>您未开通直播服务，暂不能使用该功能哦~</p>
+        <p><a class="th-fs0fc5" href="#/cloud/live" r-hide={!isAdmin}>点击此处，立刻了解什么是“直播服务”</a></p>
+    </div>
+</div>

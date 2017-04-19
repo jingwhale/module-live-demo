@@ -1,0 +1,1559 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mochawesome Report Card</title>
+    
+    <link rel="stylesheet" href="css/mochawesome.css">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="report-info-cnt">
+          <h1 class="report-title">edu-front-util</h1>
+          <h3 class="report-date">Friday, May 6 2016, 07:16pm</h3>
+        </div>
+        <div class="quick-summary-cnt">
+            <ul class="list-unstyled quick-summary">
+              <li class="qs-item summary-duration" title="Duration">59<span>MS</span></li>
+              <li class="qs-item summary-suites" title="Suites">33</li>
+              <li class="qs-item summary-tests" title="Tests">38</li>
+              <li class="qs-item summary-passes" title="Passed" data-filter="passed">38</li>
+              <li class="qs-item summary-failures" title="Failed" data-filter="failed">0</li>
+              <li class="qs-item summary-pending" title="Pending" data-filter="pending">0</li>
+            </ul>        </div>
+      </div>
+    </div>
+
+    <!-- Report Summary -->
+    <div class="summary">
+      <div class="container">
+          <div class="row">
+            <div class="summary-col summary-duration">
+              <h1 class="summary-count">59<span>MS</span></h1>
+              <h4 class="summary-label">MS</h4>
+            </div>
+            <div class="summary-col summary-suites" title="Suites">
+              <h1 class="summary-count">33</h1>
+              <h4 class="summary-label">Suites</h4>
+            </div>
+            <div class="summary-col summary-tests" title="Tests">
+              <h1 class="summary-count">38</h1>
+              <h4 class="summary-label">Tests</h4>
+            </div>
+            <div class="summary-col summary-passes" data-filter="passed" title="Passed">
+              <h1 class="summary-count">38</h1>
+              <h4 class="summary-label">Passed</h4>
+            </div>
+            <div class="summary-col summary-failures" data-filter="failed" title="Failed">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Failed</h4>
+            </div>
+            <div class="summary-col summary-pending" data-filter="pending" title="Pending">
+              <h1 class="summary-count">0</h1>
+              <h4 class="summary-label">Pending</h4>
+            </div>
+          </div>      </div>
+    </div>
+    <div class="statusbar">
+      <div class="container">
+          <div class="row">
+            <div class="status-item status-item-pending-pct">0% Pending</div>
+            <div class="status-item status-item-passing-pct success">100% Passing</div>
+          </div>      </div>
+    </div>
+
+    <!-- Suites -->
+    <div class="details container">
+            <section class="suite-wrap">
+          <div id="34295c7a-6492-49cb-8986-0484b031fa24" class="suite has-suites">
+            <h3 class="suite-title">arrayUtil</h3>
+            <h5 class="suite-filename">\test\arrayUtil.test.js</h5>
+        
+              <section class="suite-wrap">
+          <div id="d22b90b1-8922-4762-bce0-0ff6d000b769" class="suite has-tests has-passed">
+            <h3 class="suite-title">#arrayUtil._$arrContains()</h3>
+            <h5 class="suite-filename">\test\arrayUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="d22b90b1-8922-4762-bce0-0ff6d000b769" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">1 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#d22b90b1-8922-4762-bce0-0ff6d000b769-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="d22b90b1-8922-4762-bce0-0ff6d000b769-test-list" class="list-group test-list collapse in">
+                    <div id="5fb054a8-2271-4b9b-97d2-1932a14c90ae" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              返回true，当数组包含给定的数值
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#5fb054a8-2271-4b9b-97d2-1932a14c90ae > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrContains([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>],<span class="hljs-number">1</span>));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrContains([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>],-<span class="hljs-number">1</span>));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrContains([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>],<span class="hljs-number">0</span>));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrContains([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>],<span class="hljs-number">0.1</span>));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrContains([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>],-<span class="hljs-number">0.1</span>));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrContains([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">"qq"</span>],<span class="hljs-literal">false</span>));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrContains([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">"qq"</span>],<span class="hljs-literal">true</span>));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrContains([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">"qq"</span>],<span class="hljs-string">"qq"</span>));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrContains([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">" "</span>],<span class="hljs-string">" "</span>));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrContains([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>],<span class="hljs-string">""</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="51d1d69b-e1c2-4bac-ba02-88b34fe23d28" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              返回false，当数组不包含给定的值
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#51d1d69b-e1c2-4bac-ba02-88b34fe23d28 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrContains([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">"qq"</span>],<span class="hljs-string">"aa"</span>));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrContains([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">"qq"</span>],-<span class="hljs-number">1</span>));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrContains([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">"qq"</span>],<span class="hljs-number">0</span>));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrContains([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">"qq"</span>],-<span class="hljs-number">0.1</span>));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrContains([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">true</span>,<span class="hljs-number">3</span>],<span class="hljs-string">"aa"</span>));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrContains([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">true</span>,<span class="hljs-number">3</span>],<span class="hljs-string">" "</span>));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrContains([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">true</span>,<span class="hljs-number">3</span>],<span class="hljs-string">""</span>));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrContains([<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-literal">false</span>,<span class="hljs-string">"qq"</span>],<span class="hljs-literal">true</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+              <section class="suite-wrap">
+          <div id="d311d886-75c6-4e08-8e3a-22c688d87ed7" class="suite has-tests has-passed">
+            <h3 class="suite-title">#arrayUtil._$arrContainsByKey()</h3>
+            <h5 class="suite-filename">\test\arrayUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="d311d886-75c6-4e08-8e3a-22c688d87ed7" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">1 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#d311d886-75c6-4e08-8e3a-22c688d87ed7-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="d311d886-75c6-4e08-8e3a-22c688d87ed7-test-list" class="list-group test-list collapse in">
+                    <div id="6d678d03-360f-4599-815b-a28cb04d37a6" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              返回true，当对象数组包含给定的数值
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#6d678d03-360f-4599-815b-a28cb04d37a6 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrContainsByKey([{<span class="hljs-string">"name"</span>:<span class="hljs-number">123</span>}],<span class="hljs-number">123</span>,<span class="hljs-string">"name"</span>));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrContainsByKey([{<span class="hljs-string">"name"</span>:<span class="hljs-number">0</span>}],<span class="hljs-number">0</span>,<span class="hljs-string">"name"</span>));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrContainsByKey([{<span class="hljs-string">"name"</span>:-<span class="hljs-number">1</span>}],-<span class="hljs-number">1</span>,<span class="hljs-string">"name"</span>));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrContainsByKey([{<span class="hljs-string">"name"</span>:-<span class="hljs-number">0.1</span>}],-<span class="hljs-number">0.1</span>,<span class="hljs-string">"name"</span>));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrContainsByKey([{<span class="hljs-string">"name"</span>:<span class="hljs-literal">true</span>}],<span class="hljs-literal">true</span>,<span class="hljs-string">"name"</span>));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrContainsByKey([{<span class="hljs-string">"name"</span>:<span class="hljs-literal">false</span>}],<span class="hljs-literal">false</span>,<span class="hljs-string">"name"</span>));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrContainsByKey([{<span class="hljs-string">"name"</span>:<span class="hljs-string">" "</span>}],<span class="hljs-string">" "</span>,<span class="hljs-string">"name"</span>));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrContainsByKey([{<span class="hljs-string">"name"</span>:<span class="hljs-string">""</span>}],<span class="hljs-string">""</span>,<span class="hljs-string">"name"</span>));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrContainsByKey([{<span class="hljs-string">"name"</span>:<span class="hljs-string">"12q"</span>}],<span class="hljs-string">"12q"</span>,<span class="hljs-string">"name"</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="e318e9cf-1c27-4a43-aa1c-e394ef5c8299" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              返回false，当对象数组不包含给定的数值
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#e318e9cf-1c27-4a43-aa1c-e394ef5c8299 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrContainsByKey([{<span class="hljs-string">"name"</span>:<span class="hljs-number">123</span>}],<span class="hljs-number">123</span>,<span class="hljs-string">"123"</span>));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrContainsByKey([{<span class="hljs-string">"name"</span>:<span class="hljs-number">0</span>}],<span class="hljs-number">1</span>,<span class="hljs-string">"name"</span>));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrContainsByKey([{<span class="hljs-string">"name"</span>:-<span class="hljs-number">1</span>}],<span class="hljs-number">0</span>,<span class="hljs-string">"name"</span>));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrContainsByKey([{<span class="hljs-string">"name"</span>:-<span class="hljs-number">0.1</span>}],-<span class="hljs-number">0</span>,<span class="hljs-string">"name"</span>));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrContainsByKey([{<span class="hljs-string">"name"</span>:<span class="hljs-literal">true</span>}],<span class="hljs-literal">true</span>,<span class="hljs-string">"true"</span>));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrContainsByKey([{<span class="hljs-string">"name"</span>:<span class="hljs-literal">false</span>}],<span class="hljs-literal">false</span>,<span class="hljs-string">"false"</span>));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrContainsByKey([{<span class="hljs-string">"name"</span>:<span class="hljs-string">" "</span>}],<span class="hljs-string">" "</span>,<span class="hljs-string">" "</span>));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrContainsByKey([{<span class="hljs-string">"name"</span>:<span class="hljs-string">""</span>}],<span class="hljs-string">""</span>,<span class="hljs-string">""</span>));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrContainsByKey([{<span class="hljs-string">"name"</span>:<span class="hljs-string">"12q"</span>}],<span class="hljs-string">"name"</span>,<span class="hljs-string">"12q"</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+              <section class="suite-wrap">
+          <div id="28d7879d-6e30-4305-b360-bdb60db49624" class="suite has-tests has-passed">
+            <h3 class="suite-title">#arrayUtil._$arrCross()</h3>
+            <h5 class="suite-filename">\test\arrayUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="28d7879d-6e30-4305-b360-bdb60db49624" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#28d7879d-6e30-4305-b360-bdb60db49624-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="28d7879d-6e30-4305-b360-bdb60db49624-test-list" class="list-group test-list collapse in">
+                    <div id="20a762d7-9639-4f70-919a-cc50308966f3" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              返回true，当数组A包含数组B中的数值
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#20a762d7-9639-4f70-919a-cc50308966f3 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>,<span class="hljs-literal">false</span>],[<span class="hljs-number">1</span>]));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>,<span class="hljs-literal">false</span>],[<span class="hljs-number">2</span>,<span class="hljs-number">0</span>]));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>,<span class="hljs-literal">false</span>],[<span class="hljs-number">3</span>,-<span class="hljs-number">1</span>]));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>,<span class="hljs-literal">false</span>],[<span class="hljs-number">4</span>,-<span class="hljs-number">0.1</span>]));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>,<span class="hljs-literal">false</span>],[<span class="hljs-number">5</span>,<span class="hljs-number">0.1</span>]));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>,<span class="hljs-literal">false</span>],[<span class="hljs-number">6</span>,<span class="hljs-literal">true</span>]));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>,<span class="hljs-literal">false</span>],[<span class="hljs-number">6</span>,<span class="hljs-string">""</span>]));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>,<span class="hljs-literal">false</span>],[<span class="hljs-number">6</span>,<span class="hljs-string">" "</span>]));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>,<span class="hljs-literal">false</span>],[<span class="hljs-number">6</span>,<span class="hljs-literal">false</span>]));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>,<span class="hljs-literal">false</span>],[<span class="hljs-number">1</span>,<span class="hljs-literal">false</span>]));<br>assert.equal(<span class="hljs-literal">true</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>,<span class="hljs-literal">false</span>],[-<span class="hljs-number">1</span>,<span class="hljs-literal">null</span>]));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="4a3dfe58-bb33-4109-9107-f35aed2654f0" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              返回false，当数组A不包含数组B中的数值
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#4a3dfe58-bb33-4109-9107-f35aed2654f0 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>,<span class="hljs-literal">false</span>],[<span class="hljs-number">2</span>]));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>,<span class="hljs-literal">false</span>],[<span class="hljs-number">0</span>]));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>,<span class="hljs-literal">false</span>],[-<span class="hljs-number">1</span>]));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>,<span class="hljs-literal">false</span>],[<span class="hljs-number">3</span>,<span class="hljs-number">0.1</span>]));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>,<span class="hljs-literal">false</span>],[<span class="hljs-number">3</span>,-<span class="hljs-number">0.1</span>]));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>,<span class="hljs-literal">false</span>],[<span class="hljs-literal">true</span>]));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">" "</span>,<span class="hljs-literal">false</span>],[<span class="hljs-string">""</span>]));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-literal">false</span>],[<span class="hljs-string">" "</span>]));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>],[<span class="hljs-literal">false</span>]));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>],[<span class="hljs-literal">false</span>]));<br>assert.equal(<span class="hljs-literal">false</span>, arrayUtil._$arrCross([<span class="hljs-number">1</span>,<span class="hljs-number">0</span>,-<span class="hljs-number">1</span>,<span class="hljs-number">0.1</span>,-<span class="hljs-number">0.1</span>,<span class="hljs-literal">true</span>,<span class="hljs-string">""</span>,<span class="hljs-string">" "</span>,<span class="hljs-literal">false</span>],[<span class="hljs-literal">null</span>]));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="729865b9-0688-4e04-96bb-b0ede0815fa0" class="suite has-suites">
+            <h3 class="suite-title">cashUtil</h3>
+            <h5 class="suite-filename">\test\cashUtil.test.js</h5>
+        
+              <section class="suite-wrap">
+          <div id="7ce46f89-7270-46a4-9a44-754d3f1eb356" class="suite has-tests has-passed">
+            <h3 class="suite-title">#cashUtil._$formatCash()</h3>
+            <h5 class="suite-filename">\test\cashUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="7ce46f89-7270-46a4-9a44-754d3f1eb356" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#7ce46f89-7270-46a4-9a44-754d3f1eb356-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="7ce46f89-7270-46a4-9a44-754d3f1eb356-test-list" class="list-group test-list collapse in">
+                    <div id="6470223f-cb2d-4a21-92bf-d30c64a24c38" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确显示价格信息
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#6470223f-cb2d-4a21-92bf-d30c64a24c38 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-string">'￥3.00'</span>, cashUtil._$formatCash(<span class="hljs-number">3</span>));<br>assert.equal(<span class="hljs-string">'￥3.10'</span>, cashUtil._$formatCash(<span class="hljs-number">3.1</span>));<br>assert.equal(<span class="hljs-string">'￥3.01'</span>, cashUtil._$formatCash(<span class="hljs-number">3.01</span>));<br>assert.equal(<span class="hljs-string">'￥3.00'</span>, cashUtil._$formatCash(<span class="hljs-number">3.001</span>));<br>assert.equal(<span class="hljs-string">'免费'</span>, cashUtil._$formatCash());<br>assert.equal(<span class="hljs-string">'免费'</span>, cashUtil._$formatCash(<span class="hljs-number">0</span>));<br>assert.equal(<span class="hljs-string">'免费'</span>, cashUtil._$formatCash(<span class="hljs-number">0.00</span>));<br>assert.equal(<span class="hljs-string">'免费'</span>, cashUtil._$formatCash(<span class="hljs-literal">null</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+              <section class="suite-wrap">
+          <div id="958041cc-e216-4afe-82e4-bab325c9afed" class="suite has-tests has-passed">
+            <h3 class="suite-title">#cashUtil._$formatCashNoRMB()</h3>
+            <h5 class="suite-filename">\test\cashUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="958041cc-e216-4afe-82e4-bab325c9afed" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#958041cc-e216-4afe-82e4-bab325c9afed-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="958041cc-e216-4afe-82e4-bab325c9afed-test-list" class="list-group test-list collapse in">
+                    <div id="f22701ca-85b0-40d0-83b4-b2e5f7bea31c" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确显示不带有¥的价格信息
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#f22701ca-85b0-40d0-83b4-b2e5f7bea31c > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-string">'3.00'</span>, cashUtil._$formatCashNoRMB(<span class="hljs-number">3</span>));<br>assert.equal(<span class="hljs-string">'3.10'</span>, cashUtil._$formatCashNoRMB(<span class="hljs-number">3.1</span>));<br>assert.equal(<span class="hljs-string">'3.01'</span>, cashUtil._$formatCashNoRMB(<span class="hljs-number">3.01</span>));<br>assert.equal(<span class="hljs-string">'3.00'</span>, cashUtil._$formatCashNoRMB(<span class="hljs-number">3.001</span>));<br>assert.equal(<span class="hljs-string">'免费'</span>, cashUtil._$formatCashNoRMB());<br>assert.equal(<span class="hljs-string">'免费'</span>, cashUtil._$formatCashNoRMB(<span class="hljs-number">0</span>));<br>assert.equal(<span class="hljs-string">'免费'</span>, cashUtil._$formatCashNoRMB(<span class="hljs-number">0.00</span>));<br>assert.equal(<span class="hljs-string">'免费'</span>, cashUtil._$formatCashNoRMB(<span class="hljs-literal">null</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+              <section class="suite-wrap">
+          <div id="172e96f7-ed37-4a23-9158-6e317bd222c6" class="suite has-tests has-passed">
+            <h3 class="suite-title">#cashUtil._$formatNumber()</h3>
+            <h5 class="suite-filename">\test\cashUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="172e96f7-ed37-4a23-9158-6e317bd222c6" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#172e96f7-ed37-4a23-9158-6e317bd222c6-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="172e96f7-ed37-4a23-9158-6e317bd222c6-test-list" class="list-group test-list collapse in">
+                    <div id="6131191f-4e05-4396-909a-87406f8a0c52" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确格式化数值
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#6131191f-4e05-4396-909a-87406f8a0c52 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-number">0.20</span>, cashUtil._$formatNumber(<span class="hljs-number">0.2</span>,<span class="hljs-number">2</span>));<br>assert.equal(<span class="hljs-number">3.10</span>, cashUtil._$formatNumber(<span class="hljs-number">3.101</span>,<span class="hljs-number">2</span>));<br>assert.equal(<span class="hljs-number">3.02</span>, cashUtil._$formatNumber(<span class="hljs-number">3.016</span>,<span class="hljs-number">2</span>));<br>assert.equal(<span class="hljs-number">3.29</span>, cashUtil._$formatNumber(<span class="hljs-string">"3.287"</span>,<span class="hljs-number">2</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="8b0511e0-e1e6-4d9c-910f-5a5c3a443c53" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              非数值类型，2位精度返回0.00
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#8b0511e0-e1e6-4d9c-910f-5a5c3a443c53 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-number">0.00</span>, cashUtil._$formatNumber(<span class="hljs-string">"0.qw"</span>,<span class="hljs-number">2</span>));<br>assert.equal(<span class="hljs-number">0.00</span>, cashUtil._$formatNumber(<span class="hljs-string">""</span>,<span class="hljs-number">2</span>));<br>assert.equal(<span class="hljs-number">0.00</span>, cashUtil._$formatNumber(<span class="hljs-string">" "</span>,<span class="hljs-number">2</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="6afd932b-720c-466b-9566-a7d9814f69fd" class="suite has-suites">
+            <h3 class="suite-title">imageUtil</h3>
+            <h5 class="suite-filename">\test\imageUtil.test.js</h5>
+        
+              <section class="suite-wrap">
+          <div id="9e68568d-ecd7-4946-bc13-4b076a4f8788" class="suite has-tests has-passed">
+            <h3 class="suite-title">#imageUtil._$scaleImage()</h3>
+            <h5 class="suite-filename">\test\imageUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="9e68568d-ecd7-4946-bc13-4b076a4f8788" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">1 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#9e68568d-ecd7-4946-bc13-4b076a4f8788-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="9e68568d-ecd7-4946-bc13-4b076a4f8788-test-list" class="list-group test-list collapse in">
+                    <div id="d7e8a655-fc9f-4f01-8f1c-10e8fb300e56" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确显示压缩后的图片信息
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#d7e8a655-fc9f-4f01-8f1c-10e8fb300e56 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-string">'http://imgsize.ph.126.net/?enlarge=true&amp;imgurl=http://img1.ph.126.net/_4vld4yQzMkX7mlp-BFTVw==/4887250020728080384.jpg_450x250x1x95.jpg'</span>, imageUtil._$scaleImage(<span class="hljs-string">'http://img1.ph.126.net/_4vld4yQzMkX7mlp-BFTVw==/4887250020728080384.jpg'</span>, <span class="hljs-number">450</span>, <span class="hljs-number">250</span>));<br>assert.equal(<span class="hljs-string">'http://nos.netease.com/edu-image/AE32703A6908FBD2A57F917F5E93A55D.jpg?imageView&amp;thumbnail=450y250&amp;quality=100'</span>, imageUtil._$scaleImage(<span class="hljs-string">'http://nos.netease.com/edu-image/AE32703A6908FBD2A57F917F5E93A55D.jpg?imageView&amp;thumbnail=225y142&amp;quality=100'</span>, <span class="hljs-number">450</span>, <span class="hljs-number">250</span>));<br>assert.equal(<span class="hljs-string">'http://nos.netease.com/edu-image/AE32703A6908FBD2A57F917F5E93A55D.jpg?imageView&amp;thumbnail=450y250&amp;quality=100'</span>, imageUtil._$scaleImage(<span class="hljs-string">'http://nos.netease.com/edu-image/AE32703A6908FBD2A57F917F5E93A55D.jpg'</span>, <span class="hljs-number">450</span>, <span class="hljs-number">250</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="72a6fc36-7ccb-48a0-91c4-52486079c733" class="suite has-suites">
+            <h3 class="suite-title">numUtil</h3>
+            <h5 class="suite-filename">\test\numUtil.test.js</h5>
+        
+              <section class="suite-wrap">
+          <div id="aa2412a3-e623-4c82-aae5-2610e1d43643" class="suite has-tests has-passed">
+            <h3 class="suite-title">#numUtil._$num10000()</h3>
+            <h5 class="suite-filename">\test\numUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="aa2412a3-e623-4c82-aae5-2610e1d43643" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#aa2412a3-e623-4c82-aae5-2610e1d43643-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="aa2412a3-e623-4c82-aae5-2610e1d43643-test-list" class="list-group test-list collapse in">
+                    <div id="9165a977-d077-4dff-84f9-c345b7a2660a" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              超出10000显示xx.x万,否则输出数值
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#9165a977-d077-4dff-84f9-c345b7a2660a > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-string">"4.1万"</span>, numUtil._$num10000(<span class="hljs-number">41023</span>));<br>assert.equal(<span class="hljs-string">"4.2万"</span>, numUtil._$num10000(<span class="hljs-number">41523</span>));<br>assert.equal(<span class="hljs-string">"4000"</span>, numUtil._$num10000(<span class="hljs-number">4000</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+              <section class="suite-wrap">
+          <div id="e65f4545-8eef-4708-94ef-b71ad622b34b" class="suite has-tests has-passed">
+            <h3 class="suite-title">#numUtil._$formatFileSize()</h3>
+            <h5 class="suite-filename">\test\numUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="e65f4545-8eef-4708-94ef-b71ad622b34b" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#e65f4545-8eef-4708-94ef-b71ad622b34b-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="e65f4545-8eef-4708-94ef-b71ad622b34b-test-list" class="list-group test-list collapse in">
+                    <div id="3232fc53-5288-409a-b954-2961b87b39b8" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              格式化文件大小，B、KB、MB、GB、TB、PB、EB、ZB、YB
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#3232fc53-5288-409a-b954-2961b87b39b8 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-string">"0 B"</span>,   numUtil._$formatFileSize(<span class="hljs-number">0</span>));<br>assert.equal(<span class="hljs-string">"100 B"</span>, numUtil._$formatFileSize(<span class="hljs-number">100</span>));<br>assert.equal(<span class="hljs-string">"10.0 KB"</span>, numUtil._$formatFileSize(<span class="hljs-number">10240</span>));<br>assert.equal(<span class="hljs-string">"10.0 MB"</span>, numUtil._$formatFileSize(<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">10</span>));<br>assert.equal(<span class="hljs-string">"10.0 GB"</span>, numUtil._$formatFileSize(<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">10</span>));<br>assert.equal(<span class="hljs-string">"10.0 TB"</span>, numUtil._$formatFileSize(<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">10</span>));<br>assert.equal(<span class="hljs-string">"10.0 PB"</span>, numUtil._$formatFileSize(<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">10</span>));<br>assert.equal(<span class="hljs-string">"10.0 EB"</span>, numUtil._$formatFileSize(<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">10</span>));<br>assert.equal(<span class="hljs-string">"10.0 ZB"</span>, numUtil._$formatFileSize(<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">10</span>));<br>assert.equal(<span class="hljs-string">"10.0 YB"</span>, numUtil._$formatFileSize(<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">1024</span>*<span class="hljs-number">10</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="f1ba1e3e-e35c-4a6c-bf19-d2a7d0839fc0" class="suite has-suites">
+            <h3 class="suite-title">regUtil</h3>
+            <h5 class="suite-filename">\test\regUtil.test.js</h5>
+        
+              <section class="suite-wrap">
+          <div id="60f6a0c5-4f17-42e7-a0df-86f0315ff636" class="suite has-tests has-passed">
+            <h3 class="suite-title">#regUtil._$isEmail()</h3>
+            <h5 class="suite-filename">\test\regUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="60f6a0c5-4f17-42e7-a0df-86f0315ff636" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">1 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#60f6a0c5-4f17-42e7-a0df-86f0315ff636-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="60f6a0c5-4f17-42e7-a0df-86f0315ff636-test-list" class="list-group test-list collapse in">
+                    <div id="6e1762ea-ae9e-4569-91b7-8e0beb624c80" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确判断字符串是邮箱
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#6e1762ea-ae9e-4569-91b7-8e0beb624c80 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-literal">true</span>, regUtil._$isEmail(<span class="hljs-string">'hzshaoyy@corp.netease.com'</span>));<br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isEmail(<span class="hljs-string">'111@163.com'</span>));<br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isEmail(<span class="hljs-string">'807991555@qq.com'</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="ceb24b8e-8842-4558-b906-f7d51d75b202" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确判断字符串不是邮箱
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#ceb24b8e-8842-4558-b906-f7d51d75b202 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-literal">false</span>, regUtil._$isEmail(<span class="hljs-string">'hzshaoyy@corp.'</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isEmail(<span class="hljs-string">'111@163.c'</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isEmail(<span class="hljs-string">'111@163.'</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isEmail(<span class="hljs-string">'1asd@'</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isEmail(<span class="hljs-string">'dadwasadzcs'</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+              <section class="suite-wrap">
+          <div id="1d56548c-120a-49f4-9a5a-1cc35ce723b1" class="suite has-tests has-passed">
+            <h3 class="suite-title">#regUtil._$isPhone()</h3>
+            <h5 class="suite-filename">\test\regUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="1d56548c-120a-49f4-9a5a-1cc35ce723b1" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#1d56548c-120a-49f4-9a5a-1cc35ce723b1-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="1d56548c-120a-49f4-9a5a-1cc35ce723b1-test-list" class="list-group test-list collapse in">
+                    <div id="9075ee97-5a91-4a5e-8733-66de0c67d23d" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确判断字符串是手机号码
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#9075ee97-5a91-4a5e-8733-66de0c67d23d > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-literal">true</span>, regUtil._$isPhone(<span class="hljs-string">'13732215280'</span>)); <span class="hljs-comment">//这个不是我的号码，不要打</span><br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isPhone(<span class="hljs-string">'13332215285'</span>));<br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isPhone(<span class="hljs-string">'17757783669'</span>));<br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isPhone(<span class="hljs-string">'15138712518'</span>));<br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isPhone(<span class="hljs-string">'13423456789'</span>));<br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isPhone(<span class="hljs-string">'18023123456'</span>));<br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isPhone(<span class="hljs-string">'+8618023123456'</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="7ca40862-f2a5-41eb-96ab-f623c5929eb8" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确判断字符串不是手机号码
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#7ca40862-f2a5-41eb-96ab-f623c5929eb8 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-literal">false</span>, regUtil._$isPhone(<span class="hljs-string">'1373221528'</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isPhone(<span class="hljs-string">'1373221528a'</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isPhone(<span class="hljs-string">'137322152801'</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isPhone(<span class="hljs-string">'dadwasadzcs'</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+              <section class="suite-wrap">
+          <div id="5f3c64d2-6dfe-429d-ae50-a66ce8790b35" class="suite has-tests has-passed">
+            <h3 class="suite-title">#regUtil._$isTel()</h3>
+            <h5 class="suite-filename">\test\regUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="5f3c64d2-6dfe-429d-ae50-a66ce8790b35" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">1 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#5f3c64d2-6dfe-429d-ae50-a66ce8790b35-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="5f3c64d2-6dfe-429d-ae50-a66ce8790b35-test-list" class="list-group test-list collapse in">
+                    <div id="6ddbccd8-2233-4d1e-994b-c5448aba11e1" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确判断字符串是电话号码
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#6ddbccd8-2233-4d1e-994b-c5448aba11e1 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-literal">true</span>, regUtil._$isTel(<span class="hljs-string">'0511-4405222'</span>)); <span class="hljs-comment">//这个不是我的号码，不要打</span><br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isTel(<span class="hljs-string">'0511-4405222-1234'</span>)); <span class="hljs-comment">//这个不是我的号码，不要打</span><br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isTel(<span class="hljs-string">'021-87888822'</span>));<br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isTel(<span class="hljs-string">'021-87888822-1234'</span>));<br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isTel(<span class="hljs-string">'4405222'</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="858358aa-bdd7-4252-9777-18cbd3f80f53" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确判断字符串不是电话号码
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#858358aa-bdd7-4252-9777-18cbd3f80f53 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-literal">false</span>, regUtil._$isTel(<span class="hljs-string">'0511'</span>)); <span class="hljs-comment">//这个不是我的号码，不要打</span><br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isTel(<span class="hljs-string">'0511a-4405222'</span>)); <span class="hljs-comment">//这个不是我的号码，不要打</span><br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isTel(<span class="hljs-string">'021-87888822a'</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isTel(<span class="hljs-string">'021-87888822-1234a'</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isTel(<span class="hljs-string">'0511-440522a'</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isTel(<span class="hljs-string">'4405222a'</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+              <section class="suite-wrap">
+          <div id="504ed483-dbff-4c20-82f8-3b87964a2013" class="suite has-tests has-passed">
+            <h3 class="suite-title">#regUtil._$isPositiveNum()</h3>
+            <h5 class="suite-filename">\test\regUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="504ed483-dbff-4c20-82f8-3b87964a2013" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">1 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#504ed483-dbff-4c20-82f8-3b87964a2013-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="504ed483-dbff-4c20-82f8-3b87964a2013-test-list" class="list-group test-list collapse in">
+                    <div id="cbee282d-e4d8-4524-bf23-3a0081451260" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确判断字符串是正整数
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#cbee282d-e4d8-4524-bf23-3a0081451260 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-literal">true</span>, regUtil._$isPositiveNum(<span class="hljs-number">1</span>));<br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isPositiveNum(<span class="hljs-number">11110</span>));<br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isPositiveNum(<span class="hljs-number">1111111111111110</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="15753aa2-87dc-4093-a715-d0f174cee264" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确判断字符串不是正整数
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#15753aa2-87dc-4093-a715-d0f174cee264 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-literal">false</span>, regUtil._$isPositiveNum(-<span class="hljs-number">0</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isPositiveNum(<span class="hljs-number">0.2</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isPositiveNum(-<span class="hljs-number">1</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isPositiveNum(-<span class="hljs-number">1.5</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isPositiveNum(<span class="hljs-number">0</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isPositiveNum(<span class="hljs-number">1.3</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+              <section class="suite-wrap">
+          <div id="1f625b20-fb7a-42a0-9432-f345d4987a3b" class="suite has-tests has-passed">
+            <h3 class="suite-title">#regUtil._$isQQ()</h3>
+            <h5 class="suite-filename">\test\regUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="1f625b20-fb7a-42a0-9432-f345d4987a3b" class="suite-chart" width="50" height="50" data-total-passes="2" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">2</li>
+                <li class="suite-summary-item passed">2</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#1f625b20-fb7a-42a0-9432-f345d4987a3b-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="1f625b20-fb7a-42a0-9432-f345d4987a3b-test-list" class="list-group test-list collapse in">
+                    <div id="d3b4568f-8d28-4828-bec2-9b78127f01df" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确判断字符串是QQ号码(4-11位数字)
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#d3b4568f-8d28-4828-bec2-9b78127f01df > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-literal">true</span>, regUtil._$isQQ(<span class="hljs-string">'147066110'</span>));<br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isQQ(<span class="hljs-string">'14706'</span>));<br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isQQ(<span class="hljs-string">'1470'</span>));<br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isQQ(<span class="hljs-string">'3470'</span>));<br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isQQ(<span class="hljs-string">'14706123'</span>));<br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isQQ(<span class="hljs-string">'1470612311'</span>));<br>assert.equal(<span class="hljs-literal">true</span>, regUtil._$isQQ(<span class="hljs-string">'9470612311'</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="2f7e7425-fb19-4079-8c95-7fcdd6890830" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确判断字符串不是QQ号码(4-11位数字)
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#2f7e7425-fb19-4079-8c95-7fcdd6890830 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-literal">false</span>, regUtil._$isQQ(<span class="hljs-string">'147'</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isQQ(<span class="hljs-string">'1'</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isQQ(<span class="hljs-string">'1qweqwe'</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isQQ(<span class="hljs-string">'1q2324244'</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isQQ(<span class="hljs-string">'1111112324244'</span>));<br>assert.equal(<span class="hljs-literal">false</span>, regUtil._$isQQ(<span class="hljs-string">'0111112'</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="0b08cbcb-8d29-4379-8d5e-6d44141db931" class="suite has-suites">
+            <h3 class="suite-title">TextUtil</h3>
+            <h5 class="suite-filename">\test\textUtil.test.js</h5>
+        
+              <section class="suite-wrap">
+          <div id="fb472200-bd3d-41b7-8688-3243635f375a" class="suite has-tests has-passed">
+            <h3 class="suite-title">#TextUtil._$removeNRNBSP()</h3>
+            <h5 class="suite-filename">\test\textUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="fb472200-bd3d-41b7-8688-3243635f375a" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#fb472200-bd3d-41b7-8688-3243635f375a-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="fb472200-bd3d-41b7-8688-3243635f375a-test-list" class="list-group test-list collapse in">
+                    <div id="c1dce671-22e7-46e3-83ce-79250bd234cc" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              移除tab 回車 換行,多于的空格变成一个空格
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#c1dce671-22e7-46e3-83ce-79250bd234cc > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-string">"q1"</span>, TextUtil._$removeNRNBSP(<span class="hljs-string">'q1'</span>));<br>assert.equal(<span class="hljs-string">" q1"</span>, TextUtil._$removeNRNBSP(<span class="hljs-string">' q1'</span>));<br>assert.equal(<span class="hljs-string">" q 1"</span>, TextUtil._$removeNRNBSP(<span class="hljs-string">' q '</span> +<br>    <span class="hljs-string">' 1'</span>));<br>assert.equal(<span class="hljs-string">"q 1 "</span>, TextUtil._$removeNRNBSP(<span class="hljs-string">'q  1 '</span>));<br>assert.equal(<span class="hljs-string">"q 1 "</span>, TextUtil._$removeNRNBSP(<span class="hljs-string">'q  1  '</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+              <section class="suite-wrap">
+          <div id="f650a519-d6b7-43a9-af0c-6d40cf39c420" class="suite has-tests has-passed">
+            <h3 class="suite-title">#TextUtil._$getStringLength()</h3>
+            <h5 class="suite-filename">\test\textUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="f650a519-d6b7-43a9-af0c-6d40cf39c420" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">1 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#f650a519-d6b7-43a9-af0c-6d40cf39c420-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="f650a519-d6b7-43a9-af0c-6d40cf39c420-test-list" class="list-group test-list collapse in">
+                    <div id="4f8e8d0c-806f-4339-a679-02277d38e871" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确获取字符串长度
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#4f8e8d0c-806f-4339-a679-02277d38e871 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-number">1</span>, TextUtil._$getStringLength(<span class="hljs-string">'1'</span>));<br>assert.equal(<span class="hljs-number">2</span>, TextUtil._$getStringLength(<span class="hljs-string">'Aa'</span>));<br>assert.equal(<span class="hljs-number">4</span>, TextUtil._$getStringLength(<span class="hljs-string">'中文'</span>));<br>assert.equal(<span class="hljs-number">6</span>, TextUtil._$getStringLength(<span class="hljs-string">'中文CN'</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+              <section class="suite-wrap">
+          <div id="29e51354-a4eb-422f-a303-7bfb55a95da3" class="suite has-tests has-passed">
+            <h3 class="suite-title">#TextUtil._$sliceStrByLength()</h3>
+            <h5 class="suite-filename">\test\textUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="29e51354-a4eb-422f-a303-7bfb55a95da3" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#29e51354-a4eb-422f-a303-7bfb55a95da3-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="29e51354-a4eb-422f-a303-7bfb55a95da3-test-list" class="list-group test-list collapse in">
+                    <div id="466fd567-9c1a-4a50-ae52-a9d205b4f604" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确截断字符串，处理中英文情况
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#466fd567-9c1a-4a50-ae52-a9d205b4f604 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-string">'qaz'</span>, TextUtil._$sliceStrByLength(<span class="hljs-string">'qazwsxedc'</span>, <span class="hljs-number">3</span>));<br>assert.equal(<span class="hljs-string">'中'</span>, TextUtil._$sliceStrByLength(<span class="hljs-string">'中文中文中文'</span>, <span class="hljs-number">3</span>));<br>assert.equal(<span class="hljs-string">'qazw'</span>, TextUtil._$sliceStrByLength(<span class="hljs-string">'qazw中文'</span>,<span class="hljs-number">5</span>));<br>assert.equal(<span class="hljs-string">'中文C'</span>, TextUtil._$sliceStrByLength(<span class="hljs-string">'中文CN'</span>,<span class="hljs-number">5</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+              <section class="suite-wrap">
+          <div id="07430bcf-5654-4c26-84cb-4bb24b81ee4d" class="suite has-tests has-passed">
+            <h3 class="suite-title">#TextUtil._$ellipsisStrByLength()</h3>
+            <h5 class="suite-filename">\test\textUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="07430bcf-5654-4c26-84cb-4bb24b81ee4d" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#07430bcf-5654-4c26-84cb-4bb24b81ee4d-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="07430bcf-5654-4c26-84cb-4bb24b81ee4d-test-list" class="list-group test-list collapse in">
+                    <div id="3debe88a-9c93-49bf-83a6-b51a4a8262d9" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确截断字符串，如果超出字数限制，追加... 
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#3debe88a-9c93-49bf-83a6-b51a4a8262d9 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-string">'中...'</span>, TextUtil._$ellipsisStrByLength(<span class="hljs-string">'中文中文中文'</span>, <span class="hljs-number">3</span>));<br>assert.equal(<span class="hljs-string">'Aa'</span>, TextUtil._$ellipsisStrByLength(<span class="hljs-string">'Aa'</span>,<span class="hljs-number">3</span>));<br>assert.equal(<span class="hljs-string">'中文C...'</span>, TextUtil._$ellipsisStrByLength(<span class="hljs-string">'中文CN'</span>, <span class="hljs-number">5</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="959a1a9d-ef08-4219-9450-3f870645fac5" class="suite has-suites">
+            <h3 class="suite-title">TimeUtil</h3>
+            <h5 class="suite-filename">\test\timeUtil.test.js</h5>
+        
+              <section class="suite-wrap">
+          <div id="4175bd1d-00ea-4c07-986d-2d81d07e4265" class="suite has-tests has-passed">
+            <h3 class="suite-title">#TimeUtil._$getCurServerTime() 获取服务器时间</h3>
+            <h5 class="suite-filename">\test\timeUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="4175bd1d-00ea-4c07-986d-2d81d07e4265" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#4175bd1d-00ea-4c07-986d-2d81d07e4265-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="4175bd1d-00ea-4c07-986d-2d81d07e4265-test-list" class="list-group test-list collapse in">
+                    <div id="c809df02-efec-442d-ad9d-ab4474cd5eb5" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确显示服务器时间
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#c809df02-efec-442d-ad9d-ab4474cd5eb5 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(+<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>, timeUtil._$getCurServerTime());</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+              <section class="suite-wrap">
+          <div id="6568e2c5-c3f9-4425-8714-2a2994681e90" class="suite has-tests has-passed">
+            <h3 class="suite-title">#TimeUtil._$formatTime()</h3>
+            <h5 class="suite-filename">\test\timeUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="6568e2c5-c3f9-4425-8714-2a2994681e90" class="suite-chart" width="50" height="50" data-total-passes="6" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">2 ms</li>
+                <li class="suite-summary-item tests">6</li>
+                <li class="suite-summary-item passed">6</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#6568e2c5-c3f9-4425-8714-2a2994681e90-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="6568e2c5-c3f9-4425-8714-2a2994681e90-test-list" class="list-group test-list collapse in">
+                    <div id="7210d6a3-106e-42af-ba20-3d87d4c0518c" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确格式化时间 2016-01-06
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#7210d6a3-106e-42af-ba20-3d87d4c0518c > .test-code.collapse">Code</button>
+              <span class="test-duration fast">2 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-string">'2016-01-06'</span>, timeUtil._$formatTime(<span class="hljs-number">1452088945458</span>, <span class="hljs-string">'yyyy-MM-dd'</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="f8b46a7f-f1c0-4f4f-8231-d40e27cd7c87" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确格式化时间 2016-01-06 22:02:25
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#f8b46a7f-f1c0-4f4f-8231-d40e27cd7c87 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-string">'2016-01-06 22:02:25'</span>, timeUtil._$formatTime(<span class="hljs-number">1452088945458</span>, <span class="hljs-string">'yyyy-MM-dd HH:mm:ss'</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="ff0182a4-ae2f-4e5a-a589-804f8acaeb74" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确格式化时间 2016年01月06日
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#ff0182a4-ae2f-4e5a-a589-804f8acaeb74 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-string">'2016年01月06日'</span>, timeUtil._$formatTime(<span class="hljs-number">1452088945458</span>, <span class="hljs-string">'yyyy年MM月dd日'</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="6ac54b0b-83a7-4725-9eeb-8a7f6cf767e9" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确格式化时间 2016-1-6
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#6ac54b0b-83a7-4725-9eeb-8a7f6cf767e9 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-string">'2016-1-6'</span>, timeUtil._$formatTime(<span class="hljs-number">1452088945458</span>, <span class="hljs-string">'yyyy-M-d'</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="83e3d021-1c27-4ce4-ba27-5fdd2cc27d15" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确格式化时间 2014-11-26
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#83e3d021-1c27-4ce4-ba27-5fdd2cc27d15 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-string">'2014-11-26'</span>, timeUtil._$formatTime(<span class="hljs-number">1417011945458</span>, <span class="hljs-string">'yyyy-M-d'</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>            <div id="55ad5fd1-1b25-4dab-8ee7-54b69558de14" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确格式化时间 new Date().getTime
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#55ad5fd1-1b25-4dab-8ee7-54b69558de14 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-string">'2016-5-6'</span>, timeUtil._$formatTime(<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>().getTime(), <span class="hljs-string">'yyyy-M-d'</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+              <section class="suite-wrap">
+          <div id="fc840d27-dfde-4c38-805e-88d766967200" class="suite has-tests has-passed">
+            <h3 class="suite-title">#TimeUtil._$formatPeriod()</h3>
+            <h5 class="suite-filename">\test\timeUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="fc840d27-dfde-4c38-805e-88d766967200" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#fc840d27-dfde-4c38-805e-88d766967200-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="fc840d27-dfde-4c38-805e-88d766967200-test-list" class="list-group test-list collapse in">
+                    <div id="f5906f02-b220-47db-8ab0-2b4c3a4532be" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确格式化时间段
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#f5906f02-b220-47db-8ab0-2b4c3a4532be > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-string">'2014-11-26 - 2016-01-06'</span>, timeUtil._$formatPeriod(<span class="hljs-number">1417011945458</span>, <span class="hljs-number">1452088945458</span>, <span class="hljs-string">'yyyy-MM-dd'</span>));<br>assert.equal(<span class="hljs-string">'2014-11-26 - 2016-01-06'</span>, timeUtil._$formatPeriod(<span class="hljs-number">1417011945458</span>, <span class="hljs-number">1452088945458</span>));<br>assert.equal(<span class="hljs-string">'2014-11-26 至 2016-01-06'</span>, timeUtil._$formatPeriod(<span class="hljs-number">1417011945458</span>, <span class="hljs-number">1452088945458</span>, <span class="hljs-string">'yyyy-MM-dd'</span>, <span class="hljs-string">' 至 '</span>));<br>assert.equal(<span class="hljs-string">'2014年11月26日 至 2016年01月06日'</span>, timeUtil._$formatPeriod(<span class="hljs-number">1417011945458</span>, <span class="hljs-number">1452088945458</span>, <span class="hljs-string">'yyyy年MM月dd日'</span>, <span class="hljs-string">' 至 '</span>));<br>assert.equal(<span class="hljs-string">'待定'</span>, timeUtil._$formatPeriod(<span class="hljs-number">32503651201000</span>, <span class="hljs-number">32535187201000</span>, <span class="hljs-string">'yyyy年MM月dd日'</span>, <span class="hljs-string">' 至 '</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+              <section class="suite-wrap">
+          <div id="8daf6b32-d845-4459-ab9b-0f8c47cf977a" class="suite has-tests has-passed">
+            <h3 class="suite-title">#TimeUtil._$formatTiktokTime()</h3>
+            <h5 class="suite-filename">\test\timeUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="8daf6b32-d845-4459-ab9b-0f8c47cf977a" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">1 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#8daf6b32-d845-4459-ab9b-0f8c47cf977a-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="8daf6b32-d845-4459-ab9b-0f8c47cf977a-test-list" class="list-group test-list collapse in">
+                    <div id="8dae912e-a696-46a1-b11b-8f512e6cba18" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              正确格式化倒计时时间
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#8dae912e-a696-46a1-b11b-8f512e6cba18 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-string">'58天18小时16分钟'</span>, timeUtil._$formatTiktokTime(<span class="hljs-number">1422088945458</span>, <span class="hljs-number">1417011945458</span>));<br>assert.equal(<span class="hljs-string">'2小时46分钟'</span>, timeUtil._$formatTiktokTime(<span class="hljs-number">1417021945458</span>, <span class="hljs-number">1417011945458</span>));<br>assert.equal(<span class="hljs-string">'16分钟'</span>, timeUtil._$formatTiktokTime(<span class="hljs-number">1417012945458</span>, <span class="hljs-number">1417011945458</span>));<br>assert.equal(<span class="hljs-string">'10秒钟'</span>, timeUtil._$formatTiktokTime(<span class="hljs-number">1417011955458</span>, <span class="hljs-number">1417011945458</span>));<br>assert.equal(<span class="hljs-literal">null</span>, timeUtil._$formatTiktokTime(<span class="hljs-number">141011945458</span>, <span class="hljs-number">1417011945458</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="7828950f-abe6-4111-a426-aedbfc441ed5" class="suite has-suites">
+            <h3 class="suite-title">urlUtil</h3>
+            <h5 class="suite-filename">\test\urlUtil.test.js</h5>
+        
+              <section class="suite-wrap">
+          <div id="535f75f4-8d7f-4da0-b711-a14dbdc97f0a" class="suite has-tests has-passed">
+            <h3 class="suite-title">#urlUtil._$isRightUMI() </h3>
+            <h5 class="suite-filename">\test\urlUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="535f75f4-8d7f-4da0-b711-a14dbdc97f0a" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">1 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#535f75f4-8d7f-4da0-b711-a14dbdc97f0a-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="535f75f4-8d7f-4da0-b711-a14dbdc97f0a-test-list" class="list-group test-list collapse in">
+                    <div id="c2d795a9-b816-4994-ab4e-0e27ebea7d36" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              比较UMI是否正确
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#c2d795a9-b816-4994-ab4e-0e27ebea7d36 > .test-code.collapse">Code</button>
+              <span class="test-duration fast">1 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-literal">true</span>, urlUtil._$isRightUMI(<span class="hljs-string">"#/terer/ewewe?qweqeqwe"</span>,<span class="hljs-string">"/terer/ewewe"</span>));<br>assert.equal(<span class="hljs-literal">true</span>, urlUtil._$isRightUMI(<span class="hljs-string">"#/terer/ewewe?qweqe112qwe"</span>,<span class="hljs-string">"/terer/ewewe"</span>));<br>assert.equal(<span class="hljs-literal">true</span>, urlUtil._$isRightUMI(<span class="hljs-string">"/terer/ewewe?qweqe112qwe"</span>,<span class="hljs-string">"/terer/ewewe"</span>));<br>assert.equal(<span class="hljs-literal">false</span>, urlUtil._$isRightUMI(<span class="hljs-string">"#/terer/eweweq?qweqeqwe"</span>,<span class="hljs-string">"/terer/ewewe"</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+        
+          </div>
+        </section>
+            <section class="suite-wrap">
+          <div id="8d63cf09-4f5f-4ef1-b118-eaaf0ac2f374" class="suite has-suites">
+            <h3 class="suite-title">versionUtil</h3>
+            <h5 class="suite-filename">\test\versionUtil.test.js</h5>
+        
+              <section class="suite-wrap">
+          <div id="33bbbcf7-275b-4c6f-87a1-1d3467d4bec3" class="suite has-tests has-passed">
+            <h3 class="suite-title">#versionUtil._$versionCompare() </h3>
+            <h5 class="suite-filename">\test\versionUtil.test.js</h5>
+            <!-- Suite Chart -->
+            <div class="suite-chart-wrap">
+              <canvas id="33bbbcf7-275b-4c6f-87a1-1d3467d4bec3" class="suite-chart" width="50" height="50" data-total-passes="1" data-total-failures="0" data-total-pending="0" data-total-skipped="0"></canvas>
+            </div>
+            <div class="suite-data-wrap">
+              <!-- Suite Summary -->
+              <ul class="suite-summary list-unstyled">
+                <li class="suite-summary-item duration">0 ms</li>
+                <li class="suite-summary-item tests">1</li>
+                <li class="suite-summary-item passed">1</li>
+                <li class="suite-summary-item failed">0</li>
+                <li class="suite-summary-item pending">0</li>
+              </ul>
+              <!-- Test Info -->
+              <div class="suite-test-wrap">
+                <div class="suite-test-header" data-toggle="collapse" data-target="#33bbbcf7-275b-4c6f-87a1-1d3467d4bec3-test-list">
+                  <h4 class="suite-test-header-title">Tests</h4>
+                </div>
+                <div id="33bbbcf7-275b-4c6f-87a1-1d3467d4bec3-test-list" class="list-group test-list collapse in">
+                    <div id="a6921405-b8f1-40a2-ba6a-6e9d4730fd8d" class="list-group-item test passed">
+          <!-- Test Heading -->
+          <div class="test-heading">
+            <h4 class="test-title">
+              <span class="text-muted hidden"> it </span>
+              比较UMI是否正确
+            </h4>
+            <div class="pull-right">
+              <button class="btn btn-link btn-sm toggle-btn toggle-code collapsed" data-toggle="collapse" data-target="#a6921405-b8f1-40a2-ba6a-6e9d4730fd8d > .test-code.collapse">Code</button>
+              <span class="test-duration fast">0 ms</span>
+            </div>
+          </div>
+          <!-- Test Errors -->
+          <!-- Test Code -->
+          <div class="test-code collapse">
+            <pre><code class="hljs javascript small">assert.equal(<span class="hljs-number">0</span>, versionUtil._$versionCompare(<span class="hljs-string">"1.0.0"</span>,<span class="hljs-string">"1.0.0"</span>));<br>assert.equal(<span class="hljs-number">0</span>, versionUtil._$versionCompare(<span class="hljs-string">"1.1.0"</span>,<span class="hljs-string">"1.1.0"</span>));<br>assert.equal(<span class="hljs-number">0</span>, versionUtil._$versionCompare(<span class="hljs-string">"1.0.1"</span>,<span class="hljs-string">"1.0.1"</span>));<br>assert.equal(-<span class="hljs-number">1</span>, versionUtil._$versionCompare(<span class="hljs-string">"1.0.0"</span>,<span class="hljs-string">"1.0.1"</span>));<br>assert.equal(-<span class="hljs-number">1</span>, versionUtil._$versionCompare(<span class="hljs-string">"1.0.0"</span>,<span class="hljs-string">"1.1.0"</span>));<br>assert.equal(-<span class="hljs-number">1</span>, versionUtil._$versionCompare(<span class="hljs-string">"1.0.0"</span>,<span class="hljs-string">"2.0.0"</span>));<br>assert.equal(<span class="hljs-number">1</span>, versionUtil._$versionCompare(<span class="hljs-string">"3.0.0"</span>,<span class="hljs-string">"2.0.0"</span>));<br>assert.equal(<span class="hljs-number">1</span>, versionUtil._$versionCompare(<span class="hljs-string">"2.1.0"</span>,<span class="hljs-string">"2.0.0"</span>));<br>assert.equal(<span class="hljs-number">1</span>, versionUtil._$versionCompare(<span class="hljs-string">"2.0.1"</span>,<span class="hljs-string">"2.0.0"</span>));</code></pre>
+          </div>
+          <!-- Test Error Stack -->
+        </div>        </div>
+              </div>
+            </div>
+        
+        
+          </div>
+        </section>
+        
+          </div>
+        </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>Report generated by <a href="http://adamgruber.github.io/mochawesome/" target="_blank">mochawesome</a>.<br>Designed and built by <a href="https://github.com/adamgruber" target="_blank">adamgruber</a>. &copy;2016.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/vendor.js"></script>
+    <script src="js/mochawesome.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DEMO - dateTimePicker</title>
+    <link href="../../lib/res-base/css/style.css" rel="stylesheet" />
+</head>
+<body>
+<script src="../../lib/regularjs/dist/regular.js"></script>
+<script src="../../lib/nej/src/define.js?pool=../../lib/"></script>
+<script id="template" type="application/template">
+    <div>{#inc des}</div>
+    <ux-button  value={value}  size={size} width={width} on-click={this.doClick($event)} />
+</script>
+<style>
+    .demo{
+        margin: 50px 0 0 100px;
+    }
+</style>
+<script>
+NEJ.define([
+    '../../src/modal/ui.js',
+    'pool/component-button/src/button/ui'
+],function(
+    Modal
+) {
+    var TestUI = Regular.extend({
+        name: 'testUI',
+        template: "#template"
+    });
+
+    new TestUI({
+        data:{
+            des: 'Modal.alert(content, title, okButton,type)，你选择了：{stateAction}',
+            value: "召唤modal"
+        },
+        doClick: function(event){
+            var that = this;
+            Modal.alert("这里是content，蓝瘦、香菇","这里是title").$on('ok',function(){
+                that.data.stateAction = '确定';
+                that.$update();
+            }).$on('cancel',function(){
+                that.data.stateAction = '取消';
+                that.$update();
+            })
+        }
+    }).$inject('#demo1');
+
+
+
+    new TestUI({
+        data:{
+            des: 'Modal.confirm(content, title, okButton, cancelButton,type)，你选择了：{stateAction}',
+            value: "召唤modal"
+        },
+        doClick: function(event){
+            var that = this;
+            Modal.confirm("这里是content，蓝瘦、香菇","这里是title").$on('ok',function(){
+                that.data.stateAction = '确定';
+                that.$update();
+            }).$on('cancel',function(){
+                that.data.stateAction = '取消';
+                that.$update();
+            })
+        }
+    }).$inject('#demo2');
+
+    new TestUI({
+        data:{
+            des: 'data.contentTemplate-动态模板',
+            value: "召唤modal"
+        },
+        doClick: function(event){
+            new Modal({
+                data: {
+                    contentTemplate: "这里是contentTemplate-当前时间{date}",
+                    title: '这里是title',
+                    date: new Date()
+                }
+            });
+        }
+    }).$inject('#demo3');
+
+})
+</script>
+<div class="demo" id="demo1"></div>
+<div class="demo" id="demo2"></div>
+<div class="demo" id="demo3"></div>
+<div class="demo" id="demo4"></div>
+</body>
+</html>

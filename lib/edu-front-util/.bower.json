@@ -1,0 +1,33 @@
+{
+  "name": "edu-front-util",
+  "version": "0.3.32",
+  "description": "utils for NetEase Education FrontEnd Group",
+  "main": "index.js",
+  "authors": [
+    "hzshaoyy"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "util"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "dependencies": {
+    "nej": "git+https://g.hz.netease.com/edu-front-vendor/nej.git#0.3.8"
+  },
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.3.32",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.3.32",
+    "commit": "73401dbf28db1673981c7bd57215e2e645a32ca2"
+  },
+  "_source": "https://g.hz.netease.com/edu-frontend/edu-front-util.git",
+  "_target": "0.3.32",
+  "_originalSource": "git+https://g.hz.netease.com/edu-frontend/edu-front-util.git"
+}

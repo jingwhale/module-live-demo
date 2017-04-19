@@ -1,0 +1,7 @@
+<div class="um-notify {class}" r-hide={!visible}>
+    {#list messages as message}
+    <div class="um-message um-message-{message.state}" r-animation="on: enter; class: animated fadeIn fast; on: leave; class: animated fadeOut fast;">
+        {message.text}
+    </div>
+    {/list}
+</div>

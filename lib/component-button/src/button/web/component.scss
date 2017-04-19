@@ -1,0 +1,53 @@
+@import 'res-base/scss/var';
+@import 'res-base/scss/bourbon/bourbon';
+@import 'base/scss/button';
+@import 'base/scss/mixins';
+
+
+// Size Extends:
+// ========================================================================
+
+@include ux-btn-extend_size(xs, 5px, $height-xs, $font-size-xs);
+@include ux-btn-extend_size(sm, 10px, $height-sm, $font-size-sm);
+@include ux-btn-extend_size(lg, 16px, $height-lg, $font-size-lg);
+@include ux-btn-extend_size(xl, 20px, $height-xl, $font-size-xl);
+
+// Widht Extends:
+// ========================================================================
+@include ux-btn-extend_width(w100, 100px);
+@include ux-btn-extend_width(w110, 110px);
+@include ux-btn-extend_width(w120, 120px);
+@include ux-btn-extend_width(w130, 130px);
+@include ux-btn-extend_width(w140, 140px);
+@include ux-btn-extend_width(w140, 150px);
+@include ux-btn-extend_width(w160, 160px);
+@include ux-btn-extend_width(w170, 170px);
+@include ux-btn-extend_width(w180, 180px);
+@include ux-btn-extend_width(w190, 190px);
+@include ux-btn-extend_width(w200, 200px);
+@include ux-btn-extend_width(w210, 210px);
+@include ux-btn-extend_width(w220, 220px);
+@include ux-btn-extend_width(w300, 300px);
+@include ux-btn-extend_width(w400, 400px);
+@include ux-btn-extend_width(w500, 500px);
+@include ux-btn-extend_width(w600, 600px);
+
+// Color Extends:
+// ========================================================================
+
+@include ux-btn-extend_color(primary, transparent, $color-base, $color-base, $color-base, $color-base, $color-white);
+@include ux-btn-extend_color(warning, transparent, $brand-error, $brand-error, $brand-error, $brand-error, $color-white);
+@include ux-btn-extend_color(disabled, $color-disabled, $color-disabled, $color-disabled, $color-white, $color-disabled, $color-white);
+@include ux-btn-extend_color(success, $brand-success, $brand-success-darker, $brand-success-darker, white, $brand-success-darker);
+@include ux-btn-extend_color(info, $brand-info, $brand-info-darker, $brand-info-darker, white, $brand-info-darker);
+@include ux-btn-extend_color(error, $brand-error, $brand-error-darker, $brand-error-darker, white, $brand-error-darker);
+
+@include ux-btn-extend_color(gh, transparent, $color-base, $color-base, $color-base, $color-base, $color-white);
+@include ux-btn-extend_color(deny, transparent, $brand-error, $brand-error, $brand-error, $brand-error, $color-white);
+@include ux-btn-extend_color(buy, $color-buy, $color-buy-hover, $color-buy-hover, $color-white, $color-white, $color-white);
+
+.ux-btn-disabled{
+    cursor: not-allowed;
+}
+
+// ========================================================================

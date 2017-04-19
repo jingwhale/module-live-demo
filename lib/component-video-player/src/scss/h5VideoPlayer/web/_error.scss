@@ -1,0 +1,56 @@
+.u-edu-h5player-error{
+    display:none;
+    left: 0;
+    top: 0;
+    @extend %basesize;
+    background:$bgColor;
+    z-index:100;
+
+    .emid{
+        line-height:18px;
+        height:18px;
+        width:100%;
+        position:absolute;
+        left:0;
+        top:50%;
+        margin-top:-9px;
+        text-align:center;
+
+        .eic{
+            margin-right:3px;
+            vertical-align:top;
+            width: 18px;
+            height: 18px;
+            background-image: $web-sprites-map; 
+            background-position: 66.66667% 10.38961%;
+        }
+    }
+
+    .bwarp{
+        position:absolute;
+        width:100%;
+        height:66px;
+        left:0;   
+        top:50%;
+        text-align:center;
+        margin-top:10px;
+
+        .reloadbtn{
+            text-align:center;
+            line-height:66px;
+            height:66px;
+            color:$primaryColor;
+            border:1px solid $primaryColor;
+            @include border-radius(10px);
+            width:100px;
+
+            // .ic{
+            //     width: 36px;
+            //     height: 32px;
+            //     background: transparent url("../res/images/h5VideoPlayer/mobile/reload_btn.png") right center no-repeat;
+            //     background-size: 36px 32px;
+            //     margin:15px 5px 15px 0;
+            // }
+        }
+    }
+}

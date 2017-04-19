@@ -1,0 +1,14 @@
+@import '../../../lib/res-base/scss/var';
+@import '../../../lib/res-base/scss/bourbon/bourbon';
+
+.ux-dropdown-cascade{
+    font-size: 0;
+
+    .ux-dropdown{
+        margin-left: 20px;
+
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+} 

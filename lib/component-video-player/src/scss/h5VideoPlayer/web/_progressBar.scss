@@ -1,0 +1,136 @@
+@import "../var";
+
+.m-progressbar {
+    position: relative;
+    height: 4px;
+    cursor: pointer;
+
+    .backgroundbar{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $bgProgressColor;
+    }
+
+    .progressbar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        background-color: $primaryColor;
+    }
+
+    .bufferbar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 0;
+        background-color: $bgLightColor;
+    }
+
+    // 改其他类的定位 TODO
+    .drag_item {
+        position: absolute;
+        top: -3px;
+        width: 8px;
+        height: 8px;
+        border: 1px solid $primaryColor;
+        background: #ffffff;
+        border-radius: 100%;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .anchor {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 4px;
+        background-color: #ccc;
+    }
+
+    &.m-progressbar-hr{
+
+        .progressbar{
+            left: auto;
+            right: 0;
+        }
+
+        .bufferbar{
+            left: auto;
+            right: 0;
+        }
+
+        .drag_item{
+            left: auto;
+            right: 0;
+        }
+
+        .anchor {
+            left: auto;
+        }
+    }
+
+    &.m-progressbar-vt{
+        width: 4px;
+        height: 120px;
+
+        .progressbar{
+            width: 100%;
+            height: 0;
+        }
+
+        .bufferbar{
+            width: 100%;
+            height: 0;
+        }
+
+        .drag_item{
+            top:0;
+            left: -3px;
+        }
+
+        .anchor {
+            top: auto;
+            left: 0;
+            width: 100%;
+            height: 4px;
+        }
+    }
+
+    &.m-progressbar-vb{
+        width: 4px;
+        height: 85px;
+
+        .progressbar{
+            top: auto;
+            bottom: 0;
+            width: 100%;
+            height: 0;
+        }
+
+        .bufferbar{
+            top: auto;
+            bottom: 0;
+            width: 100%;
+            height: 0;
+        }
+
+        .drag_item{
+            top: auto;
+            left: -3px;
+        }
+
+        .anchor {
+            top: auto;
+            bottom:0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+        }
+    }
+}

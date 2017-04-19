@@ -1,0 +1,17 @@
+<label class="ux-textarea2 {class}" r-hide={!visible}>
+    <ux-validation rules={rules} value={value} ref="validation" state={state}>
+        <textarea ref="input" class="ux-textarea ux-textarea_{state} ux-textarea_{size} ux-textarea_{width}"
+                  placeholder={placeholder}
+                  autofocus={autofocus}
+                  readonly={readonly}
+                  disabled={disabled}
+                  r-model={value}
+                  on-keyup={this.onkeyup($event)}
+                  on-blur={this.onblur($event)}
+                  on-focus={this.onfocus($event)}
+                  {#if autoHeight} r-style={{height: height+'px', overflow:'hidden'}} {/if}
+        ></textarea>
+            {#if eltIE9 && !value}<span class="ux-textarea2_placeholder">{placeholder}</span>{/if}
+    </ux-validation>
+</label>
+

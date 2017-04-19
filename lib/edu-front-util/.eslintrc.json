@@ -1,0 +1,71 @@
+{
+    "extends": "eslint:recommended",
+    "rules": {
+        "no-extra-boolean-cast":[
+            "warn"
+        ],
+        "no-unused-vars": [
+            "warn"
+        ],
+        "no-else-return": [
+            "warn"
+        ],
+        "no-redeclare":[
+            "warn"
+        ],
+        "curly": [
+            "warn",
+            "all"
+        ],
+        "no-empty-function": [
+            "warn"
+        ],
+        "no-control-regex": [
+            "warn"
+        ],
+        "no-magic-numbers": [
+            "warn"
+        ],
+        "no-unmodified-loop-condition": [
+            "warn"
+        ],
+        "vars-on-top": [
+            "warn"
+        ],
+        "no-use-before-define": [
+            "warn"
+        ],
+        "max-len": [
+            "warn",
+            150
+        ],
+        "no-spaced-func": [
+            "warn"
+        ],
+        "no-console": [
+            "error",
+            {
+                "allow": [
+                    "warn",
+                    "error"
+                ]
+            }
+        ]
+    },
+    "globals": {
+        "jQuery": true,
+        "$": true,
+        "NEJ": true,
+        "define": true,
+        "document": true,
+        "window": true,
+        "Regular": true,
+        "console": true,
+        "location": true,
+        "ActiveXObject": true,
+        "navigator": true,
+        "setTimeout":true,
+        "clearTimeout":true
+    },
+    "fix": true
+}

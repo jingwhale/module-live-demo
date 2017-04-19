@@ -1,0 +1,14 @@
+{
+	"videoplayer-flash-demo" : {
+        "title" : "flash视频播放器范例"
+    },
+    "videoplayer-h5-demo" : {
+        "title" : "h5视频播放器范例"
+    },
+    "videoplayer-h5-live-demo" : {
+        "title" : "h5直播视频播放器范例"
+    },
+    "videoplayer-h5-native-demo" : {
+        "title" : "h5原生视频播放器范例"
+    }
+}

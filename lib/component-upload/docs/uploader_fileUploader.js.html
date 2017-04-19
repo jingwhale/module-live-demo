@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>教育产品组件开发文档 Source: uploader/fileUploader.js</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cosmo.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">教育产品组件开发文档</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="module-pool_component-upload_src_custom_file_upload_ui.html">pool/component-upload/src/custom_file_upload/ui</a></li><li><a href="module-pool_component-upload_src_muti_file_upload_ui.html">pool/component-upload/src/muti_file_upload/ui</a></li><li><a href="module-pool_component-upload_src_progress_upload_percent_modal_ui.html">pool/component-upload/src/progress/upload_percent_modal/ui</a></li><li><a href="module-pool_component-upload_src_progress_upload_progress_ui.html">pool/component-upload/src/progress/upload_progress/ui</a></li><li><a href="module-pool_component-upload_src_simple-img-upload_ui.html">pool/component-upload/src/simple-img-upload/ui</a></li><li><a href="module-pool_component-upload_src_upload_component.html">pool/component-upload/src/upload/component</a></li><li><a href="module-pool_component-upload_src_upload_ui.html">pool/component-upload/src/upload/ui</a></li><li><a href="pool_component-upload_src_custom_file_upload_component%250A----------------------------------------------------------module_.html">pool/component-upload/src/custom_file_upload/component
+----------------------------------------------------------</a></li><li><a href="pool_component-upload_src_muti-file-upload_component%250A----------------------------------------------------------module_.html">pool/component-upload/src/muti-file-upload/component
+----------------------------------------------------------</a></li><li><a href="pool_component-upload_src_progress_upload_percent_modal_component%250A----------------------------------------------------------module_.html">pool/component-upload/src/progress/upload_percent_modal/component
+----------------------------------------------------------</a></li><li><a href="pool_component-upload_src_progress_upload_progress_component%250A----------------------------------------------------------module_.html">pool/component-upload/src/progress/upload_progress/component
+----------------------------------------------------------</a></li><li><a href="pool_component-upload_src_simple_img_upload_component%250A----------------------------------------------------------module_.html">pool/component-upload/src/simple_img_upload/component
+----------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_constant%250A----------------------------------------------------------------module_.html">pool/component-upload/src/uploader/constant
+----------------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_customImgUploader%250A----------------------------------------------------------------module_.html">pool/component-upload/src/uploader/customImgUploader
+----------------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_defaultConfig%250A----------------------------------------------------------------module_.html">pool/component-upload/src/uploader/defaultConfig
+----------------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_fileUploader2%250A----------------------------------------------------------------module_.html">pool/component-upload/src/uploader/fileUploader2
+----------------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_flashUploader%250A----------------------------------------------------------------module_.html">pool/component-upload/src/uploader/flashUploader
+----------------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_formUploader%250A----------------------------------------------------------------module_.html">pool/component-upload/src/uploader/formUploader
+----------------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_mutiFileUploader%250A----------------------------------------------------------------module_.html">pool/component-upload/src/uploader/mutiFileUploader
+----------------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_mutiFormUploader%250A----------------------------------------------------------------module_.html">pool/component-upload/src/uploader/mutiFormUploader
+----------------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_uploaderBase%250A----------------------------------------------------------------module_.html">pool/component-upload/src/uploader/uploaderBase
+----------------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_uploadUtil%250A---------------------------------------------------------module_.html">pool/component-upload/src/uploader/uploadUtil
+---------------------------------------------------------</a></li><li><a href="pool_component-upload_src_util_verifyFile%250A----------------------------------------------------------module_.html">pool/component-upload/src/util/verifyFile
+----------------------------------------------------------</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="module-pool_component-upload_src_custom_file_upload_ui.CustomFileUploadUI.html">pool/component-upload/src/custom_file_upload/ui.CustomFileUploadUI</a></li><li><a href="module-pool_component-upload_src_muti_file_upload_ui.MutiFileUploadUI.html">pool/component-upload/src/muti_file_upload/ui.MutiFileUploadUI</a></li><li><a href="module-pool_component-upload_src_progress_upload_percent_modal_ui.UploadPercentModalUI.html">pool/component-upload/src/progress/upload_percent_modal/ui.UploadPercentModalUI</a></li><li><a href="module-pool_component-upload_src_progress_upload_progress_ui.uploadProgressUI.html">pool/component-upload/src/progress/upload_progress/ui.uploadProgressUI</a></li><li><a href="module-pool_component-upload_src_simple-img-upload_ui.SimpleImgUploadUI.html">pool/component-upload/src/simple-img-upload/ui.SimpleImgUploadUI</a></li><li><a href="module-pool_component-upload_src_ui.UploadUI.html">pool/component-upload/src/ui.UploadUI</a></li><li><a href="module-pool_component-upload_src_upload_upload.Upload.html">pool/component-upload/src/upload/upload.Upload</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="pool_component-upload_src_uploader_mutiFormUploader%250A----------------------------------------------------------------module_.html#~event:uploadStart%25E4%25B8%258A%25E4%25BC%25A0%25E5%25BC%2580%25E5%25A7%258B">event:uploadStart 上传开始</a></li><li><a href="module-pool_component-upload_src_custom_file_upload_component.Upload.html#event:beginUpload">pool/component-upload/src/custom_file_upload/component.Upload#event:beginUpload</a></li><li><a href="module-pool_component-upload_src_custom_file_upload_component.Upload.html#event:finishUpload">pool/component-upload/src/custom_file_upload/component.Upload#event:finishUpload</a></li><li><a href="module-pool_component-upload_src_custom_file_upload_component.Upload.html#event:updateProgress">pool/component-upload/src/custom_file_upload/component.Upload#event:updateProgress</a></li><li><a href="module-pool_component-upload_src_custom_file_upload_component.Upload.html#event:uploadError">pool/component-upload/src/custom_file_upload/component.Upload#event:uploadError</a></li><li><a href="module-pool_component-upload_src_muti_file_upload_component.Upload.html#event:beginUpload">pool/component-upload/src/muti_file_upload/component.Upload#event:beginUpload</a></li><li><a href="module-pool_component-upload_src_muti_file_upload_component.Upload.html#event:finishUpload">pool/component-upload/src/muti_file_upload/component.Upload#event:finishUpload</a></li><li><a href="module-pool_component-upload_src_muti_file_upload_component.Upload.html#event:maxCount">pool/component-upload/src/muti_file_upload/component.Upload#event:maxCount</a></li><li><a href="module-pool_component-upload_src_muti_file_upload_component.Upload.html#event:updateProgress">pool/component-upload/src/muti_file_upload/component.Upload#event:updateProgress</a></li><li><a href="module-pool_component-upload_src_muti_file_upload_component.Upload.html#event:uploadError">pool/component-upload/src/muti_file_upload/component.Upload#event:uploadError</a></li><li><a href="module-pool_component-upload_src_simple_img_upload_component.Upload.html#event:beginUpload">pool/component-upload/src/simple_img_upload/component.Upload#event:beginUpload</a></li><li><a href="module-pool_component-upload_src_simple_img_upload_component.Upload.html#event:finishUpload">pool/component-upload/src/simple_img_upload/component.Upload#event:finishUpload</a></li><li><a href="module-pool_component-upload_src_simple_img_upload_component.Upload.html#event:updateProgress">pool/component-upload/src/simple_img_upload/component.Upload#event:updateProgress</a></li><li><a href="module-pool_component-upload_src_simple_img_upload_component.Upload.html#event:uploadError">pool/component-upload/src/simple_img_upload/component.Upload#event:uploadError</a></li><li><a href="module-pool_component-upload_src_upload_upload.Upload.html#event:beginUpload">pool/component-upload/src/upload/upload.Upload#event:beginUpload</a></li><li><a href="module-pool_component-upload_src_upload_upload.Upload.html#event:finishUpload">pool/component-upload/src/upload/upload.Upload#event:finishUpload</a></li><li><a href="module-pool_component-upload_src_upload_upload.Upload.html#event:updateProgress">pool/component-upload/src/upload/upload.Upload#event:updateProgress</a></li><li><a href="module-pool_component-upload_src_upload_upload.Upload.html#event:uploadError">pool/component-upload/src/upload/upload.Upload#event:uploadError</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-12">
+	
+		<div id="main">
+			
+
+		<h1 class="page-title">Source: uploader/fileUploader.js</h1>
+    
+<section>
+    <article>
+        <pre
+            class="sunlight-highlight-javascript linenums">/**
+ * 上传组件
+ */
+NEJ.define([
+    'text!./fileUploader.html',
+    'base/util',
+    'base/element',
+    'util/template/tpl',
+    'ui/base',
+    'util/ajax/xdr',
+    'eui/uploader/util',
+    'eui/uploader/constant',
+    'eui/uploader/defaultConfig'
+],function(
+    _template,
+    ut,
+    e,
+    t,
+    ui,
+    j,
+    uploadUtil,
+    uploadConst,
+    defaultConfig,
+    p, o, f, r){
+
+    // 样式
+    var _seed_css = e._$pushCSSText('\
+        .u-upload{ position:relative; display:inline-block;}\
+        .u-upload .showIpt{ text-align:center; overflow:hidden;}\
+        .u-upload .filewrap{ overflow:hidden; position:absolute; top:0; left:0; width:100%; height:100%;}\
+        .u-upload .realIpt{ font-size:100px; display:block; position:absolute; top:0; left:0; filter:alpha(opacity=0); opacity:0; cursor:pointer; width:100%; height:100%;}');
+
+    // 上传组件类
+    p._$$UploadUI = NEJ.C();
+
+    var _proUploadUI;
+
+    _proUploadUI = p._$$UploadUI._$extend(ui._$$Abstract, true);
+
+    /**
+     * 初始化外观信息
+     *
+     */
+    _proUploadUI.__initXGui = function() {
+        this.__seed_css  = _seed_css;
+        this.__seed_html = t._$addNodeTemplate(_template);
+    };
+
+    /**
+     * 初始化节点
+     *
+     * @return {Void}
+     */
+    _proUploadUI.__initNode = function() {
+        this.__supInitNode();
+
+        //初始化节点
+        this.__showUpload = this.__body;
+
+        this.__txtNode = e._$getByClassName(this.__body,'j-txt')[0];
+
+        this.__fileWrapNode = e._$getByClassName(this.__body,'j-filewrap')[0];
+
+        this.__uploadForm = e._$getByClassName(this.__body, 'j-uploadForm')[0]; // 表单节点
+
+    };
+
+    /**
+     * 统一的错误处理
+     */
+    _proUploadUI.__errorHandler = function(_msg, _callBack){
+        if (!ut._$isObject(_msg)) {
+            _msg = {
+                message : _msg
+            }
+        }
+
+        if (_msg.code == -2) { // edu token 过期错误
+            this.__getEduToken();
+            return;
+        };
+
+        // 如果有其他地址，则重试。取消上传也会触发错误，但是不应该重新上传，这里不好判断
+        // if (this.__uploadIPs.length > 1 &amp;&amp; this.__posUploadIPIndex &lt; this.__uploadIPs.length - 1) {
+        //     this.__posUploadIPIndex++;
+
+        //     this.__checkToUpload();
+        //     return;
+        // };
+
+        var _str = (_msg.code || _msg.errCode || '') + (_msg.errMsg || _msg.msg || _msg.message || '网络错误');
+
+        this.__resetHtmlFileNode();
+
+        if (!this.__isAbort) { // 如果没有__reqId则是主动取消，不抛错
+            this.__config.onUploadError &amp;&amp; this.__config.onUploadError({
+                reqId : this.__reqId,
+                errMsg : _str,
+                fileName : this.__file
+            });
+        };
+    }
+
+    /**
+     * 重置file域
+     */
+    _proUploadUI.__resetHtmlFileNode = function(_disable){
+        //允许多次选择同一个文件，因此每次都重置file域
+        var _html;
+
+        if (!!_disable) { // 禁用
+            this.__fileWrapNode.innerHTML = '';
+            return
+        }
+
+        var _html = '&lt;input name="file" type="file" class="j-inputfile realIpt" title="" ';
+        switch (this.__config.type){
+            case uploadConst.UPLOAD_FILE_TYPE_PDF:
+                _html += 'accept="' + uploadConst.PDF_FILE_EXTENSION.join(', ')+'" >';
+                break;
+
+            case uploadConst.UPLOAD_FILE_TYPE_VIDEO:
+                _html += 'accept="' + uploadConst.VIDEO_FILE_EXTENSION.join(', ')+'" >';
+                break;
+
+            case uploadConst.UPLOAD_FILE_TYPE_ATTACH:
+                _html += 'accept="' + uploadConst.ATTACH_FILE_EXTENSION.join(', ')+'" >';
+                break;
+            case uploadConst.UPLOAD_FILE_TYPE_CAPTION:
+                _html += 'accept="' + uploadConst.CAPTION_FILE_EXTENSION.join(', ')+'" >';
+
+            case uploadConst.UPLOAD_FILE_TYPE_IMAGE:
+                _html += 'accept="' + uploadConst.IMAGE_FILE_EXTENSION.join(', ')+'" >';
+                break;
+            case uploadConst.UPLOAD_FILE_TYPE_EXCEL:
+                _html += 'accept="' + uploadConst.EXCEL_FILE_EXTENSION.join(', ')+'" >';
+            default:
+                _html += '>';
+                break;
+
+        }
+
+
+        this.__fileWrapNode.innerHTML = _html;
+
+        this.__realUpload = e._$getByClassName(this.__body, 'j-inputfile')[0];
+
+        this.__doInitDomEvent([[this.__realUpload, 'change', this.__uploadHandler._$bind(this)]]);
+    }
+
+    /**
+     * 禁用
+     */
+    _proUploadUI._$disable = function(_disable){
+        this.__isDisable = _disable;
+
+        if (this.__isDisable) {
+            if(this.__config.btnDisableClassName){
+                e._$addClassName(this.__showUpload, this.__config.btnDisableClassName);
+            }
+        }else{
+            if(this.__config.btnDisableClassName){
+                e._$delClassName(this.__showUpload, this.__config.btnDisableClassName);
+            }
+        }
+
+        this.__resetHtmlFileNode(_disable);
+    }
+
+    /**
+     * 取消上传，该方法暂时不对外
+     */
+    _proUploadUI._$abort = function(){
+        this.__isAbort = true;
+
+        // 所有请求都取消
+        if(this.__reqId){
+            j._$abort(this.__reqId);
+            this.__reqId = null;
+        }
+
+        if (this.__blobUploadId) {
+            uploadUtil._$abortFileUploadByBlobs(this.__blobUploadId);
+            this.__blobUploadId = null;
+        };
+
+        this.__resetHtmlFileNode();
+    }
+
+    /**
+     * 上传进度事件
+     */
+    _proUploadUI.__onUploading = function(_data){
+        if (!!_data) {
+            _data.initOffset = _data.initOffset || 0;
+            _data.beginTime = this.__beginTime;
+            _data.fileName = this.__file;
+
+            this.__config.onUpdateProgress &amp;&amp; this.__config.onUpdateProgress(_data);
+        }
+    };
+
+    /**
+     * 上传完成处理
+     */
+    _proUploadUI.__onUploadComplete = function(_data){
+        _data = _data || {};
+
+        this.__resetHtmlFileNode();
+
+        if(_data.errCode){ // nos上传完成的结果也可能出错，包含了错误信息
+            this.__errorHandler(_data);
+            return;
+        }
+
+        var _data = {
+            fileName : this.__file,    // 视频文件的名称
+            nosKey : this.__nosKey,     // 视频文件上传至nos的对象名
+            bucket : this.__bucket
+        };
+
+        // 触发上传完成事件
+        this.__config.onFinishUpload &amp;&amp; this.__config.onFinishUpload(_data);
+    };
+
+    /**
+     * 点击上传按钮的操作
+     */
+    _proUploadUI.__uploadHandler = function(){
+        // 重新选择文件后重置
+        this.__isAbort = false;
+
+        var _fileName = this.__realUpload.value;
+
+        while (_fileName.indexOf('\\') != -1){
+            _fileName = _fileName.slice(_fileName.lastIndexOf('\\') + 1);
+        }
+
+        // 如果需要对文件格式进行判断，则调用this.__verifyFile进行判断，可由options传入
+        // // 提供文件名和节点作为参数，不同浏览器对于file操作和属性不一样，需要自己处理
+        if(!!this.__config.verifyFile &amp;&amp; !this.__config.verifyFile(_fileName, this.__realUpload)){
+            this.__resetHtmlFileNode();
+            return;
+        }
+
+        // 保存文件信息
+        this.__file = _fileName;
+        this.__beginTime = new Date().getTime(); // 开始上传的时间戳
+        this.__fileSize = uploadUtil._$getFileSize(this.__realUpload);
+        this.__fileGmtModifiedTime = uploadUtil._$getFileLastModifiedTime(this.__realUpload);
+
+        // 触发开始上传事件
+        if(!!this.__file){
+            this.__config.onBeginUpload &amp;&amp; this.__config.onBeginUpload({
+                'name':this.__file,
+                'curTime':this.__beginTime
+            });
+        }
+
+        // 调用应用接口获取凭证
+        this.__getEduToken();
+    }
+
+    /**
+     * 调用应用接口获取凭证，用于交换nos数据
+     */
+    _proUploadUI.__getEduToken = function(){
+        // 调用应用接口
+        var _options = {
+            sync : false,
+            type : 'json',
+            data : {
+                'fileName':encodeURIComponent(this.__file),
+                'type':this.__config.type,
+                'fileSize' : this.__fileSize,
+                'fileGmtModifiedTime' : this.__fileGmtModifiedTime
+            },
+            query : {},
+            method  : 'POST',
+            timeout : 0,
+            headers : {},
+            cookie : false,  // 跨域请求是否带cookie，仅对CORS方式有效
+            mode : this.__config.mode,   // 请求模式,针对跨域请求采用的请求方式
+            onload: function(_data){
+                if(!!_data){
+                    if (_data.code != 0) { // 错误
+                        this.__errorHandler(_data);
+                    }else{
+                        this.__eduUploaderToken = _data.result;
+
+                        // 交换token
+                        this.__getNosToken();
+                    }
+
+                }else{
+                    this.__errorHandler('上传失败！无数据返回');
+                }
+            }._$bind(this),
+            onerror:this.__errorHandler._$bind(this, '初始化上传失败！')
+        };
+
+        this.__reqId = j._$request(this.__config.initUploadUrl, _options);
+    }
+
+    /**
+     * 调用交换接口获取nos数据
+     */
+    _proUploadUI.__getNosToken = function(){
+        // 调用token接口
+        var _options = {
+            sync : false,
+            type : 'json',
+            query : {
+                'eduUploaderToken':this.__eduUploaderToken,
+                'fileName' : encodeURIComponent(this.__file),
+                'fileSize' : this.__fileSize,
+                'fileGmtModifiedTime' : this.__fileGmtModifiedTime,
+                '_t' : (new Date()).getTime()
+            },
+            method  : 'GET',
+            timeout : 0,
+            headers : {},
+            cookie : false,  // 跨域请求是否带cookie，仅对CORS方式有效
+            mode : this.__config.mode,   // 请求模式,针对跨域请求采用的请求方式
+            onload: function(_data){
+                if(!!_data){
+                    if(_data.code != 0){
+                        this.__errorHandler(_data);//'上传失败，code:' + _data.code + '，errMsg:' + _data.message);
+                    }else{
+                        // nos token
+                        this.__xNosToken = _data.result.xnosToken;
+                        // nos桶名
+                        this.__bucket = _data.result.bucketName;
+                        // 存储上传文件的object对象名
+                        this.__nosKey = _data.result.nosKey;
+
+                        // 开始文件上传操作
+                        this.__checkToUpload();
+                    }
+
+                }else{
+                    this.__errorHandler('上传失败！无数据返回');
+                }
+            }._$bind(this),
+            onerror:this.__errorHandler._$bind(this, '上传失败！')
+        };
+
+        this.__reqId = j._$request(uploadConst.EXCHANGE_NOSTOKEN_URL, _options);
+    }
+
+    // 判断选择哪种上传
+    _proUploadUI.__checkToUpload = function(){
+        if (this.__isSupportAnchor()) {
+            // 开始断点续传
+            if (this.__hasGetIPs) { // 已经获取了ip
+                this.__startUploadByBlobs();
+            }else{
+                this.__getNosIP();
+            }
+
+        }else{
+            this.__startFromUpload(); // 开始普通表单直传
+        }
+    }
+
+    /**
+     * 开始表单上传
+     */
+    _proUploadUI.__startFromUpload = function(){
+        e._$getByClassName(this.__uploadForm, 'j-noskey')[0].value = this.__nosKey;
+        e._$getByClassName(this.__uploadForm, 'j-xnostoken')[0].value = this.__xNosToken;
+
+        // 普通表单上传
+        var _options = {
+            type:'json',
+            mode:this.__config.mode,
+            method:'POST',
+            cookie:false,
+            headers:{},
+            onuploading:this.__onUploading._$bind(this), // 表单上传没有进度，所以可以不传
+            onload:this.__onUploadComplete._$bind(this),
+            onerror:this.__errorHandler._$bind(this)
+        };
+
+        // nos上传地址
+        this.__uploadForm.action = this.__uploadIPs[this.__posUploadIPIndex] + '/' + this.__bucket;
+        this.__reqId = j._$upload(this.__uploadForm, _options);
+    }
+
+    /**
+     * 选择断点续传的ip
+     */
+    _proUploadUI.__getNosIP = function(){
+        var _options = {
+            sync : false,
+            type : 'json',
+            data : {},
+            query : {'version':'1.0', 'bucketname':this.__bucket},
+            method  : 'GET',
+            timeout : 0,
+            cookie : false,  // 跨域请求是否带cookie，仅对CORS方式有效
+            mode : this.__config.mode,   // 请求模式,针对跨域请求采用的请求方式
+            onload: function(_data){
+                if(!!_data){
+                    // 目前只使用第一个ip，建议增加重试功能，如果当前ip上传失败，使用下一个ip
+                    this.__uploadIPs = _data.upload;
+                    this.__hasGetIPs = true;
+
+                    this.__startUploadByBlobs();
+
+                }else{
+                    this.__errorHandler('上传失败！无法获得上传地址');
+                }
+            }._$bind(this),
+            onerror:this.__errorHandler._$bind(this, '上传失败！')
+        };
+
+        this.__reqId = j._$request(uploadConst.NOS_GET_IP_URL, _options);
+    }
+
+    /**
+     * 开始断点上传
+     */
+    _proUploadUI.__startUploadByBlobs = function(){
+        this.__blobUploadId = uploadUtil._$fileUploadByBlobs({
+            key : this.__blobUploadId, // 如果有key，说明是重试
+            ip : this.__uploadIPs[this.__posUploadIPIndex], // 目前只使用第一个ip，建议增加重试功能，如果当前ip上传失败，使用下一个ip
+            file : this.__realUpload.files[0],
+            fileName : this.__file,
+            form : this.__uploadForm,
+            mode : this.__config.mode,
+            eduUploaderToken : this.__eduUploaderToken,
+            xNosToken : this.__xNosToken,
+            nosKey : this.__nosKey,
+            bucket : this.__bucket,
+            onuploading : this.__onUploading._$bind(this),
+            onload : this.__onUploadComplete._$bind(this),
+            onerror : this.__errorHandler._$bind(this)
+        });
+    }
+
+    /**
+     * 重置ui
+     * _options:
+     *      配置:
+     *      parent
+     *      type
+     *      txt
+     *      verifyFile
+     *
+     *      事件回调:
+     *      onBeginUpload
+     *      onUpdateProgress
+     *      onFinishUpload
+     *      onUploadError
+     */
+    _proUploadUI.__reset = function(_options){
+        this.__supReset(_options);
+
+        // 配置
+        this.__config = ut._$merge({}, defaultConfig()); // 从默认配置拷贝
+        this.__config = ut._$merge(this.__config, _options || {}, function(val){
+            return val === undefined;
+        }); // 如果是undefined就不覆盖
+
+        this.__txtNode.innerHTML = this.__config.txt;
+
+        if(this.__config.btnClassName){
+            e._$addClassName(this.__showUpload, this.__config.btnClassName);
+        }
+
+        ////////////////////////// 上传相关数据 /////////////////////////
+
+        // 文件信息
+        this.__file                    = null;
+        this.__fileSize                = null;
+        this.__fileGmtModifiedTime     = null;
+        // 请求凭证
+        this.__eduUploaderToken        = '';
+
+        // 实际上传地址
+        this.__uploadIPs = [uploadConst.NOS_FORM_UPLOAD_URL];
+        this.__posUploadIPIndex = 0; // 当前使用第几个上传ip
+
+        // 访问nos的token信息
+        this.__xNosToken        = '';
+        // nos桶名
+        this.__bucket           = '';
+        // 存储上传文件的object对象名
+        this.__nosKey           = '';
+
+        // 请求id
+        this.__reqId            = null;
+        // 断点续传id
+        this.__blobUploadId     = null;
+        // 是否主动中断
+        this.__isAbort          = false;
+        // 是否禁用
+        this.__isDisable        = false;
+        // 是否已经获取的断点续传的ip地址
+        this.__hasGetIPs        = false;
+
+        // 允许多次选择同一个文件，因此每次都重置file域
+        this.__resetHtmlFileNode();
+    };
+
+    // 是否可以使用断点续传，只有视频和pdf支持
+    _proUploadUI.__isSupportAnchor = function(){
+        return  uploadUtil._$canUseFileUploadByBlobs() &amp;&amp;
+            (this.__config.type == uploadConst.UPLOAD_FILE_TYPE_VIDEO || this.__config.type == uploadConst.UPLOAD_FILE_TYPE_PDF);
+    }
+
+    /**
+     * 销毁ui
+     */
+    _proUploadUI.__destroy = function(){
+        this._$abort();
+
+        // 清除类
+        if(this.__config.btnClassName){
+            e._$delClassName(this.__showUpload, this.__config.btnClassName);
+        }
+
+        if(this.__config.btnDisableClassName){
+            e._$delClassName(this.__showUpload, this.__config.btnDisableClassName);
+        }
+
+        this.__supDestroy();
+    }
+
+    // 返回结果可注入给其他文件
+    return p;
+});
+
+</pre>
+    </article>
+</section>
+
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+	<span class="copyright">
+	网易教育产品部 前端组
+	</span>
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a>
+	
+		on Sun Sep 18th 2016
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>

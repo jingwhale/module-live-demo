@@ -1,0 +1,1209 @@
+@charset "UTF-8";
+/* em-base */
+/* Height */
+/* Font Size */
+/* Padding */
+/* Border Radius */
+/* Brand Colors */
+/* Gray Colors */
+/* Base Colors */
+/* Shadow */
+/* dropdown */
+/* Dimensions */
+/* Colors */
+/* Form Control Item */
+/* Font Family */
+/* 衬线字体 */
+/* 非衬线字体 */
+/* reset */
+*[hidefocus] {
+  outline: none; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  padding: 0;
+  margin: 0; }
+
+fieldset, img, html, body, iframe {
+  border: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+li {
+  list-style: none; }
+
+caption, th {
+  font-weight: normal;
+  font-style: normal;
+  text-align: left; }
+
+em {
+  font-style: normal; }
+
+strong {
+  font-weight: bold; }
+
+body, textarea, select, input {
+  font-family: "Arial","Hiragino Sans GB", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif";
+  font-size: 14px;
+  line-height: 21px;
+  color: #343d42;
+  outline: none;
+  border: 0; }
+
+textarea {
+  resize: none; }
+
+input {
+  vertical-align: baseline;
+  margin: 0px; }
+
+body {
+  background-color: #fff; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+a, button {
+  cursor: pointer; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+html {
+  overflow: auto; }
+
+body {
+  text-align: left;
+  background: #fff; }
+
+textarea {
+  overflow: auto; }
+
+/* em-base */
+/* Height */
+/* Font Size */
+/* Padding */
+/* Border Radius */
+/* Brand Colors */
+/* Gray Colors */
+/* Base Colors */
+/* Shadow */
+/* dropdown */
+/* Dimensions */
+/* Colors */
+/* Form Control Item */
+/* Font Family */
+/* 衬线字体 */
+/* 非衬线字体 */
+/* clear float */
+.f-fl {
+  float: left; }
+
+.f-fr {
+  float: right; }
+
+.f-cb:after, .f-cbli li:after {
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  content: "."; }
+
+.f-clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.f-cb, .f-cbli li {
+  zoom: 1; }
+
+.f-cl {
+  clear: left; }
+
+.f-cr {
+  clear: right; }
+
+.f-clr {
+  clear: both; }
+
+.f-thide {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.f-hide {
+  text-indent: -9999px;
+  overflow: hidden; }
+
+.f-tc {
+  text-align: center; }
+
+.f-tl {
+  text-align: left; }
+
+.f-ib {
+  display: inline-block;
+  zoom: 1;
+  *display: inline; }
+
+.f-dn {
+  display: none; }
+
+.f-db {
+  display: block; }
+
+.f-pr {
+  position: relative; }
+
+.f-pa {
+  position: absolute; }
+
+.f-pf {
+  position: fixed; }
+
+.f-ohidden {
+  overflow: hidden; }
+
+.f-af {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.f-lh1 {
+  line-height: 1; }
+
+.f-wsn {
+  word-wrap: normal;
+  white-space: nowrap; }
+
+.f-pre {
+  overflow: hidden;
+  text-align: left;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all; }
+
+.f-wwb {
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-all; }
+
+.f-toe {
+  overflow: hidden;
+  word-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.f-usn {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+
+.f-lsn {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.f-lsi {
+  letter-spacing: -4px; }
+
+.f-lsi > * {
+  letter-spacing: normal; }
+
+.f-richEditorText {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: left;
+  word-break: break-word;
+  word-wrap: break-word;
+  font: 12px/22px Helvetica Neue,Helvetica,Arial,Sans-serif; }
+
+.f-richEditorText em {
+  font-style: italic; }
+
+.f-richEditorText p {
+  margin: 0;
+  padding: 0; }
+
+.f-richEditorText div {
+  margin: 10px 0;
+  padding: 0; }
+
+.f-richEditorText blockquote {
+  border-left: 3px solid #D0E5F2;
+  font-style: normal;
+  padding: 0 0 0 10px;
+  vertical-align: baseline;
+  margin: 0;
+  font-size: 14px; }
+
+.f-richEditorText img {
+  max-height: 520px;
+  max-width: 520px; }
+
+.f-richEditorText a {
+  text-decoration: underline; }
+
+.f-richEditorText ul li {
+  list-style: disc inside; }
+
+.f-richEditorText ol li {
+  list-style: decimal inside; }
+
+.f-richEditorText table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #E4E4E4; }
+
+.f-richEditorText table th, .f-richEditorText table td {
+  border: 1px solid #E4E4E4;
+  padding: 5px; }
+
+.bg, .f-bg {
+  background-color: #fff;
+  box-shadow: 0px 1px 2px #bbb; }
+
+.f-pointer:hover {
+  cursor: pointer; }
+
+.f-require:before {
+  display: inline;
+  font-weight: bold;
+  color: #ff513a;
+  padding-right: 5px;
+  vertical-align: middle;
+  content: '*'; }
+
+.f-unselectable, .f-unselectable * {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+/* blank */
+.b-10, .b-25, .b-20, .b-30, .b-15, .b-40, .b-50, .b-70 {
+  clear: both;
+  height: 10px;
+  overflow: hidden;
+  display: block; }
+
+.b-25 {
+  height: 25px; }
+
+.b-20 {
+  height: 20px; }
+
+.b-30 {
+  height: 30px; }
+
+.b-15 {
+  height: 15px; }
+
+.b-40 {
+  height: 40px; }
+
+.b-50 {
+  height: 50px; }
+
+.b-70 {
+  height: 70px; }
+
+@font-face {
+  font-family: "ux-icon-edu";
+  src: url("../res/res-base/fonts/ux-icon-edu.eot");
+  src: url("../res/res-base/fonts/ux-icon-edu.eot") format("embedded-opentype"), url("../res/res-base/fonts/ux-icon-edu.ttf") format("truetype"), url("../res/res-base/fonts/ux-icon-edu.woff") format("woff"), url("../res/res-base/fonts/ux-icon-edu.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="ux-icon-"], [class*=" ux-icon-"] {
+  font-family: "ux-icon-edu" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: none;
+  line-height: 1; }
+
+.ux-icon-OJ-question:before {
+  content: "\E001"; }
+
+.ux-icon-QQ:before {
+  content: "\E002"; }
+
+.ux-icon-add-big:before {
+  content: "\E003"; }
+
+.ux-icon-angle-double-left:before {
+  content: "\E004"; }
+
+.ux-icon-angle-double-right:before {
+  content: "\E005"; }
+
+.ux-icon-arr-right-small:before {
+  content: "\E006"; }
+
+.ux-icon-arrange:before {
+  content: "\E007"; }
+
+.ux-icon-arrow-left:before {
+  content: "\E008"; }
+
+.ux-icon-back:before {
+  content: "\E009"; }
+
+.ux-icon-blocked:before {
+  content: "\E00A"; }
+
+.ux-icon-book:before {
+  content: "\E00B"; }
+
+.ux-icon-caret-down:before {
+  content: "\E00C"; }
+
+.ux-icon-caret-left:before {
+  content: "\E00D"; }
+
+.ux-icon-caret-right:before {
+  content: "\E00E"; }
+
+.ux-icon-caret-up:before {
+  content: "\E00F"; }
+
+.ux-icon-cart:before {
+  content: "\E010"; }
+
+.ux-icon-cash:before {
+  content: "\E011"; }
+
+.ux-icon-chat-circle:before {
+  content: "\E012"; }
+
+.ux-icon-check-slim:before {
+  content: "\E013"; }
+
+.ux-icon-check:before {
+  content: "\E014"; }
+
+.ux-icon-close:before {
+  content: "\E015"; }
+
+.ux-icon-collect:before {
+  content: "\E016"; }
+
+.ux-icon-continue:before {
+  content: "\E017"; }
+
+.ux-icon-course-content:before {
+  content: "\E018"; }
+
+.ux-icon-course-discuss:before {
+  content: "\E019"; }
+
+.ux-icon-course-manage:before {
+  content: "\E01A"; }
+
+.ux-icon-data:before {
+  content: "\E01B"; }
+
+.ux-icon-delete:before {
+  content: "\E01C"; }
+
+.ux-icon-dialog:before {
+  content: "\E01D"; }
+
+.ux-icon-discuss:before {
+  content: "\E01E"; }
+
+.ux-icon-document:before {
+  content: "\E01F"; }
+
+.ux-icon-douban:before {
+  content: "\E020"; }
+
+.ux-icon-download:before {
+  content: "\E021"; }
+
+.ux-icon-edit:before {
+  content: "\E022"; }
+
+.ux-icon-elite:before {
+  content: "\E023"; }
+
+.ux-icon-empty-criterial:before {
+  content: "\E024"; }
+
+.ux-icon-empty:before {
+  content: "\E025"; }
+
+.ux-icon-error-circle:before {
+  content: "\E026"; }
+
+.ux-icon-exam:before {
+  content: "\E027"; }
+
+.ux-icon-exchange:before {
+  content: "\E028"; }
+
+.ux-icon-exercise:before {
+  content: "\E029"; }
+
+.ux-icon-front:before {
+  content: "\E02A"; }
+
+.ux-icon-gear:before {
+  content: "\E02B"; }
+
+.ux-icon-hand-down:before {
+  content: "\E02C"; }
+
+.ux-icon-hand-up:before {
+  content: "\E02D"; }
+
+.ux-icon-home:before {
+  content: "\E02E"; }
+
+.ux-icon-icourse:before {
+  content: "\E02F"; }
+
+.ux-icon-im:before {
+  content: "\E030"; }
+
+.ux-icon-key:before {
+  content: "\E031"; }
+
+.ux-icon-list:before {
+  content: "\E032"; }
+
+.ux-icon-live:before {
+  content: "\E033"; }
+
+.ux-icon-loop2:before {
+  content: "\E034"; }
+
+.ux-icon-management:before {
+  content: "\E035"; }
+
+.ux-icon-message:before {
+  content: "\E036"; }
+
+.ux-icon-minus-big:before {
+  content: "\E037"; }
+
+.ux-icon-minus:before {
+  content: "\E038"; }
+
+.ux-icon-mobileview:before {
+  content: "\E039"; }
+
+.ux-icon-move:before {
+  content: "\E03A"; }
+
+.ux-icon-mute:before {
+  content: "\E03B"; }
+
+.ux-icon-netease:before {
+  content: "\E03C"; }
+
+.ux-icon-notice:before {
+  content: "\E03D"; }
+
+.ux-icon-noword:before {
+  content: "\E03E"; }
+
+.ux-icon-object-question:before {
+  content: "\E03F"; }
+
+.ux-icon-order:before {
+  content: "\E040"; }
+
+.ux-icon-org-content:before {
+  content: "\E041"; }
+
+.ux-icon-org-content2:before {
+  content: "\E042"; }
+
+.ux-icon-org-test:before {
+  content: "\E043"; }
+
+.ux-icon-org-tutor:before {
+  content: "\E044"; }
+
+.ux-icon-org-utility:before {
+  content: "\E045"; }
+
+.ux-icon-password:before {
+  content: "\E046"; }
+
+.ux-icon-pause:before {
+  content: "\E047"; }
+
+.ux-icon-phone-number:before {
+  content: "\E048"; }
+
+.ux-icon-playback:before {
+  content: "\E049"; }
+
+.ux-icon-playing:before {
+  content: "\E04A"; }
+
+.ux-icon-plus:before {
+  content: "\E04B"; }
+
+.ux-icon-qiyemail:before {
+  content: "\E04C"; }
+
+.ux-icon-question-circle:before {
+  content: "\E04D"; }
+
+.ux-icon-qzone:before {
+  content: "\E04E"; }
+
+.ux-icon-renren:before {
+  content: "\E04F"; }
+
+.ux-icon-reply:before {
+  content: "\E050"; }
+
+.ux-icon-richText:before {
+  content: "\E051"; }
+
+.ux-icon-right-slim:before {
+  content: "\E052"; }
+
+.ux-icon-sad:before {
+  content: "\E053"; }
+
+.ux-icon-score:before {
+  content: "\E054"; }
+
+.ux-icon-scorm:before {
+  content: "\E055"; }
+
+.ux-icon-search:before {
+  content: "\E056"; }
+
+.ux-icon-secret:before {
+  content: "\E057"; }
+
+.ux-icon-secure-number:before {
+  content: "\E058"; }
+
+.ux-icon-share:before {
+  content: "\E059"; }
+
+.ux-icon-smile:before {
+  content: "\E05A"; }
+
+.ux-icon-standard:before {
+  content: "\E05B"; }
+
+.ux-icon-star:before {
+  content: "\E05C"; }
+
+.ux-icon-success-circle:before {
+  content: "\E05D"; }
+
+.ux-icon-surprise:before {
+  content: "\E05E"; }
+
+.ux-icon-tag:before {
+  content: "\E05F"; }
+
+.ux-icon-test:before {
+  content: "\E060"; }
+
+.ux-icon-test2:before {
+  content: "\E061"; }
+
+.ux-icon-thin-caret-down:before {
+  content: "\E062"; }
+
+.ux-icon-thin-caret-up:before {
+  content: "\E063"; }
+
+.ux-icon-unknown:before {
+  content: "\E064"; }
+
+.ux-icon-video:before {
+  content: "\E065"; }
+
+.ux-icon-volume:before {
+  content: "\E066"; }
+
+.ux-icon-warning-circle:before {
+  content: "\E067"; }
+
+.ux-icon-warning:before {
+  content: "\E068"; }
+
+.ux-icon-wechat:before {
+  content: "\E069"; }
+
+.ux-icon-weibo:before {
+  content: "\E06A"; }
+
+.ux-icon-wrong-slim:before {
+  content: "\E06B"; }
+
+.ux-icon-data-interface:before {
+  content: "\E06C"; }
+
+.ux-icon-OJ-question-after:after {
+  content: "\E001"; }
+
+.ux-icon-QQ-after:after {
+  content: "\E002"; }
+
+.ux-icon-add-big-after:after {
+  content: "\E003"; }
+
+.ux-icon-angle-double-left-after:after {
+  content: "\E004"; }
+
+.ux-icon-angle-double-right-after:after {
+  content: "\E005"; }
+
+.ux-icon-arr-right-small-after:after {
+  content: "\E006"; }
+
+.ux-icon-arrange-after:after {
+  content: "\E007"; }
+
+.ux-icon-arrow-left-after:after {
+  content: "\E008"; }
+
+.ux-icon-back-after:after {
+  content: "\E009"; }
+
+.ux-icon-blocked-after:after {
+  content: "\E00A"; }
+
+.ux-icon-book-after:after {
+  content: "\E00B"; }
+
+.ux-icon-caret-down-after:after {
+  content: "\E00C"; }
+
+.ux-icon-caret-left-after:after {
+  content: "\E00D"; }
+
+.ux-icon-caret-right-after:after {
+  content: "\E00E"; }
+
+.ux-icon-caret-up-after:after {
+  content: "\E00F"; }
+
+.ux-icon-cart-after:after {
+  content: "\E010"; }
+
+.ux-icon-cash-after:after {
+  content: "\E011"; }
+
+.ux-icon-chat-circle-after:after {
+  content: "\E012"; }
+
+.ux-icon-check-slim-after:after {
+  content: "\E013"; }
+
+.ux-icon-check-after:after {
+  content: "\E014"; }
+
+.ux-icon-close-after:after {
+  content: "\E015"; }
+
+.ux-icon-collect-after:after {
+  content: "\E016"; }
+
+.ux-icon-continue-after:after {
+  content: "\E017"; }
+
+.ux-icon-course-content-after:after {
+  content: "\E018"; }
+
+.ux-icon-course-discuss-after:after {
+  content: "\E019"; }
+
+.ux-icon-course-manage-after:after {
+  content: "\E01A"; }
+
+.ux-icon-data-after:after {
+  content: "\E01B"; }
+
+.ux-icon-delete-after:after {
+  content: "\E01C"; }
+
+.ux-icon-dialog-after:after {
+  content: "\E01D"; }
+
+.ux-icon-discuss-after:after {
+  content: "\E01E"; }
+
+.ux-icon-document-after:after {
+  content: "\E01F"; }
+
+.ux-icon-douban-after:after {
+  content: "\E020"; }
+
+.ux-icon-download-after:after {
+  content: "\E021"; }
+
+.ux-icon-edit-after:after {
+  content: "\E022"; }
+
+.ux-icon-elite-after:after {
+  content: "\E023"; }
+
+.ux-icon-empty-criterial-after:after {
+  content: "\E024"; }
+
+.ux-icon-empty-after:after {
+  content: "\E025"; }
+
+.ux-icon-error-circle-after:after {
+  content: "\E026"; }
+
+.ux-icon-exam-after:after {
+  content: "\E027"; }
+
+.ux-icon-exchange-after:after {
+  content: "\E028"; }
+
+.ux-icon-exercise-after:after {
+  content: "\E029"; }
+
+.ux-icon-front-after:after {
+  content: "\E02A"; }
+
+.ux-icon-gear-after:after {
+  content: "\E02B"; }
+
+.ux-icon-hand-down-after:after {
+  content: "\E02C"; }
+
+.ux-icon-hand-up-after:after {
+  content: "\E02D"; }
+
+.ux-icon-home-after:after {
+  content: "\E02E"; }
+
+.ux-icon-icourse-after:after {
+  content: "\E02F"; }
+
+.ux-icon-im-after:after {
+  content: "\E030"; }
+
+.ux-icon-key-after:after {
+  content: "\E031"; }
+
+.ux-icon-list-after:after {
+  content: "\E032"; }
+
+.ux-icon-live-after:after {
+  content: "\E033"; }
+
+.ux-icon-loop2-after:after {
+  content: "\E034"; }
+
+.ux-icon-management-after:after {
+  content: "\E035"; }
+
+.ux-icon-message-after:after {
+  content: "\E036"; }
+
+.ux-icon-minus-big-after:after {
+  content: "\E037"; }
+
+.ux-icon-minus-after:after {
+  content: "\E038"; }
+
+.ux-icon-mobileview-after:after {
+  content: "\E039"; }
+
+.ux-icon-move-after:after {
+  content: "\E03A"; }
+
+.ux-icon-mute-after:after {
+  content: "\E03B"; }
+
+.ux-icon-netease-after:after {
+  content: "\E03C"; }
+
+.ux-icon-notice-after:after {
+  content: "\E03D"; }
+
+.ux-icon-noword-after:after {
+  content: "\E03E"; }
+
+.ux-icon-object-question-after:after {
+  content: "\E03F"; }
+
+.ux-icon-order-after:after {
+  content: "\E040"; }
+
+.ux-icon-org-content-after:after {
+  content: "\E041"; }
+
+.ux-icon-org-content2-after:after {
+  content: "\E042"; }
+
+.ux-icon-org-test-after:after {
+  content: "\E043"; }
+
+.ux-icon-org-tutor-after:after {
+  content: "\E044"; }
+
+.ux-icon-org-utility-after:after {
+  content: "\E045"; }
+
+.ux-icon-password-after:after {
+  content: "\E046"; }
+
+.ux-icon-pause-after:after {
+  content: "\E047"; }
+
+.ux-icon-phone-number-after:after {
+  content: "\E048"; }
+
+.ux-icon-playback-after:after {
+  content: "\E049"; }
+
+.ux-icon-playing-after:after {
+  content: "\E04A"; }
+
+.ux-icon-plus-after:after {
+  content: "\E04B"; }
+
+.ux-icon-qiyemail-after:after {
+  content: "\E04C"; }
+
+.ux-icon-question-circle-after:after {
+  content: "\E04D"; }
+
+.ux-icon-qzone-after:after {
+  content: "\E04E"; }
+
+.ux-icon-renren-after:after {
+  content: "\E04F"; }
+
+.ux-icon-reply-after:after {
+  content: "\E050"; }
+
+.ux-icon-richText-after:after {
+  content: "\E051"; }
+
+.ux-icon-right-slim-after:after {
+  content: "\E052"; }
+
+.ux-icon-sad-after:after {
+  content: "\E053"; }
+
+.ux-icon-score-after:after {
+  content: "\E054"; }
+
+.ux-icon-scorm-after:after {
+  content: "\E055"; }
+
+.ux-icon-search-after:after {
+  content: "\E056"; }
+
+.ux-icon-secret-after:after {
+  content: "\E057"; }
+
+.ux-icon-secure-number-after:after {
+  content: "\E058"; }
+
+.ux-icon-share-after:after {
+  content: "\E059"; }
+
+.ux-icon-smile-after:after {
+  content: "\E05A"; }
+
+.ux-icon-standard-after:after {
+  content: "\E05B"; }
+
+.ux-icon-star-after:after {
+  content: "\E05C"; }
+
+.ux-icon-success-circle-after:after {
+  content: "\E05D"; }
+
+.ux-icon-surprise-after:after {
+  content: "\E05E"; }
+
+.ux-icon-tag-after:after {
+  content: "\E05F"; }
+
+.ux-icon-test-after:after {
+  content: "\E060"; }
+
+.ux-icon-test2-after:after {
+  content: "\E061"; }
+
+.ux-icon-thin-caret-down-after:after {
+  content: "\E062"; }
+
+.ux-icon-thin-caret-up-after:after {
+  content: "\E063"; }
+
+.ux-icon-unknown-after:after {
+  content: "\E064"; }
+
+.ux-icon-video-after:after {
+  content: "\E065"; }
+
+.ux-icon-volume-after:after {
+  content: "\E066"; }
+
+.ux-icon-warning-circle-after:after {
+  content: "\E067"; }
+
+.ux-icon-warning-after:after {
+  content: "\E068"; }
+
+.ux-icon-wechat-after:after {
+  content: "\E069"; }
+
+.ux-icon-weibo-after:after {
+  content: "\E06A"; }
+
+.ux-icon-wrong-slim-after:after {
+  content: "\E06B"; }
+
+.ux-icon-data-interface-after:after {
+  content: "\E06C"; }
+
+/* em-base */
+/* Height */
+/* Font Size */
+/* Padding */
+/* Border Radius */
+/* Brand Colors */
+/* Gray Colors */
+/* Base Colors */
+/* Shadow */
+/* dropdown */
+/* Dimensions */
+/* Colors */
+/* Form Control Item */
+/* Font Family */
+/* 衬线字体 */
+/* 非衬线字体 */
+/* 字体类型 */
+/* 非衬线字体 */
+.f-f0 {
+  font-family: "Arial","Hiragino Sans GB", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif"; }
+
+/* 衬线字体 */
+.f-f1 {
+  font-family: "Arial","Hiragino Sans GB", "SimSun",\5b8b\4f53, "Georgia", "serif"; }
+
+/* 字体大小 */
+.f-fs12 {
+  font-size: 12px; }
+
+.f-fs13 {
+  font-size: 13px; }
+
+.f-fs14 {
+  font-size: 14px; }
+
+.f-fs15 {
+  font-size: 15px; }
+
+.f-fs16 {
+  font-size: 16px; }
+
+.f-fs18 {
+  font-size: 18px; }
+
+.f-fs20 {
+  font-size: 20px; }
+
+/* 字体加粗 */
+.f-fw-n {
+  font-weight: normal !important; }
+
+.f-fw-b {
+  font-weight: bold !important; }
+
+.f-fw-br {
+  font-weight: bolder !important; }
+
+/* 字体颜色 */
+.f-fc0 {
+  color: #000; }
+
+.f-fc3, .f-fcdark {
+  color: #343d42; }
+
+.f-fc6, .f-fclight {
+  color: #859295; }
+
+.f-fc9, .f-fclighter {
+  color: #b4c0c3; }
+
+.f-fcd {
+  color: #ddd; }
+
+.f-fcf {
+  color: #fff; }
+
+.f-fcred {
+  color: #ff513a; }
+
+.f-fcgreen, .f-fcg {
+  color: #49AF4F; }
+
+.f-fcorange {
+  color: #ff5307; }
+
+/* 链接颜色，非绿色hover变绿，绿色的hover下下划线 */
+a {
+  color: #859295;
+  text-decoration: none; }
+
+a:hover {
+  color: #49AF4F;
+  text-decoration: none; }
+
+a.f-fcgreen:hover, a.f-fcg:hover {
+  text-decoration: underline; }
+
+/* em-base */
+/* Height */
+/* Font Size */
+/* Padding */
+/* Border Radius */
+/* Brand Colors */
+/* Gray Colors */
+/* Base Colors */
+/* Shadow */
+/* dropdown */
+/* Dimensions */
+/* Colors */
+/* Form Control Item */
+/* Font Family */
+/* 衬线字体 */
+/* 非衬线字体 */
+.g-hd:after, .g-bd:after, .m-nav ul:after {
+  clear: both;
+  content: '.';
+  display: block;
+  height: 0;
+  visibility: hidden; }
+
+.g-hd, .g-bd, .m-nav ul {
+  zoom: 1; }
+
+body {
+  min-width: 1205px;
+  position: relative;
+  height: auto !important;
+  min-height: 100%; }
+
+.g-doc, .g-wrap, .g-flow, .g-all {
+  width: 1205px;
+  margin: 0 auto;
+  text-align: left; }
+
+.g-doc {
+  z-index: 0;
+  position: relative;
+  padding-left: -moz-calc(100vw - 100%);
+  padding-left: -webkit-calc(100vw - 100%);
+  padding-left: -o-calc(100vw - 100%);
+  padding-left: calc(100vw - 100%); }
+
+.g-all {
+  width: 100%; }
+
+.g-hide, .g-inlinehide {
+  display: none; }
+
+.g-rhide {
+  display: block; }
+
+/* 面板 */
+.m-pannel, .m-pannel-h {
+  border: 1px solid #e4e8e9;
+  background: #fff; }
+
+/* hover面板 */
+.m-pannel-h:hover {
+  -webkit-box-shadow: 1px 1px 10px #E4F9E5;
+  -moz-box-shadow: 1px 1px 10px #E4F9E5;
+  box-shadow: 1px 1px 10px #E4F9E5; }
+
+/* 网格布局 */
+.g-container {
+  margin-left: -20px;
+  position: relative;
+  z-index: 0; }
+  .g-container .g-cell,
+  .g-container .g-cell1,
+  .g-container .g-cell2,
+  .g-container .g-cell3,
+  .g-container .g-cell4 {
+    width: 225px;
+    margin-left: 20px;
+    float: left; }
+  .g-container .g-cell2 {
+    width: 470px; }
+  .g-container .g-cell3 {
+    width: 715px; }
+  .g-container .g-cell4 {
+    width: 960px; }
+
+/* 俩栏布局 左栏定宽225 */
+.g-sd1 {
+  position: relative;
+  float: left;
+  width: 225px;
+  margin-right: -225px; }
+
+.g-mn1 {
+  float: right;
+  width: 100%; }
+
+.g-mn1c {
+  margin-left: 245px; }
+
+/* 俩栏布局 右栏定宽225 */
+.g-sd2 {
+  position: relative;
+  float: right;
+  width: 225px;
+  margin-left: -225px; }
+
+.g-mn2 {
+  float: left;
+  width: 100%; }
+
+.g-mn2c {
+  margin-right: 245px; }
+
+/* 俩栏布局 课程详情页&课程主页 右栏定宽265 */
+.g-cisd2 {
+  position: relative;
+  float: right;
+  width: 265px;
+  margin-left: -265px; }
+
+.g-cimn2 {
+  float: left;
+  width: 100%; }
+
+.g-cimn2c {
+  margin-right: 285px; }
+
+/*# sourceMappingURL=style.css.map */

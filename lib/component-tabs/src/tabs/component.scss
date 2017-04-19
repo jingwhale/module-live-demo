@@ -1,0 +1,111 @@
+@import "../../lib/res-base/scss/var";
+@import "../../lib/res-base/scss/bourbon/bourbon";
+
+.ux-tabs {
+
+    &_hd {
+        list-style:none;
+        margin:0;
+        padding:0;
+
+        > li {
+            float: left;
+            cursor: pointer;
+        }
+
+        > li + li {}
+
+        > li.z-crt {
+            position: relative;
+        }
+
+        > li.z-dis {
+            cursor: not-allowed;
+        }
+    }
+
+    &_bd {
+        clear: both;
+    }
+}
+
+/* Disabled */
+.ux-tabs.z-dis {
+    .ux-tabs_hd {
+        > li {
+            cursor: not-allowed;
+        }
+
+        > li.z-crt {
+            cursor: default;
+        }
+    }
+}
+
+// Variables:
+// ========================================================================
+
+$m-tabs_hd_li_margin: 5px;
+$m-tabs_hd_li_padding-horizontal: 15px;
+$m-tabs_hd_border: #f4f4f4;
+$m-tabs-vertical_hd_li_width: 120px;
+
+// Component:       `ux-tab`
+// ========================================================================
+
+.ux-tabs {
+    @include border-radius(3px);
+    background-color: $color-background;
+
+    &_hd {
+        box-sizing: border-box;
+        height: 40px;
+        border-bottom: 1px solid $color-base;
+
+        > li {
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: $font-size-base;
+            color: $color-light;
+            border: 1px solid transparent;
+            margin-bottom:-1;
+        }
+
+        > li + li {
+
+        }
+        
+        > li:hover,    // - Apply hover style also to focus state
+        > li:focus {
+            color: $color-base;
+        }
+
+        > li.z-crt {
+            background: white;
+            border-color: $color-base;
+            border-bottom-color: #fff;
+            color: $color-base;
+        }
+
+        > li.z-dis {
+            color: #999;
+            background: none;
+            border-color: transparent;
+        }
+    }
+}
+
+/* Disabled */
+.ux-tabs.z-dis {
+    .ux-tabs_hd {
+        > li:not(.z-crt) {
+            background: none;
+            color: #999;
+            border-color: transparent;
+        }
+    }
+}

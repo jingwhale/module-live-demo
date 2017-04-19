@@ -1,0 +1,24 @@
+stages:
+  - build
+  - test
+
+cache:
+  key: ${CI_BUILD_REF_NAME}
+  paths:
+    - lib
+    - node_modules
+
+run_bower:
+  stage: build
+  script:
+    - bower install
+
+run_lint:
+  stage: test
+  script:
+    - npm run lint
+
+run_test:
+  stage: test
+  script:
+    - npm test

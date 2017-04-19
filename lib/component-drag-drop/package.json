@@ -1,0 +1,31 @@
+{
+    "name": "component",
+    "version": "0.0.37",
+    "description": "component project template",
+    "main": "src/index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "mocha-phantomjs test/test.html",
+        "lint": "eslint src/**/*.js",
+        "css": "sass --watch --scss --no-cache --unix-newlines src:src -t compressed ",
+        "jsdoc": "jsdoc -c conf.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "ssh://git@g.hz.netease.com:22222/edu-frontend/component.git"
+    },
+    "keywords": [
+        "edu",
+        "component"
+    ],
+    "author": "edu",
+    "license": "MIT",
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "ink-docstrap": "^1.2.1",
+        "jquery": "^3.1.0",
+        "replacestream": "^4.0.2"
+    }
+}

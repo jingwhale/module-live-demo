@@ -1,0 +1,50 @@
+{
+  "name": "component-video-player",
+  "version": "0.0.46",
+  "authors": [
+    "edu <edu@corp.netease.com>"
+  ],
+  "description": "unit test for component",
+  "main": "test/test.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "module",
+    "unit",
+    "test"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "doc",
+    "test"
+  ],
+  "dependencies": {
+    "nej": "git+https://g.hz.netease.com/edu-front-vendor/nej.git#0.4.0",
+    "regularjs": "git+https://g.hz.netease.com/edu-front-vendor/regularjs.git#0.5.1",
+    "hammerjs": "git+https://g.hz.netease.com/edu-front-vendor/hammerjs.git#2.0.8",
+    "res-base": "git+https://g.hz.netease.com/edu-frontend/res-base.git#0.0.19",
+    "edu-front-util": "git+https://g.hz.netease.com/edu-frontend/edu-front-util.git#0.3.32",
+    "component-base": "git+https://g.hz.netease.com/edu-frontend/component-base.git#0.0.36"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2",
+    "chai": "^3.5.0"
+  },
+  "components": [
+    "flash",
+    "h5",
+    "h5-live",
+    "h5-native"
+  ],
+  "_release": "0.0.46",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.46",
+    "commit": "f60756452a8c33146fe2dfab50f42aa5fb7e2b36"
+  },
+  "_source": "https://g.hz.netease.com/edu-frontend/component-video-player.git",
+  "_target": "0.0.46",
+  "_originalSource": "git+https://g.hz.netease.com/edu-frontend/component-video-player.git"
+}

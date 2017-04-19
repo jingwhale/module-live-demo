@@ -1,0 +1,105 @@
+@import "../../../lib/res-base/scss/var";
+@import "../../../lib/res-base/scss/bourbon/bourbon";
+
+.ux-tabs-underline {
+
+    &_hd {
+        list-style:none;
+        margin:0;
+        padding:0;
+
+        > li {
+            float: left;
+            cursor: pointer;
+        }
+
+        > li + li {}
+
+        > li.z-sel {
+            position: relative;
+        }
+
+        > li.z-dis {
+            cursor: not-allowed;
+        }
+    }
+
+    &_bd {
+        clear: both;
+    }
+}
+
+/* Disabled */
+.ux-tabs-underline.z-dis {
+    .ux-tabs-underline_hd {
+        > li {
+            cursor: not-allowed;
+        }
+
+        > li.z-sel {
+            cursor: default;
+        }
+    }
+}
+
+// Variables:
+// ========================================================================
+
+$m-tabs_hd_li_margin: 5px;
+$m-tabs_hd_li_padding-horizontal: 15px;
+$m-tabs_hd_border: #f4f4f4;
+$m-tabs-vertical_hd_li_width: 120px;
+
+// Component:       `ux-tab`
+// ========================================================================
+
+.ux-tabs-underline {
+    @include border-radius(3px);
+    background-color: $color-background;
+
+    &_hd {
+        height: 40px;
+
+        > li {
+            box-sizing: border-box;
+            margin: 0px 40px 0px 20px;
+            padding: 0px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: $font-size-base;
+            color: $color-light;
+        }
+
+        > li + li {
+
+        }
+        
+        > li:hover,    // - Apply hover style also to focus state
+        > li:focus {
+            color: $color-base;
+        }
+
+        > li.z-sel {
+            border-bottom: 3px solid $color-base;
+            color: $color-base;
+        }
+
+        > li.z-dis {
+            color: #999;
+            background: none;
+            border-color: transparent;
+        }
+    }
+}
+
+/* Disabled */
+.ux-tabs-underline.z-dis {
+    .ux-tabs-underline_hd {
+        > li:not(.z-sel) {
+            background: none;
+            color: #999;
+            border-color: transparent;
+        }
+    }
+}

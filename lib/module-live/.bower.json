@@ -1,0 +1,57 @@
+{
+  "name": "module-live",
+  "version": "0.1.46",
+  "authors": [
+    "hzwujiazhen <hzwujiazhen@corp.netease.com>"
+  ],
+  "description": "module live project",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "module",
+    "component",
+    "live"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "doc",
+    "test",
+    "tutorials"
+  ],
+  "dependencies": {
+    "nej": "git+https://g.hz.netease.com/edu-front-vendor/nej.git#0.4.0",
+    "regularjs": "git+https://g.hz.netease.com/edu-front-vendor/regularjs.git#0.5.1",
+    "hammerjs": "git+https://g.hz.netease.com/edu-front-vendor/hammerjs.git#2.0.8",
+    "res-base": "git+https://g.hz.netease.com/edu-frontend/res-base.git#0.0.19",
+    "component-notify": "git+https://g.hz.netease.com/edu-frontend/component-notify.git#0.0.37",
+    "component-modal": "git+https://g.hz.netease.com/edu-frontend/component-modal.git#0.0.39",
+    "component-clock": "git+https://g.hz.netease.com/edu-frontend/component-clock.git#0.0.35",
+    "component-input": "git+https://g.hz.netease.com/edu-frontend/component-input.git#0.0.49",
+    "component-video-player": "git+https://g.hz.netease.com/edu-frontend/component-video-player.git#0.0.46",
+    "module-base": "git+https://g.hz.netease.com/edu-frontend/module-base.git#0.0.20",
+    "cache-live": "git+https://g.hz.netease.com/edu-frontend/cache-live.git#0.0.22",
+    "component-tabs": "git+https://g.hz.netease.com/edu-frontend/component-tabs.git#0.0.35",
+    "component-list-view": "git+https://g.hz.netease.com/edu-frontend/component-list-view.git#0.0.38",
+    "edu-front-util": "git+https://g.hz.netease.com/edu-frontend/edu-front-util.git#0.3.32",
+    "component-hover": "git+https://g.hz.netease.com/edu-frontend/component-hover.git#0.0.34"
+  },
+  "resolutions": {
+    "res-base": "feature/obs_wjz_20170316",
+    "edu-front-util": "feature/obs_wjz_20170316"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2",
+    "chai": "^3.5.0"
+  },
+  "_release": "0.1.46",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.46",
+    "commit": "34f680709e771da605d96719a1f65a77646b70ad"
+  },
+  "_source": "https://git@g.hz.netease.com/edu-frontend/module-live.git",
+  "_target": "0.1.46",
+  "_originalSource": "git+https://git@g.hz.netease.com/edu-frontend/module-live.git"
+}

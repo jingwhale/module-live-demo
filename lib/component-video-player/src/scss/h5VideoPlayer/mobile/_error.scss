@@ -1,0 +1,59 @@
+.u-edu-h5player-mobileerror{
+    left: 0;
+    top: 0;
+    display:none;
+    @extend %basesize;
+    background:$bgColor;
+    z-index:100;
+
+    .emid{  
+        @include font-dpr(14px);
+        line-height:rem(36px);
+        height:rem(36px);
+        width:100%;
+        position:absolute;
+        left:0;   
+        top:50%;
+        margin-top:rem(-50px);
+        text-align:center;
+
+        .eic{
+            background:url('../res/component-video-player/images/h5VideoPlayer/mobile/error_icon.png');
+            width:rem(36px);
+            height:rem(36px);
+            margin-right:3px;
+            vertical-align:top;
+            background-size:rem(36px) rem(36px);
+        }
+    }
+
+    .bwarp{
+        position:absolute;
+        width:100%;
+        height:rem(66px);
+        left:0;   
+        top:50%;
+        text-align:center;
+        margin-top:rem(10px);
+
+        .reloadbtn{
+            text-align:center;
+            @include font-dpr(14px);
+            line-height:rem(66px);
+            height:rem(66px);
+            color:$primaryColor;
+            border:1px solid $primaryColor;
+            @include border-radius(rem(10px));
+            width:rem(200px);
+
+            .ic{
+                width: rem(36px);
+                height: rem(32px);
+                background: transparent url("../res/component-video-player/images/h5VideoPlayer/mobile/reload_btn.png") right center no-repeat;
+                background-size: rem(36px) rem(32px);
+                margin:rem(15px) rem(5px) rem(15px) 0;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,24 @@
+<div class="ux-dropdown {class}" r-class={{"z-dis":disabled}} r-hide={!visible} ref="element" on-mouseover={this.hoverToggle(true)} on-mouseout={this.hoverToggle(false)}>
+    <ux-validation rules={rules} value={selected}  ref="validation" state={state}>
+        <div class="ux-dropdown_hd f-thide" on-click={this.toggle()} title={selected ? selected.name : placeholder}>
+            <i class="ux-icon" r-class={{"ux-icon-caret-down":!open, "ux-icon-caret-up": open}}></i>
+            <span class="ux-dropdown_cnt th-fs0fc3" r-class={{'ux-btn-toggle': !open}} >{selected ? selected['name'] : placeholder} </span>
+        </div>
+        <div style="display: none;" class="ux-dropdown_bd" r-hide={!open} r-animation="on: enter; class: animated fadeInY fast; on: leave; class: animated fadeOutY fast;">
+            <ul class="ux-dropdown_listview">
+            {#if placeholder}<li r-class={{"z-sel":selected === item}} on-click={this.select(undefined)}>{placeholder}</li>{/if}
+            {#if !!source}
+            {#list source as item}
+            <li class="f-thide th-fs0fc3" r-class={{"z-sel":selected === item,"z-dis":item.disabled,"z-divider":item.divider}} title={item.name} on-click={this.select(item)}>
+                {#if itemTemplate}
+                    {#inc itemTemplate}
+                {#else}
+                    {item['name']}
+                {/if}
+            </li>
+            {/list}
+            {/if}
+            </ul>
+        </div>
+    </ux-validation>
+</div>

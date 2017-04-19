@@ -1,0 +1,29 @@
+{
+    "name": "cache-base",
+    "version": "0.0.22",
+    "description": "cache base project",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "mocha-phantomjs test/test.html",
+        "lint": "eslint src/**/*.js",
+        "jsdoc": "jsdoc -c .jsdoc.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "ssh://git@g.hz.netease.com:22222/edu-frontend/cache-base.git"
+    },
+    "keywords": [
+        "edu",
+        "component",
+        "cache"
+    ],
+    "author": "caijf <caijf@corp.netease.com>",
+    "license": "MIT",
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "replacestream": "^4.0.2",
+        "ink-docstrap": "^1.2.1"
+    }
+}

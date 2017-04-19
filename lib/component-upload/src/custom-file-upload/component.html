@@ -1,0 +1,15 @@
+<!-- 可以自定义样式的文件上传组件 -->
+<div class="u-custom-file-upload f-pr">
+    {#if uploadbtnwrapTemplate}
+    {#include uploadbtnwrapTemplate}
+    {#else}
+    <div class="btnwrap">
+        <div id="j-uploadbtnwrap" ref=uploadbtnwrap></div>
+    </div>
+    {/if}
+
+    <!-- 进度条 -->
+    <div class="processwrap f-pa" r-hide={!showProcess}>
+        <ux-upload-progress fileName={fileName} beginTime={beginTime} progressData={progressData} on-abortUpload={this.abortUpload($event)}></ux-upload-progress>
+    </div>
+</div>

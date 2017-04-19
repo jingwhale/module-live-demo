@@ -1,0 +1,10 @@
+/* 片头视频 */
+.u-edu-h5player-pread{
+    @extend %basesize;
+    display:none;
+    z-index:4;  
+
+    video{
+        @extend %basesize;  
+    }
+}

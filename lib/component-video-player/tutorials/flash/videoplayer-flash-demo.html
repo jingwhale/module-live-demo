@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>flash视频播放器组件范例</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<meta http-equiv="content-style-type" content="text/css"/>
+	<meta http-equiv="content-script-type" content="text/javascript"/>
+	<meta http-equiv="x-ua-compatible" content="ie=edge"/>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <link href="../../../lib/res-base/css/style.css" rel="stylesheet" />
+</head>
+<body>
+	
+	<div class="g-wrap">
+		
+		<div id="j-videoNodeTest" style="width:600px;height:400px;">
+			
+		</div>
+
+		<div id="j-log" style="padding:20px 0;">
+			
+		</div>
+
+	</div>
+
+    <script src="../../../lib/regularjs/dist/regular.js"></script>
+	<script type="text/javascript" src="../../../lib/nej/src/define.js?pool=../../../lib/"></script>
+	<script type="text/javascript">
+	NEJ.define([
+		'../../../src/video-player_ui.js'
+	],function(videoPlayer, p, o, f, r){
+
+		var _player = new videoPlayer({
+            data:{
+                isLocal : true,
+                autoStart : true,
+                preload : true,
+                // mode:'live',
+                useH5 : false,
+                videoPlayerSwfLocalPath : '../../../res/component-video-player/swf/eduPlayer.swf',
+                videoPlayerUISwfLocalPath : '../../../res/component-video-player/swf/ui/cloudPlayerUI.swf',
+    			videoData:{
+                    // adUrl : '../res/pread.mp4',
+   				    videoImgUrl : "http://imgsize.ph.126.net/?enlarge=true&imgurl=http://img1.ph.126.net/n5VwluA3g_CDfYXsnRwsEQ==/1561904645785237081.jpg_450x250x0x95.jpg",
+    				start : 0,
+                    // flvSdUrl:"rtmp://p7b8c60f5.live.126.net/live/10086",
+                    // flvSdUrl:"http://video.study.163.com/edu-video/nos/flv/2017/1/24/1005752080_75dd2e08-30a8-4021-9522-d2284c0686b1_shd.flv?ak=970a8281b99e9fb213053a4fc64a4400fc11aff47b4a1503e348e1c7e8893ad0655340f0bf85abd0b1421e7b2d048411eff6a55d15491982836e42383e13363ec59607af4d336537cb84f4069da9cf95f455d97e99102a49b825836de913910ef0837682774232610f0d4e39d8436cb9a153bdeea4a2bfbae357803dfb6768a742fe395e87eba0c3e30b7b64ef1be06585111bf60ea26d5dad1f891edd9e94a8e167e0b04144490499ffe31e0d97a0a1babcbd7d2e007d850cc3bf7aa697e8ff&wshc_tag=0&wsts_tag=58a41307&wsid_tag=7271c583&wsiphost=ipdbm",
+                    flvSdUrl:"http://video.study.163.com/edu-video/nos/mp4/2016/11/23/1004405061_b7e78ece399047fc84d0cccf0d71f5a8_sd.flv",
+                    // flvSdUrl:'http://175.43.20.20/video.study.163.com/edu-video/nos/ept/flv/2017/02/08/1005780209_e9659fa9466246398ba88db12f06bce4_eshd.flv?wshc_tag=1&wsts_tag=589d73ad&wsid_tag=24fbf8b3&wsiphost=ipdbm',
+                    // flvSdUrl:'http://localhost:8080/tutorials/res/pread.mp4',
+    				// flvSdUrl:'http://vodk32ywxdf.vod.126.net/vodk32ywxdf/nos/flv/2016/04/11/v2010_shd.flv',
+                    // flvHdUrl:'http://vodk32ywxdf.vod.126.net/vodk32ywxdf/nos/flv/2016/04/11/v2010_shd.flv',
+                    // flvShdUrl:'http://vodk32ywxdf.vod.126.net/vodk32ywxdf/nos/flv/2016/04/11/v2010_shd.flv',
+    				key : '',
+    				needKeyTimeValidate : false,
+    				isEncrypt : true,
+    				videoDecryptData : 'Z1hGenhCamlsbm5BYlM2Y2fgPUQAf+IxVvm/aKoNuSCSjjU1mVLJBz4AEUK5HXowclJFjJUIL9ivoiVSP3vvnD6Gmy8iOnOVlkvgi7bGVM4e2Ec8EyjBeQK8yLt5RElzd8WIHIT21e+Gie4wRiFKTw==',
+    				clientEncryptKeyVersion : 1,
+                    mp4Caption : [
+                        {
+                            name : '中文',
+                            url : '../res/videoSrt.txt'
+                        }
+                    ],
+                    flvCaption : [
+                        {
+                            name : '中文',
+                            url : '../res/videoSrt.txt'
+                        }
+                    ]
+    			}
+            }
+		});
+
+        _player.$on('onChangeVolume', function(){
+            
+        });
+
+        _player.$inject('#j-videoNodeTest');
+
+        window._player = _player;
+
+		function log(msg){
+			document.getElementById('j-log').innerHTML += msg + '<br/>';
+		}
+
+        function sendUrl(url){
+            var xmlhttp;
+            if (window.XMLHttpRequest) {
+                xmlhttp = new XMLHttpRequest();
+            } else {
+                xmlhttp = new ActiveXObject('Microsoft.XMLHTTP');
+            }
+
+            console.log(xmlhttp.readyState);
+            
+            xmlhttp.onreadystatechange = function(){
+                console.log(xmlhttp.readyState);
+
+                if (xmlhttp.readyState == 2) {    
+                    var rd = xmlhttp.getAllResponseHeaders();
+                    alert('2  status:' + xmlhttp.status + ', getAllResponseHeaders' + JSON.stringify(rd));
+                }
+
+                if (xmlhttp.readyState == 4) {                  
+                    var rd = xmlhttp.getAllResponseHeaders();
+                    alert('4  status:' + xmlhttp.status + ', getAllResponseHeaders' + JSON.stringify(rd));
+
+                    if (xmlhttp.status == 200) {//200代表执行成功
+                       
+                    }
+                }
+            }
+
+            xmlhttp.open('GET', url, true);
+            console.log(xmlhttp.readyState);
+            xmlhttp.send();
+            console.log(xmlhttp.readyState);
+            
+        }
+        // sendUrl('http://video.study.163.com/edu-video/nos/mp4/2016/11/23/1004405061_b7e78ece399047fc84d0cccf0d71f5a8_sd.mp4');
+	    
+	    return p;
+	});
+	</script>
+</body>
+</html>

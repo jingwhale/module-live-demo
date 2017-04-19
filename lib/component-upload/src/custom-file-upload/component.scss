@@ -1,0 +1,25 @@
+/* custom file upload  */
+.u-custom-file-upload{
+    height:125px;
+    .btnwrap{
+        padding:45px 15px;
+    }
+
+    /* 上传组件样式重写 */
+    .u-upload{
+        .upload{
+            .showIpt{
+
+            }
+        }
+    }
+
+    .processwrap{
+        background-color:#eef3f4;
+        width:100%;
+        height:100%;
+        left:0;
+        top:0;
+
+    }
+}

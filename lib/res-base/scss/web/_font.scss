@@ -1,0 +1,40 @@
+@import 'theme/var';
+
+/* 字体类型 */
+/* 非衬线字体 */
+.f-f0{ font-family: "Arial","Hiragino Sans GB", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif"; }
+/* 衬线字体 */
+.f-f1{ font-family: "Arial","Hiragino Sans GB", "SimSun",\5b8b\4f53, "Georgia", "serif"; }
+
+/* 字体大小 */
+.f-fs12{font-size: $font-size-sm;}
+.f-fs13{font-size: 13px;}
+.f-fs14{font-size: $font-size-base;}
+.f-fs15{font-size: 15px;}
+.f-fs16{font-size: $font-size-lg;}
+.f-fs18{font-size: 18px;}
+.f-fs20{font-size: 20px;}
+
+/* 字体加粗 */
+.f-fw-n{font-weight: normal !important;}
+.f-fw-b{font-weight: bold !important;}
+.f-fw-br{font-weight: bolder !important;}
+
+/* 字体颜色 */
+.f-fc0{color:#000;}
+.f-fc3, .f-fcdark{color: $color-dark;}
+.f-fc6, .f-fclight{color: $color-light;}
+.f-fc9, .f-fclighter{color: $color-lighter;}
+
+.f-fcd{color:#ddd;}
+.f-fcf{color:#fff;}
+.f-fcred{color: $color-red;}
+.f-fcgreen, .f-fcg{color: $color-base;}
+.f-fcorange{color:$color-orange;}
+
+/* 链接颜色，非绿色hover变绿，绿色的hover下下划线 */
+a{color: $color-light; text-decoration: none; }
+a:hover{color: $color-base; text-decoration: none; }
+a.f-fcgreen, a.f-fcg{ &:hover{ text-decoration: underline;}}
+
+

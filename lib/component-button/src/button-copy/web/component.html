@@ -1,0 +1,8 @@
+<span class="ux-btn ux-btn-{state} ux-btn-{size} ux-btn-{width} {class}" style="position:relative; zoom: 1;" ref="body">
+    {#if value}
+    {value}
+    {#else}
+    {#inc this.$body}
+    {/if}
+    <span style="left: -1px; width:100%; right: -1px; top: -1px; bottom: -1px; position: absolute; cursor: text; white-space: nowrap; overflow: hidden; " ref="box"></span>
+</span>

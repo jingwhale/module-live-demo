@@ -1,0 +1,8 @@
+<ux-validation rules={rules} value={selecteds} ref="validation" state={state}>
+    <div class="ux-dropdown-cascade">
+        {#list panes as pane}
+        <ux-dropdown ref="dropdown{pane_index}" placeholder={placeholders[pane_index]} value={selecteds[pane_index]?selecteds[pane_index][id]:''} key={id} source={pane}
+                     on-select={this.select($event.selected&&$event.selected[id],pane_index)}></ux-dropdown>
+        {/list}
+    </div>
+</ux-validation>

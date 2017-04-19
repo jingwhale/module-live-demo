@@ -1,0 +1,50 @@
+// Size Extends:
+// ========================================================================
+
+@mixin u-formctrl-extend_size($name, $padding, $height, $font-size: null, $border-radius_: null) {
+    .ux-input_#{$name}{
+        padding: $padding;
+        height: $height;
+        @if($font-size) {font-size: $font-size;}
+        @if($border-radius_) {@include border-radius($border-radius_);}
+    }
+}
+
+@mixin u-formctrl-extend_width($name, $width) {
+    .ux-input_w#{$name}, .ux-textarea_w#{$name} {
+        width: $width;
+    }
+}
+
+
+
+// Color Extends:
+// ========================================================================
+
+@mixin u-formctrl-extend_color($name, $background, $color, $border_) {
+    .ux-input_#{$name},
+    .ux-textarea_#{$name} {
+        @if($background) {background: $background;}
+        color: $color;
+        border-color: $border_;
+    }
+}
+
+
+
+// Block Extends:
+// ========================================================================
+
+@mixin u-formctrl-blank($border-color) {
+    .ux-input-blank,
+    .ux-select-blank,
+    .ux-textarea-blank {
+        border-color: transparent;
+        border-style: dashed;
+        background: none;
+
+        &:focus {
+            border-color: $border-color;
+        }
+    }
+}

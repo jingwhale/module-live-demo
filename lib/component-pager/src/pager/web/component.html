@@ -1,0 +1,19 @@
+<ul class="ux-pager{total<=1?' z-hdn':''}">
+  <li class="ux-pager_btn ux-pager_btn__prev{hasPrev?'':' z-dis'}" on-click={this.prev()}><a>上一页</a></li>
+  <li class="ux-pager_itm{index==1?' z-crt':''}" on-click={this.go(1)}><a>1</a></li>
+  {#if hasLeftSep}
+  <li class="ux-pager_sep ux-pager_sep__left"><span>...</span></li>
+  {/if}
+  {#if from<=to}
+  {#list from..to as i}
+  <li class="ux-pager_itm{index==i?' z-crt':''}" on-click={this.go(i)}><a>{i}</a></li>
+  {/list}
+  {/if}
+  {#if hasRightSep}
+  <li class="ux-pager_sep ux-pager_sep__right"><span>...</span></li>
+  {/if}
+  {#if total>1}
+  <li class="ux-pager_itm{index==total?' z-crt':''}" on-click={this.go(total)}><a>{total}</a></li>
+  {/if}
+  <li class="ux-pager_btn ux-pager_btn__next{hasNext?'':' z-dis'}" on-click={this.next()}><a>下一页</a></li>
+</ul>

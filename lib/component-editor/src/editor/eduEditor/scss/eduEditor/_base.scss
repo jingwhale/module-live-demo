@@ -1,0 +1,144 @@
+/* eduEditor style */
+.ux-richeditor{ width:auto; border:1px solid #dfdfdf; text-align:center;position: relative;}
+.ux-richeditor .zbg{ background:url('../../res/component-editor/images/richEditor.png') no-repeat 4999px 4999px;}
+
+.ux-richeditor .zarea{ background:#fff; width:100%;  }
+.ux-richeditor .ztbar{ background-color:#f1f1f1; border-bottom:1px solid #dfdfdf;}
+.ux-richeditor .ztbar_wrap{ padding:0 7px; }
+.ux-richeditor .ztbar:after{ display:block; clear:both; visibility:hidden; height:0;content:".";}
+.ux-richeditor .zitm{ float:left; width:24px; height:24px; margin:7px 1px; cursor:pointer;position: relative;}
+.ux-richeditor .zitm:hover .zicn, .ux-richeditor .zitm.js-checked .zicn{ background-color:#d0d0d0;}
+.ux-richeditor .zitm.js-disabled, .ux-richeditor .zitm.js-disabled:hover{ cursor:default; background:#f1f1f1 !important;}
+
+.ux-richeditor .zitm .zicn{ width:24px; height:24px; margin:0; overflow:hidden; text-indent:100px;}
+
+.ux-richeditor .z-i-0 .zicn{ background-position:0 0;}
+.ux-richeditor .z-i-0.js-disabled .zicn{ cursor:default; background-position:0 -24px;}
+.ux-richeditor .z-i-1 .zicn{ background-position:-24px 0;}
+.ux-richeditor .z-i-1.js-disabled .zicn{ cursor:default; background-position:-24px -24px;}
+.ux-richeditor .z-i-2 .zicn{ background-position:-48px 0;}
+.ux-richeditor .z-i-2.js-disabled .zicn{ cursor:default; background-position:-48px -24px;}
+.ux-richeditor .z-i-3 .zicn{ background-position:-72px 0;}
+.ux-richeditor .z-i-3.js-disabled .zicn{ cursor:default; background-position:-72px -24px;}
+.ux-richeditor .z-i-4 .zicn{ background-position:-96px 0;}
+.ux-richeditor .z-i-4.js-disabled .zicn{ cursor:default; background-position:-96px -24px;}
+.ux-richeditor .z-i-5 .zicn{ background-position:-120px 0;}
+.ux-richeditor .z-i-5.js-disabled .zicn{ cursor:default; background-position:-120px -24px;}
+.ux-richeditor .z-i-6 .zicn{ background-position:-144px 0;}
+.ux-richeditor .z-i-6.js-disabled .zicn{ cursor:default; background-position:-144px -24px;}
+.ux-richeditor .z-i-7 .zicn{ background-position:-168px 0;}
+.ux-richeditor .z-i-7.js-disabled .zicn{ cursor:default; background-position:-168px -24px;}
+.ux-richeditor .z-i-8 .zicn{ background-position:-192px 0;}
+.ux-richeditor .z-i-8.js-disabled .zicn{ cursor:default; background-position:-192px -24px;}
+.ux-richeditor .z-i-9 .zicn{ background-position:-216px 0;}
+.ux-richeditor .z-i-9.js-disabled .zicn{ cursor:default; background-position:-216px -24px;}
+.ux-richeditor .z-i-10 .zicn{ background-position:-240px 0;}
+.ux-richeditor .z-i-10.js-disabled .zicn{ cursor:default; background-position:-240px -24px;}
+.ux-richeditor .z-i-11 .zicn{ background-position:-264px 0;}
+.ux-richeditor .z-i-11.js-disabled .zicn{ cursor:default; background-position:-264px -24px;}
+.ux-richeditor .z-i-12 .zicn{ background-position:-288px 0;}
+.ux-richeditor .z-i-12.js-disabled .zicn{ cursor:default; background-position:-288px -24px;}
+.ux-richeditor .z-i-13 .zicn{ background-position:-320px 0;}
+.ux-richeditor .z-i-13.js-disabled .zicn{ cursor:default; background-position:-320px -24px;}
+.ux-richeditor .z-i-14 .zicn{ background-position:-346px 0;}
+.ux-richeditor .z-i-14.js-disabled .zicn{ cursor:default; background-position:-346px -24px;}
+.ux-richeditor .z-i-15 .zicn{ background-position:-471px 0;}
+.ux-richeditor .z-i-15.js-disabled .zicn{ cursor:default; background-position:-471px -25px;}
+.ux-richeditor .z-i-16 .zicn{ background-position:-398px 0;}
+.ux-richeditor .z-i-16.js-disabled .zicn{ cursor:default; background-position:-398px -25px;}
+.ux-richeditor .z-i-17 .zicn{ background-position:-422px 0;}
+.ux-richeditor .z-i-17.js-disabled .zicn{ cursor:default; background-position:-422px -25px;}
+.ux-richeditor .z-i-18 .zicn{ background-position:-446px 0;}
+.ux-richeditor .z-i-18.js-disabled .zicn{ cursor:default; background-position:-446px -25px;}
+.ux-richeditor .z-i-19 .zicn{ background-position:-495px 0;}
+.ux-richeditor .z-i-19.js-disabled .zicn{ cursor:default; background-position:-495px -25px;}
+.ux-richeditor .z-i-20 .zicn{ background-position:-516px 0;}
+.ux-richeditor .z-i-20.js-disabled .zicn{ cursor:default; background-position:-516px -25px;}
+
+/* split line */
+.ux-richeditor .zisp{ float:left; width:1px; height:18px; margin:10px 4px; background:#ccc;}
+
+/* drop list */
+.ux-richeditor .zdlitm { 
+    float:left;
+    height:22px;
+    padding:0 16px 0 5px;
+    margin:7px 5px; 
+    cursor:pointer;
+    background-color:white;
+    border:1px solid #dfdfdf;
+    position:relative;
+}
+.ux-richeditor .zdlitm .up{ font-size:12px; color:#999; line-height:22px;}
+.ux-richeditor .zdlitm .up .txt1{width:177px;height:25px}
+.ux-richeditor .zdlitm.js-disabled{ background-color:#fafafa;}
+.ux-richeditor .zdlitm.js-disabled .up{ cursor:default}
+.ux-richeditor .zdlitm .down,
+.ux-richeditor .zitm .down{
+    position:absolute;
+    top:22px;
+    left:-1px;
+    width:auto;
+    max-height:360px;
+    overflow-x:hidden;
+    overflow-y:auto;
+    z-index:100;
+    border:1px solid #d1d2d4;
+    background-color:#fff;
+}
+.ux-richeditor .zdlitm .list,
+.ux-richeditor .zitm .list{
+    display:block;
+    line-height:153%;
+    font-size:14px;
+    color:#333;
+    padding:3px 10px;
+    width:auto;
+    cursor:pointer;
+    overflow:hidden;
+    text-align:left;
+    font-family: '微软雅黑';
+}
+.ux-richeditor .zdlitm .list:hover,
+.ux-richeditor .zitm .list:hover{ background-color:#f1f1f1;}
+
+.ux-richeditor .z-i-code.zdlitm{ width:55px; background-position:53px -49px;}
+.ux-richeditor .z-i-code.zdlitm.js-disabled{ background-position:53px -74px;}
+.ux-richeditor .z-i-size.zdlitm{ width: 32px; background-position:32px -49px;}
+.ux-richeditor .z-i-size.zdlitm.js-disabled{ background-position:32px -74px;}
+.ux-richeditor .z-i-paragraph.zdlitm{ width: 32px; background-position:32px -49px;}
+.ux-richeditor .z-i-paragraph.zdlitm.js-disabled{ background-position:32px -74px;}
+.ux-richeditor .z-i-paragraph{
+    .edu-for-h1{font-size:24px;line-height:1.5;font-weight:bold;}
+    .edu-for-h2{font-size:20px;line-height:1.5;font-weight:bold;}
+    .edu-for-h3{font-size:18px;line-height:1.5;font-weight:bold;}
+    .edu-for-h4{font-size:16px;line-height:1.5;font-weight:bold;}
+}
+
+/* color picker */
+.ux-richeditor .colorbtn{ width:32px; }
+.ux-richeditor .colorbtn .zicn{ width:32px;}
+.ux-richeditor .colorbtn .colordown{ 
+    display:none;
+    position:absolute;
+    top:22px;
+    left:0;
+    z-index:100;
+}
+.ux-richeditor .ux-ecolorpicker{
+    padding:3px;
+    border:1px solid #d1d2d4;
+    background-color:#f1f1f1;
+    width:132px;
+}
+.ux-richeditor .ux-ecolorpicker .clear{ display:block; color:#666; font-size:13px; border:1px solid #f1f1f1; text-align:center; width:130px; height:24px; line-height:24px;}
+.ux-richeditor .ux-ecolorpicker .clear:hover,
+.ux-richeditor .ux-ecolorpicker .clear.selected{ border:1px solid #aaa;}
+.ux-richeditor .ux-ecolorpicker .colors{ height:88px;}
+.ux-richeditor .ux-ecolorpicker .colorbtn{ float:left; width:20px; height:20px; padding:0; border:1px solid #f1f1f1;}
+.ux-richeditor .ux-ecolorpicker .colorbtn:hover,
+.ux-richeditor .ux-ecolorpicker .colorbtn.selected{ border:1px solid #aaa;}
+.ux-richeditor .ux-ecolorpicker .colorbtn span{ display:block; width:14px; height:14px; margin:3px;}
+
+
+

@@ -1,0 +1,71 @@
+// 字体
+$theme-ff1: "Hiragino Sans GB", "SimSun",\5b8b\4f53, "Georgia", "serif";
+$theme-ff2: "Arial","Hiragino Sans GB", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif";
+
+// 字体大小
+$theme-fs0: 14px;
+$theme-fs1: 12px;
+$theme-fs2: 16px;
+$theme-fs3: 18px;
+$theme-fs4: 20px;
+$theme-fs5: 24px;
+$theme-font-size-list: ($theme-fs0, $theme-fs1, $theme-fs2, $theme-fs3, $theme-fs4, $theme-fs5);
+$theme-font-size-map: (
+  "czzName": "font-size",
+  "clazzName": "fs",
+  "list": $theme-font-size-list
+);
+
+// 字体颜色
+$theme-fc0: #666;
+$theme-fc1: #333;
+$theme-fc2: #444;
+$theme-fc3: #999;
+$theme-fc4: #aaa;
+$theme-fc5: #49af4f;
+$theme-fc6: #fff;
+$theme-fc7: #ff5500;
+$theme-fc8: #3380d2;
+$theme-font-color-list: ($theme-fc0, $theme-fc1, $theme-fc2, $theme-fc3, $theme-fc4, $theme-fc5, $theme-fc6, $theme-fc7, $theme-fc8);
+$theme-font-color-map: (
+  "czzName": "color",
+  "clazzName": "fc",
+  "list": $theme-font-color-list
+);
+
+// 背景色
+$theme-bg0: #fff;
+$theme-bg1: #f8f8f8;
+$theme-bg2: #f1f1f1;
+$theme-bg3: #ccc;
+$theme-bg4: #ddd;
+$theme-bg5: #49af4f;
+$theme-bg6: #ffffcc;
+$theme-bg7: #f2f5f5;
+$theme-bg8: #3380d2;
+$theme-bg9: #ff5500;
+$theme-background-color-list: ($theme-bg0, $theme-bg1, $theme-bg2, $theme-bg3, $theme-bg4, $theme-bg5, $theme-bg6, $theme-bg7, $theme-bg8, $theme-bg9);
+$theme-background-color-map: (
+  "czzName": "background-color",
+  "clazzName": "bg",
+  "list": $theme-background-color-list
+);
+
+// 边框色
+$theme-bd0: #D9DDDE;
+$theme-bd1: #eee;
+$theme-bd2: #ddd;
+$theme-bd3: #aaa;
+$theme-bd4: #999;
+$theme-bd5: #49af4f;
+$theme-bd6: #333;
+$theme-bd7: #444;
+$theme-bd8: #666;
+$theme-bd9: #ff5500;
+$theme-bd10: #3380d2;
+$theme-border-color-list: ($theme-bd0, $theme-bd1, $theme-bd2, $theme-bd3, $theme-bd4, $theme-bd5, $theme-bd6, $theme-bd7, $theme-bd8, $theme-bd9, $theme-bd10);
+$theme-border-color-map: (
+  "czzName": "border-color",
+  "clazzName": "bd",
+  "list": $theme-border-color-list
+);

@@ -1,0 +1,52 @@
+@import "../var";
+
+.u-edu-h5player-icon{
+    display: inline-block;
+
+    &.icon-volume {
+        width: 16px;
+        height: 16px;
+        background-image: $web-sprites-map;
+        background-origin: content-box;
+        background-clip: content-box;
+        background-repeat: no-repeat;
+        background-size: 24px 217.33333px;
+        background-position: 0 29.80132%;
+    }
+
+    &.icon-play {
+        width: 12px;
+        height: 16px;
+        background-image: $web-sprites-map;
+        background-position: 100% 29.03226%;
+    }
+
+    &.icon-big_play_btn{
+        width: 24px;
+        height: 32px;
+        background-image: $web-sprites-map;
+        background-position: 0 87.7551%;
+    }
+
+    &.icon-pause {
+        width: 12px;
+        height: 16px;
+        background-image: $web-sprites-map;
+        background-position: 66.66667% 5.16129%;
+    }
+
+    &.icon-fullscreen {
+        width: 16px;
+        height: 16px;
+        background-image: $web-sprites-map;
+        background-position: 0 5.16129%;
+    }
+
+    &.icon-notfullscreen {
+        width: 16px;
+        height: 16px;
+        background-image: $web-sprites-map;
+        background-position: 80% 0;
+    }
+}
+

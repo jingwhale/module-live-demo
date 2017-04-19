@@ -1,0 +1,71 @@
+<div class="ux-live-mobile-player f-pa" ref=livePlayerNode>
+    <!-- 直播播放器 -->
+    <div class="ux-live-mobile-player_player f-pa" ref=livePlayerNode>
+    </div>
+
+    <!-- 直播状态 -->
+    {#if liveStatus != this.liveConstant.LIVE_STATUS_PLAYING}
+    <div class="ux-live-mobile-player_status f-pa">
+        <div class="ux-live-mobile-player_status_bg f-pr">
+            {#if liveCover}
+            <img class="ux-live-mobile-player_status_bg_img" src="{liveCover|blurPic}">
+            <div class="ux-live-mobile-player_status_bg_mask f-pa"></div>
+            {#else}
+            <div class="ux-live-mobile-player_status_bg_default f-pa"></div>
+            {/if}
+        </div>
+
+        <div class="ux-live-mobile-player_status_twrap f-pa">
+            {#if liveStatus == this.liveConstant.LIVE_STATUS_NOTSTART}
+            <h4 class="ux-live-mobile-player_status_tbig">直播未开始</h4>
+            <!-- <div>
+                <a class="ux-btn ux-btn_gh ux-live-mobile-player_status_tbindbtn" on-click={this.onclickBindPhone()}>
+                    <span class=""></span>开播前提醒
+                </a>
+            </div> -->
+
+            {#elseif liveStatus == this.liveConstant.LIVE_STATUS_COMING}
+            <h4 class="ux-live-mobile-player_status_tbig">直播即将开始</h4>
+            <div>
+                <p class="ux-live-mobile-player_status_tinfo ux-live-mobile-player_status_tinfo-djs">
+                    倒计时 <div class="f-ib" ref=clockNode></div>
+                </p>
+            </div>
+
+            {#elseif liveStatus == this.liveConstant.LIVE_STATUS_DELAY_START}
+            <div>
+                <div class="f-cb ux-live-mobile-player_status_tnw">
+                    <div class="ux-live-mobile-player_status_tnots f-ib"></div>
+                </div>
+                <p class="ux-live-mobile-player_status_tinfo">讲师正在快马加鞭赶来</p>
+            </div>
+
+            {#elseif liveStatus == this.liveConstant.LIVE_STATUS_INVALID}
+            <h4 class="ux-live-mobile-player_status_tbig">直播已失效</h4>
+            <div>
+                <p class="ux-live-mobile-player_status_tinfo">老师长时间没来，该直播已失效...</p>
+            </div> 
+
+            {#elseif liveStatus == this.liveConstant.LIVE_STATUS_END}
+            <h4 class="ux-live-mobile-player_status_tbig">直播已结束</h4>
+            <div>
+                <p class="ux-live-mobile-player_status_tinfo">课时正在转码，转码成功后可随时观看录播</p>
+            </div>   
+            {/if}
+    
+        </div>
+
+        <div class="ux-live-mobile-player_status_livetit f-pa">
+            <h3 class="ux-live-mobile-player_status_livetith f-thide">{liveTitle}</h3>
+            <p class="ux-live-mobile-player_status_livetitp f-thide">{this.formatLiveTime(liveStartTime, liveEndTime)}</p>
+        </div>  
+    </div>
+    {/if}
+
+    <!-- 直播进度 -->
+    {#if liveStatus == this.liveConstant.LIVE_STATUS_PLAYING}
+    <div class="ux-live-mobile-player_progress f-pa">
+        <div class="f-fl ux-live-mobile-player_progress_pl" style="width:{liveProgress};"></div>
+    </div>
+    {/if}
+</div>

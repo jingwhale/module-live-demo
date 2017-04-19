@@ -1,0 +1,328 @@
+@import "../var";
+@import "icons";
+
+// TODO 改类名
+/*========== 进度条 ==========*/
+.u-edu-h5player-controlwrap {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    letter-spacing: -0.34px;
+    z-index: 5;
+
+    .bigplaybtn{
+        display: none;
+        position: absolute;
+        left:20px;
+        bottom: 19px;
+        width: 60px;
+        height: 32px;
+        padding: 14px 0;
+        text-align: center;
+        border-radius:5px;
+        background-color: rgba(0,0,0,.8);
+        transition: .5s bottom;
+
+        .icon-big_play_btn{
+            &:hover{
+                //@include get-sprite-base($web-sprites-map,big_play_btn_hover);
+                background-image: $web-sprites-map;
+                background-position: 0 76.87075%;
+            }
+        }
+
+        &.z-show{
+            display: block;
+        }
+    }
+
+    .progresswrap{
+        bottom: -36px;
+        transition: .5s bottom;
+        z-index: 1;
+
+        .placeholder{
+            opacity: 0;
+            position: absolute;
+            left: 0;
+            top: -6px;
+            height: 6px;
+            width: 100%;
+        }
+
+        .drag_item{
+            transition: .2s opacity,.2s transform,0.1s left;
+            visibility: hidden;
+            opacity: 0;
+
+            &.z-ban{
+                display: none !important;
+            }
+        }
+
+        .bufferbar,.progressbar{
+            transition: .1s width,.2s transform;
+        }
+
+        .backgroundbar,.anchor{
+            transition: .2s transform;
+        }
+
+        &:hover{
+            .backgroundbar,.progressbar,.bufferbar,.anchor{
+                transform: scaleY(1.4);
+            }
+
+            .drag_item{
+                visibility: visible;
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .m-controlbar{
+        bottom: -36px;
+        transition: bottom .5s;
+    }
+
+    &.z-show{
+
+        .bigplaybtn{
+            bottom: 55px;
+        }
+
+        .progresswrap{
+            bottom: 0;
+        }
+
+        .m-controlbar{
+            bottom: 0;
+        }
+    }
+
+    .controlwrap_cover{
+        display: none;
+        opacity: 0;
+        position: absolute;
+        bottom:0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        z-index: 999;
+
+        &.z-show{
+            display: block;
+        }
+    }
+
+    .time {
+        display: none;
+        position: absolute;
+        top: -32px;
+        left: 20px;
+        height: 20px;
+        padding: 3px 5px;
+        line-height: 20px;
+        background-color: #000;
+        color: $fontActiveColor;
+        opacity: 0.8;
+        border-radius: 4px;
+        z-index: 5;
+
+        &.z-show {
+            display: block;
+        }
+    }
+}
+
+/*========== 控制条 ==========*/
+.m-controlbar {
+    box-sizing: border-box;
+    position: relative;
+    height: 36px;
+    line-height: 36px;
+    background-color: $bgBarColor;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+    a:active, a:hover, a:visited, a:link {
+        text-decoration: none;
+    }
+
+    .g-left, .g-right {
+        height: 100%;
+        //font-size: 0px; // firefox中样式会出问题
+
+        > * {
+            font-size: 14px;
+            margin-top: 6px;
+            vertical-align: top;
+        }
+    }
+
+    .controlbar_btn{
+        position: relative;
+        display: inline-block;
+        padding: 4px 10px;
+        height: 16px;
+        line-height: 16px;
+        border-radius: 2px;
+        text-align: center;
+        color: $fontUnActiveColor;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #222;
+            color: $fontActiveColor;
+        }
+
+        &.z-show{
+            display: inline-block;
+        }
+
+        &.z-hide{
+            display: none;
+        }
+    }
+
+    .cdnbtn ,.qualitybtn{
+        &.z-dis {
+            color: $fontDisabledColor;
+            cursor: not-allowed;
+            &:hover {
+                color: $fontDisabledColor;
+                background-color: transparent;
+            }
+        }
+    }
+
+    .playbtn:hover{
+        .icon-play{
+            //@include get-sprite-base($web-sprites-map,play_btn_hover);
+            background-image: $web-sprites-map;
+            background-position: 100% 21.29032%;
+        }
+    }
+
+    .pausebtn:hover{
+        .icon-pause{
+            //@include get-sprite-base($web-sprites-map,pause_btn_hover);
+            background-image: $web-sprites-map;
+            background-position: 0 10.32258%;
+        }
+    }
+
+    .volumebtn{
+        z-index: 1000;
+
+        &:hover{
+            .icon-volume{
+                //@include get-sprite-base($web-sprites-map,volume_btn_hover,2/3);
+                background-image: $web-sprites-map;
+                background-position: 0 21.8543%;
+            }
+        }
+
+        &.z-close{
+            .icon-volume{
+                //@include get-sprite-base($web-sprites-map,volume_close_btn,2/3);
+                background-image: $web-sprites-map;
+                background-position: 0 37.74834%;
+            }
+
+            &:hover{
+                .icon-volume{
+                    //@include get-sprite-base($web-sprites-map,volume_close_btn_hover,2/3);
+                    background-image: $web-sprites-map;
+                    background-position: 0 45.69536%;
+                }
+            }
+        }
+    }
+
+    .fullscreen:hover{
+        .icon-fullscreen{
+            //@include get-sprite-base($web-sprites-map,fullscreen_btn_hover);
+            background-image: $web-sprites-map;
+            background-position: 0 16.12903%;
+        }
+    }
+
+    .notfullscreen:hover{
+        .icon-notfullscreen{
+            //@include get-sprite-base($web-sprites-map,exist_fullscreen_btn_hover);
+            background-image: $web-sprites-map;
+            background-position: 0 0;
+        }
+    }
+
+    .playbtn,.pausebtn,.fullscreen,.notfullscreen{
+        &:hover{
+            background-color: transparent;
+        }
+    }
+
+    // 初始化
+    .pausebtn,.notfullscreen{
+        display: none;
+    }
+
+    .current_time {
+        margin-left: 10px;
+        color: $fontActiveColor;
+    }
+
+    .seperator {
+        margin: 0 4px;
+        color: $fontUnActiveColor;
+    }
+
+    .duration {
+        color: $fontUnActiveColor;
+    }
+}
+
+/* popover样式自定义 */
+.m-popover{
+    z-index: 6;
+}
+
+.m-popover-rate {
+    width: 150px;
+    li{
+        width: 71px;
+    }
+}
+
+.m-popover-quality {
+    width: 64px;
+    li{
+        width: 60px;
+    }
+}
+
+.m-popover-cdn{
+    width: 128px;
+    &.m-popover-cdn-one_column{
+        width: 64px;
+    }
+}
+
+.m-popover-volume{
+    padding: 8px 16px;
+    width: auto;
+}
+
+/* 其他逻辑 */
+.volumebtn{
+    &:hover{
+        .m-popover-volume{
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+progressDataList :
+[
+	{
+		fileName : 
+		beginTime : 
+		index : 1
+ 		timeStamp :  时间戳
+		loaded : 已经上传的字节数
+		total : 总共字节数
+		initOffset : 初始字节数
+ 	},
+ 	...
+]
+
+onerror : 
+ {
+ 	index : 1
+ 	data : 字符串或者错误对象
+ 	progressDataList : 进度数组
+ }
+
+onselectFile :
+ {
+ 	index : 1
+ 	data : {
+ 		"fileName" : 文件名
+		"fileSize" : 文件大小
+		"fileGmtModifiedTime" : 文件修改时间
+ 	}
+ 	progressDataList : 进度数组
+ }
+
+ onuploading :
+ {
+ 	index : 1
+ 	data : {
+ 		timeStamp :  时间戳
+		loaded : 已经上传的字节数
+		total : 总共字节数
+		initOffset : 初始字节数
+ 	}
+ 	progressDataList : 进度数组
+ }
+
+  onload :
+ {
+ 	index : 1
+ 	data : {
+ 		fileName : 文件的名称
+        nosKey : nos的对象名
+        bucket : nos桶
+ 	}
+ 	progressDataList : 进度数组
+ }

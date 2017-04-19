@@ -1,0 +1,17 @@
+<div class="ux-modal ux-upload-percent-modal {class} modal-animation" on-keyup={this.onKeyUp($event)}>
+    <div class="ux-modal_dialog ">
+        <div class="ux-modal_hd">
+            <h3 class="ux-modal_title">{title}</h3>
+            <p class="ux-modal_desc">{desc}</p>
+        </div>
+        <div class="ux-modal_body">
+            <div class="percent-box">
+                <div class="percent-solid" style="width:{finished | toPercent:total}"></div>
+            </div>
+            <p class="percent-num">
+                {finished | toPercent:total}
+            </p>
+        </div>
+    </div>
+</div>
+

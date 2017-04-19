@@ -1,0 +1,179 @@
+.u-edu-h5player-mobiledisplay{
+    z-index:3;  
+
+    &.full{
+        @extend %basesize;
+    }
+
+    %wrap{
+        z-index:3; 
+        display:none;
+        top:50%;
+        left:50%;
+    }
+
+    .bbg{
+        @extend %basesize;
+        opacity:0;
+        background:#000;
+    }
+    
+    .sbg{
+        opacity:0.8;
+        background:$bgColor;
+        @extend %basesize;
+        border-radius:rem(10px);
+    }
+
+    .statewrap{
+        display:none;
+        @extend %wrap;
+        width:rem(160px);
+        height:rem(160px);
+        margin:rem(-80px) 0 0 rem(-80px);
+
+        .pause{
+            width:rem(48px);
+            height:rem(64px);
+            background:url('../res/component-video-player/images/h5VideoPlayer/mobile/big_play_btn.png');
+            top:rem(48px);
+            left:rem(56px);
+            background-size:rem(48px) rem(64px);
+        }
+
+        .buffering{
+            width:rem(72px);
+            height:rem(72px);
+            top:rem(44px);
+            left:rem(44px);
+            background:url('../res/component-video-player/images/h5VideoPlayer/mobile/buffering.png');
+            background-size:rem(72px) rem(72px);
+        }
+
+        .replay{
+            width:rem(72px);
+            top:rem(30px);
+            left:rem(44px);
+
+            .ic{
+                width:rem(72px);
+                height:rem(64px);
+                background:url('../res/component-video-player/images/h5VideoPlayer/mobile/big_replay_btn.png');
+                background-size:rem(72px) rem(64px);
+            }
+
+            .txt{
+                text-align:center;
+                margin-top:rem(18px);
+                color:$fontUnActiveColor;
+                @include font-dpr(14px);
+            }
+        }
+
+        &:hover{
+            .pause{
+                background-image:url('../res/component-video-player/images/h5VideoPlayer/mobile/big_play_btn_hover.png');
+            }
+
+            .replay{
+                .ic{
+                    background-image:url('../res/component-video-player/images/h5VideoPlayer/mobile/big_replay_btn_hover.png');
+                }
+                
+                .txt{
+                    color:$fontActiveColor;
+                }
+            }
+             
+        }
+    }
+
+    .seekwrap{
+        @extend %wrap;
+        width:rem(220px);
+        height:rem(220px);
+        margin:rem(-110px) 0 0 rem(-110px);
+
+        .scon{
+            top:0;
+            left:0;
+            width:100%;
+            text-align:center;
+        }
+
+        .seekic{
+            width:rem(70px);
+            height:rem(48px);
+            background-size:rem(70px) rem(48px);
+            margin:rem(58px) auto rem(32px) auto;
+
+            &.forward{
+                background-image:url('../res/component-video-player/images/h5VideoPlayer/mobile/seek_forward.png');
+            }
+
+            &.backward{
+                background-image:url('../res/component-video-player/images/h5VideoPlayer/mobile/seek_backward.png');
+            }
+        }
+
+        .time{
+            @include font-dpr(14px);
+            color:$fontActiveColor;
+            line-height:1.4;
+
+            .dur{
+                color:$fontUnActiveColor;
+            }
+        }
+    }
+
+    .volumewrap{
+        @extend %wrap;
+        width:rem(100px);
+        height:rem(260px);
+        margin:rem(-130px) 0 0 rem(-50px);
+
+        .vcon{
+            top:0;
+            left:0;
+            width:100%;
+            text-align:center;
+        }
+
+        .vic{
+            width:rem(32px);
+            height:rem(32px);
+            background-image:url('../res/component-video-player/images/h5VideoPlayer/mobile/volume_icon.png');
+            margin:rem(20px) rem(34px);
+            background-size:rem(32px) rem(32px);
+        }
+
+        .vl{
+            height:rem(168px);
+            width:rem(8px);
+            background:$bgProgressColor;
+            margin:0 auto;
+
+            .vp{
+                left:rem(-8px);
+                bottom:rem(-8px);
+                width:rem(16px);
+                height:rem(16px);
+                border:rem(4px) solid $primaryColor;
+                background:$fontActiveColor;
+                border-radius:100%;
+                z-index:3;
+            }
+
+            .vb{
+                width:100%;
+                height:0;
+                left:0;
+                bottom:0;
+                background:$primaryColor;
+                z-index:1;
+            }
+        }
+
+    }
+}

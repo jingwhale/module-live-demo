@@ -1,0 +1,37 @@
+/* link card style */
+.ux-richeditor-link{
+	width:322px;
+	padding:0 20px 20px 20px;  
+}
+
+.ux-richeditor-link .row{ width:338px; margin:10px 0;}
+
+.ux-richeditor-link .txtwrap{
+	border:1px solid #ddd;
+	width:320px;
+	height:30px;
+}
+
+.ux-richeditor-link	.txtwrap .title{
+	color:#ccc;
+	height:30px;
+	width:30px;
+	line-height:30px;
+	text-align:center;
+}
+
+.ux-richeditor-link	.txtwrap .ipt{
+	width:280px;
+	padding:5px; 
+    font-size:12px; 
+   	line-height:20px; 
+    background:#fafafa; 
+    border:none; 
+    overflow-y:auto;overflow-x:hidden;resize:none;
+}
+
+
+.ux-richeditor-link .btns{margin-top:10px;}
+.ux-richeditor-link .btns .u-btn{ margin-right:0; margin-left:10px;}
+
+.ux-richeditor-link .error{ color:red; line-height:1.4}

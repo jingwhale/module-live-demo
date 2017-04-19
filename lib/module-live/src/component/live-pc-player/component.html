@@ -1,0 +1,111 @@
+<div class="ux-live-pc-player f-pa"> 
+    {#if notSupportFlash}
+    <div class="ux-live-pc-player_notSupportFlash">
+        <p class="ux-video-player-notSupportFlash_txt">
+            未安装flash，点击<a target="_blank" href="https://get.adobe.com/flashplayer/">这里</a>安装
+        </p>
+    </div>
+    {/if}
+
+    {#if liveStatus == this.liveConstant.LIVE_STATUS_TRANSFORM_COMPLETE}
+    <div class="ux-live-pc-player_playerbox f-pa">
+        <div class="ux-live-pc-player_playerbox_videobox" ref=playBackPlayerNode></div>
+    </div>
+
+    {#elseif liveStatus != null}
+    <div class="ux-live-pc-player_playerbox f-pa">
+
+        {#if liveStatus == this.liveConstant.LIVE_STATUS_NOTSTART}
+        <div class="ux-live-pc-player_status">
+            <div class="ux-live-pc-player_status_img ux-live-pc-player_status_img-notstart"></div>
+            <div class="ux-live-pc-player_status_tbar f-pa">
+                <div class="ux-live-pc-player_status_tbar_bg"></div>
+                <div class="ux-live-pc-player_status_tbar_w f-pa">
+                    <h3 class="ux-live-pc-player_status_tbar_h3">直播未开始</h3>
+                    <p class="ux-live-pc-player_status_tbar_p">早起的鸟儿有虫吃，座位有限，先到先得哦</p>
+                </div>
+            </div>
+        </div>
+
+        {#elseif liveStatus == this.liveConstant.LIVE_STATUS_COMING}
+        <div class="ux-live-pc-player_status">
+            <div class="ux-live-pc-player_status_img ux-live-pc-player_status_img-coming"></div>
+            <div class="ux-live-pc-player_status_tbar f-pa">
+                <div class="ux-live-pc-player_status_tbar_bg"></div>
+                <div class="ux-live-pc-player_status_tbar_w f-pa">
+                    <h3 class="ux-live-pc-player_status_tbar_h3">即将直播</h3>
+                    <p class="ux-live-pc-player_status_tbar_p">搬来小板凳快快坐好吧，直播马上就要开始啦</p>
+                </div>
+            </div>
+        </div>
+
+        {#elseif liveStatus == this.liveConstant.LIVE_STATUS_DELAY_START}
+        <div class="ux-live-pc-player_status">
+            <div class="ux-live-pc-player_status_img ux-live-pc-player_status_img-delay"></div>
+            <div class="ux-live-pc-player_status_tbar f-pa">
+                <div class="ux-live-pc-player_status_tbar_bg"></div>
+                <div class="ux-live-pc-player_status_tbar_w f-pa">
+                    <h3 class="ux-live-pc-player_status_tbar_h3">讲师未开播</h3>
+                    <p class="ux-live-pc-player_status_tbar_p">讲师正快马加鞭赶来.....</p>
+                </div>
+            </div>
+        </div>
+
+        {#elseif liveStatus == this.liveConstant.LIVE_STATUS_INVALID}
+        <div class="ux-live-pc-player_status">
+            <div class="ux-live-pc-player_status_img ux-live-pc-player_status_img-delay"></div>
+            <div class="ux-live-pc-player_status_tbar f-pa">
+                <div class="ux-live-pc-player_status_tbar_bg"></div>
+                <div class="ux-live-pc-player_status_tbar_w f-pa">
+                    <h3 class="ux-live-pc-player_status_tbar_h3">直播已失效</h3>
+                    <p class="ux-live-pc-player_status_tbar_p">老师长时间没来，该直播已失效...</p>
+                </div>
+            </div>
+        </div>
+            
+        {#elseif liveStatus == this.liveConstant.LIVE_STATUS_PLAYING}
+            {#if showLiveStreamErrorFlag}
+            <!-- 显示流异常 -->
+            <div class="ux-live-pc-player_status">
+                <div class="ux-live-pc-player_status_img ux-live-pc-player_status_img-notstart"></div>
+                <div class="ux-live-pc-player_status_tbar f-pa">
+                    <div class="ux-live-pc-player_status_tbar_bg"></div>
+                    <div class="ux-live-pc-player_status_tbar_w f-pa">
+                        <h3 class="ux-live-pc-player_status_tbar_h3">您的网络连接可能出现了问题</h3>
+                        <p class="ux-live-pc-player_status_tbar_p">尝试<a class="th-fc5" on-click={this.checkReload()}>重新连接</a></p>
+                    </div>
+                </div>
+            </div>
+            {/if}
+
+            {#if showLiveInIdleFlag}
+            <!-- 主播没来 -->
+            <div class="ux-live-pc-player_status">
+                <div class="ux-live-pc-player_status_img ux-live-pc-player_status_img-end"></div>
+                <div class="ux-live-pc-player_status_tbar f-pa">
+                    <div class="ux-live-pc-player_status_tbar_bg"></div>
+                    <div class="ux-live-pc-player_status_tbar_w f-pa">
+                        <h3 class="ux-live-pc-player_status_tbar_h3">主播正在赶来直播路上…</h3>
+                    </div>
+                </div>
+            </div>    
+            {/if}
+
+            <div class="ux-live-pc-player_playerbox_videobox" ref=livePlayerNode></div>
+
+        {#elseif liveStatus == this.liveConstant.LIVE_STATUS_END}
+        <div class="ux-live-pc-player_status">
+            <div class="ux-live-pc-player_status_img ux-live-pc-player_status_img-end"></div>
+            <div class="ux-live-pc-player_status_tbar f-pa">
+                <div class="ux-live-pc-player_status_tbar_bg"></div>
+                <div class="ux-live-pc-player_status_tbar_w f-pa">
+                    <h3 class="ux-live-pc-player_status_tbar_h3">直播已结束，待回放...</h3>
+                    <p class="ux-live-pc-player_status_tbar_p">正在进行直播回放处理，完成后可随时观看回放</p>
+                </div>
+            </div>
+        </div>
+        {/if}
+
+    </div>
+    {/if}
+</div>

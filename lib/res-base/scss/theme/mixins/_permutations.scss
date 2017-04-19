@@ -1,0 +1,31 @@
+@mixin permutations($map, $map2) {
+  @include generateThemeClazz($map, $map2);
+  @include generateThemeClazz($map2, $map);
+}
+
+@mixin generateThemeClazz($map, $map2){
+  $list: map_get($map, "list");
+  $clazzName: map_get($map, "clazzName");
+  $czzName: map_get($map, "czzName");
+
+  $list2: map_get($map2, "list");
+  $clazzName2: map_get($map2, "clazzName");
+  $czzName2: map_get($map2, "czzName");
+
+  @for $i from 1 through length($list) {
+    $s: nth($list, $i);
+
+    .th-#{$clazzName}#{$i - 1} {
+      #{$czzName}: $s;
+    }
+
+    @for $j from 1 through length($list2) {
+      $c: nth($list2, $j);
+
+      .th-#{$clazzName}#{$i - 1}#{$clazzName2}#{$j - 1} {
+        #{$czzName}: $s;
+        #{$czzName2}: $c;
+      }
+    }
+  }
+}

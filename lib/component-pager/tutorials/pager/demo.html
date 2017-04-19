@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>DEMO - pager</title>
+        <link href="../../lib/res-base/css/style.css" rel="stylesheet" />
+    </head>
+    <style>
+        body{
+            padding: 100px;
+        }
+    </style>
+    <body>
+        <script src="../../lib/regularjs/dist/regular.js"></script>
+        <script src="../../lib/nej/src/define.js?pool=../../lib/"></script>
+        <script>
+            NEJ.define([
+                '../../src/pager/ui.js'
+            ],function(Component){
+                (new Component({
+                    data: {
+                        index: 1,
+                        total: 10
+                    }
+                })).$inject(document.body);
+
+                (new Component({
+                    data: {
+                        index: 1,
+                        total: 11
+                    }
+                })).$inject(document.body)
+            });
+        </script>
+    </body>
+</html>

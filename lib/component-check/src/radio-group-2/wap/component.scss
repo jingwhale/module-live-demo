@@ -1,0 +1,31 @@
+@import "../lib/res-base/scss/bourbon/bourbon";
+@import "../lib/res-base/scss/var";
+
+$primary:#f6454a;
+.ux-radio-group-2 {
+    &_item{
+        @include display(flex);
+        align-items: center;
+        justify-content:center;
+        float: left;
+        width: rem(330);
+        height: rem(110);
+        margin-top:rem(30);
+        margin-right: rem(30);
+        border-radius: 3px;
+        background-color: #f0f0f0;
+        font-size: rem(28);
+        color: #333;
+        -webkit-tap-highlight-color:transparent;
+
+        &:nth-child(2n){
+            margin-right: 0;
+        }
+
+        &.z-sel{
+            background-color: $primary;
+            color: white;
+        }
+    }
+}
+

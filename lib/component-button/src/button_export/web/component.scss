@@ -1,0 +1,14 @@
+.ux-btn-export{
+    > .ux-btn{
+        background: #2077d4;
+        &:hover{
+            background: #157eee;
+        }
+        border: none;
+    }
+}
+.export-test{
+    .ux-btn{
+        background-color: #00a2ff;
+    }
+}

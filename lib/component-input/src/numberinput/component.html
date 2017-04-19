@@ -1,0 +1,15 @@
+<label class="ux-input2 ux-numberinput {class}" r-hide={!visible}>
+    <ux-validation rules={rules} value={value} ref="validation" state={state}>
+        <input
+               class="ux-input ux-input_{state} ux-input_{size} ux-input_{width}"
+               r-model={value | number}
+               placeholder={placeholder}
+               autofocus={autofocus}
+               on-blur={this.onblur($event)}
+               readonly={readonly}
+               disabled={disabled}>
+        <a class="ux-btn" z-dis={disabled} on-click={this.add(+step)}><i class="ux-icon-caret-up"></i></a>
+        <a class="ux-btn" z-dis={disabled} on-click={this.add(-step)}><i class="ux-icon-caret-down"></i></a>
+    </ux-validation>
+</label>
+

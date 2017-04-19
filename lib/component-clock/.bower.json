@@ -1,0 +1,45 @@
+{
+  "name": "component-clock",
+  "version": "0.0.35",
+  "authors": [
+    "hzliujunwei <hzliujunwei@corp.netease.com>"
+  ],
+  "description": "component clock project",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "module",
+    "component",
+    "clock"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "docs",
+    "test",
+    "tutorials"
+  ],
+  "dependencies": {
+    "nej": "git+https://g.hz.netease.com/edu-front-vendor/nej.git#0.4.0",
+    "regularjs": "git+https://g.hz.netease.com/edu-front-vendor/regularjs.git#0.5.1",
+    "res-base": "git+https://g.hz.netease.com/edu-frontend/res-base.git#0.0.19",
+    "component-base": "git+https://g.hz.netease.com/edu-frontend/component-base.git#0.0.36"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2",
+    "chai": "^3.5.0"
+  },
+  "components": [
+    "clock"
+  ],
+  "_release": "0.0.35",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.35",
+    "commit": "af5975960042e435e520f17cccf7d9ec4731a955"
+  },
+  "_source": "https://g.hz.netease.com/edu-frontend/component-clock.git",
+  "_target": "0.0.35",
+  "_originalSource": "git+https://g.hz.netease.com/edu-frontend/component-clock.git"
+}

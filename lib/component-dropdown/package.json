@@ -1,0 +1,37 @@
+{
+    "name": "component-dropdown",
+    "version": "0.0.49",
+    "description": "component dropdown project",
+    "main": "src/dropdown.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "build": "npm prune && npm install && bower prune && bower update",
+        "test": "./node_modules/.bin/gulp coverage && mocha-phantomjs test/coverage.html --hooks test/hook.js",
+        "coverage-report": "./node_modules/.bin/istanbul report --root test/coverage --dir test/coverage lcov",
+        "coverage-cmd-report": "./node_modules/.bin/istanbul report --root test/coverage --dir test/coverage text-summary",
+        "lint": "eslint src/**/*.js",
+        "css": "sass --watch --scss --no-cache --unix-newlines src:src -t compressed",
+        "jsdoc": "jsdoc -c .jsdoc.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "ssh://git@g.hz.netease.com:22222/edu-frontend/component-dropdown.git"
+    },
+    "keywords": [
+        "edu",
+        "component",
+        "dropdown"
+    ],
+    "author": "hzlixinxin",
+    "license": "MIT",
+    "devDependencies": {
+        "gulp": "^3.9.1",
+        "replacestream": "^4.0.2",
+        "ink-docstrap": "^1.2.1",
+        "istanbul": "^0.4.5",
+        "mocha-phantomjs": "^4.1.0",
+        "gulp-istanbul": "^1.1.1"
+    }
+}

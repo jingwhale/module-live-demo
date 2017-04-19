@@ -1,0 +1,42 @@
+{
+  "name": "component-drag-drop",
+  "version": "0.0.37",
+  "authors": [
+    "edu <edu@corp.netease.com>"
+  ],
+  "description": "unit test for component",
+  "main": "test/test.html",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "module",
+    "unit",
+    "test"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [],
+  "dependencies": {
+    "nej": "git+https://g.hz.netease.com/edu-front-vendor/nej.git#0.4.0",
+    "regularjs": "git+https://g.hz.netease.com/edu-front-vendor/regularjs.git#0.5.1",
+    "component-base": "git+https://g.hz.netease.com/edu-frontend/component-base.git#0.0.36"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2",
+    "chai": "^3.5.0"
+  },
+  "components": [
+    "draggable",
+    "droppable"
+  ],
+  "_release": "0.0.37",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.37",
+    "commit": "ef09601e6668eae9cad09d7b6c4150c5e50a2f51"
+  },
+  "_source": "https://g.hz.netease.com/edu-frontend/component-drag-drop.git",
+  "_target": "0.0.37",
+  "_originalSource": "git+https://g.hz.netease.com/edu-frontend/component-drag-drop.git"
+}

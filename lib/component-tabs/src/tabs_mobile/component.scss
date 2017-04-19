@@ -1,0 +1,69 @@
+@import "../../lib/res-base/scss/var";
+@import "../../lib/res-base/scss/bourbon/bourbon";
+
+
+// Variables:
+// ========================================================================
+
+$m-tabs_hd_li_margin: 5px;
+$m-tabs_hd_li_padding-horizontal: 15px;
+$m-tabs_hd_border: #f4f4f4;
+$m-tabs-vertical_hd_li_width: 120px;
+
+// Component:       `ux-tab`
+// ========================================================================
+
+.ux-tabs {
+    @include border-radius(3px);
+    background-color: #fff;
+
+    &_hd {
+        height: 41px;
+        border-bottom: 1px solid #fff;
+        @include display('flex');
+        > li {
+            @include flex(1);
+            margin: 0px;
+            padding: 0px;
+            height: rem(80px);
+            line-height: rem(80px);
+            text-align: center;
+            font-size: 14px;
+            color: #3C4A55;
+            border-bottom: 1px solid #E6EAF2;
+        }
+
+        > li + li {
+
+        }
+
+        > li:hover,    // - Apply hover style also to focus state
+        > li:focus {
+            color: #3C4A55;
+        }
+
+        > li.z-crt {
+            background: white;
+            border-color: rgba(0, 0, 0, 0);
+            border-bottom-color: $color-base;
+            color: $color-base;
+        }
+
+        > li.z-dis {
+            color: #999;
+            background: none;
+            background-color: transparent;
+        }
+    }
+}
+
+/* Disabled */
+.ux-tabs.z-dis {
+    .ux-tabs_hd {
+        > li:not(.z-crt) {
+            background: none;
+            color: #999;
+            border-color: transparent;
+        }
+    }
+}

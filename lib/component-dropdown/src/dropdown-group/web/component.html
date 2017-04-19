@@ -1,0 +1,7 @@
+<div class="ux-dropdown-group {class}" r-hide={!visible}>
+    <ux-validation rules={rules} value={selecteds}  ref="validation" state={state}>
+        {#list 0..(depth - 1) as i}
+            <ux-dropdown source={sources[i]} selected={selecteds[i]} key={key} value={values[i]} readonly={readonly} disabled={disabled} alwaysChange={true} placeholder={placeholders[i] === '' ? '' : '请选择'} on-change={this.onChange($event.selected, i)} />
+        {/list}
+    </ux-validation>
+</div>

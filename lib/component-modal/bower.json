@@ -1,0 +1,38 @@
+{
+    "name": "component-modal",
+    "version": "0.0.39",
+    "authors": [
+        "edu <edu@corp.netease.com>"
+    ],
+    "description": "unit test for component",
+    "main": "test/test.html",
+    "moduleType": [
+        "globals"
+    ],
+    "keywords": [
+        "module",
+        "unit",
+        "test"
+    ],
+    "license": "MIT",
+    "homepage": "",
+    "ignore": [
+        "doc",
+        "test"
+    ],
+    "dependencies": {
+        "nej": "git+https://g.hz.netease.com/edu-front-vendor/nej.git#0.4.0",
+        "regularjs": "git+https://g.hz.netease.com/edu-front-vendor/regularjs.git#0.5.1",
+        "component-base": "git+https://g.hz.netease.com/edu-frontend/component-base.git#0.0.36",
+        "component-drag-drop": "git+https://g.hz.netease.com/edu-frontend/component-drag-drop.git#0.0.37",
+        "component-button": "git+https://g.hz.netease.com/edu-frontend/component-button.git#0.0.37",
+        "res-base": "git+https://g.hz.netease.com/edu-frontend/res-base.git#0.0.19"
+    },
+    "devDependencies": {
+        "mocha": "^3.0.2",
+        "chai": "^3.5.0"
+    },
+    "components": [
+        "modal"
+    ]
+}

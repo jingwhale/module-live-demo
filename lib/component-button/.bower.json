@@ -1,0 +1,50 @@
+{
+  "name": "component-button",
+  "version": "0.0.37",
+  "authors": [
+    "hzshaoyy <hzshaoyy@corp.netease.com>"
+  ],
+  "description": "component button project",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "module",
+    "component",
+    "button"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "docs",
+    "test",
+    "tutorials"
+  ],
+  "dependencies": {
+    "nej": "git+https://g.hz.netease.com/edu-front-vendor/nej.git#0.4.0",
+    "regularjs": "git+https://g.hz.netease.com/edu-front-vendor/regularjs.git#0.5.1",
+    "res-base": "git+https://g.hz.netease.com/edu-frontend/res-base.git#0.0.19",
+    "component-base": "git+https://g.hz.netease.com/edu-frontend/component-base.git#0.0.36",
+    "component-notify": "git+https://g.hz.netease.com/edu-frontend/component-notify.git#0.0.37",
+    "cache-base": "git+https://g.hz.netease.com/edu-frontend/cache-base.git#0.0.22",
+    "component-upload": "git+https://g.hz.netease.com/edu-frontend/component-upload.git#0.0.41"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2",
+    "chai": "^3.5.0"
+  },
+  "components": [
+    "button",
+    "button_export"
+  ],
+  "token": "a210fd2ffcfa11de8593e3373fb039",
+  "_release": "0.0.37",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.37",
+    "commit": "13e57824146df0fe0d17cbfde7df00dd3c6df29f"
+  },
+  "_source": "https://g.hz.netease.com/edu-frontend/component-button.git",
+  "_target": "0.0.37",
+  "_originalSource": "git+https://g.hz.netease.com/edu-frontend/component-button.git"
+}

@@ -1,0 +1,13 @@
+/* 颜色变量 */
+$primaryColor:#2aa126; /* 主题色 */
+$fontActiveColor:#fff; /* 高亮字体色 */
+$fontUnActiveColor:#999; /* 正常字体色 */
+$fontDisabledColor:#555; /* 禁用字体色 */
+$bgColor:#000;  /* 基础背景色 */  
+$bgBarColor:#333;  /* 控制条背景色 */
+$bgProgressColor:#555; /* 进度条背景色 */
+$bgLightColor:#888;  /* 背景高亮色 */
+
+$web-sprites-map:url('../res/component-video-player/images/h5VideoPlayer/web-s3864e82090.png');
+
+//$web-sprites-map:sprite-map("h5VideoPlayer/web/*.png", $layout:'smart');

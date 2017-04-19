@@ -1,0 +1,9 @@
+<span class="ux-btn-export {class}">
+    <ux-button state={state} size={size} width={width} on-click={this.click($event)}>
+        {#if value}
+        {value}
+        {#else}
+        {#inc this.$body}
+        {/if}
+    </ux-button>
+</span>

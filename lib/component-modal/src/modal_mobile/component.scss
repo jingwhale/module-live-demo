@@ -1,0 +1,110 @@
+@import "../../lib/res-base/scss/var";
+@import "../../lib/res-base/scss/bourbon/bourbon";
+
+$em-base: 36px;
+
+
+.um-modal {
+    // - Hide by default
+    // display: none;
+    // - Set fixed position
+    //用于动画
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    // - 允许模态对话框在模态层里滚动，因为有时候内容可能会比较多
+    // - Allow scrolling for the modal dialog
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    // // - Fade-in transition
+    // @include opacity(0);
+    // -webkit-transition: opacity 0.15s linear;
+    // transition: opacity 0.15s linear;
+    // ? Deactivate browser history navigation in IE11
+    touch-action: cross-slide-y pinch-zoom double-tap-zoom;
+    text-align: center;
+    overflow: hidden;
+
+    background: rgba(0, 0, 0, 0.3);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4c000000,endColorstr=#4c000000); //ie8
+
+    &:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+    }
+
+    &_dialog {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: left;
+        width: rem(270px);
+        box-sizing: border-box;
+        padding: rem(20px) rem(32px);
+        background: white;
+        border: 1px solid #999\9;
+        border-radius: 2px;
+        .fade-in &{
+            opacity: 0;
+        }
+    }
+
+    &_title {
+        padding-top: rem(15px);
+        font-size: 14px;
+        color: rgba(112, 120, 140, 1);
+    }
+
+
+    &_bd {
+        padding-top: rem(15px);
+        font-size: 14px;
+    }
+
+
+    &_ft {
+        padding-top: rem(15px);
+        text-align: right;
+        font-size: 14px;
+        .um-modal-btn {
+            height: 34px;
+            line-height: 34px;
+            color: rgba(33, 150, 243, 1);
+        }
+    }
+
+    //动画
+
+    &-fadeIn{
+        opacity: 1;
+        transition: opacity 200ms;
+        //&-active{
+        //    opacity: 1;
+        //
+        //}
+    }
+
+    &-fadeOut{
+        opacity: 1;
+        &-active{
+            opacity: 0;
+            transition: opacity 300ms;
+        }
+    }
+
+
+}
+
+
+
+
+// - 禁止Modal的时候后面的内容还可以滚动，很重要的一条！
+html.z-modal,
+html.z-modal body {
+    overflow: hidden;
+}

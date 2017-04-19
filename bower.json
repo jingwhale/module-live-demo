@@ -1,0 +1,19 @@
+{
+    "name": "module-live",
+    "version": "0.0.1",
+    "authors": [
+        "hzzhangyunlong15 <hzzhangyunlong15@corp.netease.com>"
+    ],
+    "description": "module live project",
+    "moduleType": [
+        "globals"
+    ],
+    "keywords": [
+        "module-live"
+    ],
+    "license": "MIT",
+    "homepage": "",
+    "dependencies": {
+        "module-live": "git+https://git@g.hz.netease.com/edu-frontend/module-live.git#0.1.46"
+    }
+}

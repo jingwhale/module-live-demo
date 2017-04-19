@@ -1,0 +1,13 @@
+{
+    "live-mobile": {
+        "liveContentId": "1234",
+        "meetId": "asdadasd",
+        "liveStreamUrl" : "",
+        "useNative": false
+    },
+    "cache-live": {
+        "live-getInfo": {
+            "url": "/j/live/getLiveInfo.json"
+        }
+    }
+}

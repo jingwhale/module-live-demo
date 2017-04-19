@@ -1,0 +1,39 @@
+{
+    "name": "component-list-view",
+    "version": "0.0.38",
+    "authors": [
+        "hzshaqihe <hzshaqihe@corp.netease.com>"
+    ],
+    "description": "component list-view project",
+    "moduleType": [
+        "globals"
+    ],
+    "keywords": [
+        "module",
+        "component",
+        "list-view"
+    ],
+    "license": "MIT",
+    "homepage": "",
+    "ignore": [
+        "docs",
+        "test",
+        "tutorials"
+    ],
+    "dependencies": {
+        "nej": "git+https://g.hz.netease.com/edu-front-vendor/nej.git#0.4.0",
+        "regularjs": "git+https://g.hz.netease.com/edu-front-vendor/regularjs.git#0.5.1",
+        "res-base": "git+https://g.hz.netease.com/edu-frontend/res-base.git#0.0.19",
+        "component-base": "git+https://g.hz.netease.com/edu-frontend/component-base.git#0.0.36",
+        "component-pager": "git+https://g.hz.netease.com/edu-frontend/component-pager.git#0.0.37"
+    },
+    "devDependencies": {
+        "mocha": "^3.0.2",
+        "chai": "^3.5.0"
+    },
+    "components": [
+        "list_view",
+        "scroll_view"
+    ],
+    "token": "5bf43c6292590250e6ba5ccaf3d1df"
+}

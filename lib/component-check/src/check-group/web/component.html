@@ -1,0 +1,7 @@
+<div class="ux-check-group {class}">
+    <ux-validation value={source} rules={rules} ref="validation">
+        {#list source as item}
+        <ux-check pos={item_index} textClick={textClick} name={item.name} checked={item.checked} disabled={disabled} block={block} on-check={this.doCheck($event)} on-text={this._doText($event)}/>
+        {/list}
+    </ux-validation>
+</div>

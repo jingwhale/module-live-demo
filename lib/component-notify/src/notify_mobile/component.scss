@@ -1,0 +1,26 @@
+@import '../lib/res-base/scss/var';
+@import '../lib/res-base/scss/bourbon/bourbon';
+
+@import "../notify/scss/notify";
+
+$em-base: 75px;
+$ux-notify_z-index: 1040;
+.um-notify{
+
+}
+
+.um-message{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: $ux-notify_z-index;
+    @include prefixer(transform, translate(-50%,-50%), webkit ms spec);
+    max-width: 80%;
+    padding: rem(48px) rem(60px);
+    max-height: rem(280px);
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: rem(6px);
+    color: #fff;
+    font-size: 13px;
+}

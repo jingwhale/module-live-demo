@@ -1,0 +1,103 @@
+@import "../lib/res-base/scss/bourbon/bourbon";
+@import "../lib/res-base/scss/var";
+
+// Name:            Pager
+// Description:     pager
+// Author:          hzshaoyy(hzshaoyy@corp.netease.com)
+// ========================================================================
+
+
+// Variables:
+// ========================================================================
+
+$m-pager_li_a_size: 28px;
+
+
+// Component:       `ux-pager`
+// ========================================================================
+
+.ux-pager {
+    // - Center pager by default
+    text-align: center;
+
+    @include user-select(none);
+
+    font-size: 12px;
+
+    &.z-hdn{
+        display:none;
+    }
+
+    &_itm, &_btn, &_sep {
+        margin: 0 2px;
+        display: inline-block;
+        text-align: center;
+
+        > a, > span {
+            display: inline-block;
+            @include box-sizing(border-box);
+            text-decoration: none;
+
+            padding: 0 12px;
+            min-width: $m-pager_li_a_size - 12px*2;
+            @include line-height($m-pager_li_a_size);
+            color: $color-base;
+        }
+
+        > a {
+            background: transparent;
+            color: $color-light;
+            @include border($border-base);
+            @include border-radius($border-radius-sm);
+        }
+
+        > a:hover, > a:focus, > a:active {
+            background: $color-base;
+            color: white;
+        }
+    }
+
+    >li{
+        background: white;
+    }
+    >li.z-crt > a {
+        background: $color-base;
+        color: white;
+    }
+
+    >li.z-dis > a {
+        cursor: not-allowed;
+        background: white;
+        color: $u-formctrl-disabled_color;
+        border-color: $border-base;
+    }
+
+    > li + li {}
+}
+
+/* Disabled */
+.m-pager.z-dis {
+    > li {
+        > a {
+            cursor: not-allowed;
+            background: white;
+            color: $u-formctrl-disabled_color;
+            border-color: $border-base;
+        }
+    }
+}
+
+
+
+// Position Extend:
+// Description:
+// ========================================================================
+
+.ux-pager__left {
+    text-align: left;
+}
+
+.ux-pager__right {
+    text-align: right;
+}
+

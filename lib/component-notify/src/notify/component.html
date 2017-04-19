@@ -1,0 +1,9 @@
+<div class="ux-notify ux-notify-{position} {class}" r-hide={!visible}>
+    {#list messages as message}
+    <div class="ux-message ux-message-{message.state}" r-animation="on: enter; class: animated fadeIn fast; on: leave; class: animated fadeOut fast;">
+        <a class="ux-message_close" on-click={this.close(message)}><i class="ux-icon ux-icon-close"></i></a>
+        <i class="ux-message_icon ux-icon-{message.state}-circle" r-hide={!message.state}></i>
+        {message.text}
+    </div>
+    {/list}
+</div>

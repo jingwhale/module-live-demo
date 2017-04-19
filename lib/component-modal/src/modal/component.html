@@ -1,0 +1,50 @@
+<div class="ux-modal {class}" on-click={this.clickMask()} r-animation="on:enter;wait:20;class: ux-modal-fadeIn, 3;on:leave;class: ux-modal-fadeOut, 2">
+    <div class="ux-modal_dialog"  on-click={this.cancelProgation($event)} ref="modalDialog">
+        <ux-draggable disabled={!draggable} proxy={this.$refs.modalDialog} on-dragstart={this.onDragStart($event)}>
+            <div class="ux-modal_hd">
+                <a class="ux-modal_close" on-click={this.close("null")}><i class="ux-icon ux-icon-close"></i></a>
+                {#if contentTemplate}
+                <h3 class="ux-modal_title" r-hide={!title}>{title}</h3>
+                {/if}
+            </div>
+        </ux-draggable>
+        <div class="ux-modal_bd f-cb">
+            {#if contentTemplate}
+            {#inc @(contentTemplate)}
+            {#else}
+            <div class="ux-modal_icon">
+                {#if type == "warning"}
+                <span class="ux-modal_warn ux-icon ux-icon-surprise "></span>
+                {#elseif type == "info"}
+                <span class="ux-modal_info ux-icon ux-icon-surprise "></span>
+                {#elseif type == "success"}
+                <span class="ux-modal_success ux-icon ux-icon-success-circle "></span>
+                {#elseif type == "error"}
+                <span class="ux-modal_error ux-icon ux-icon-error-circle "></span>
+                {/if}
+            </div>
+            <div class="ux-modal_content">
+                <h3 class="ux-modal_content_title th-fs2fc2" r-hide={!title}>{title}</h3>
+                {#if content}<div class="ux-modal_content_content"> {#inc @(content)}</div>{/if}
+                <div class="ux-modal_content_ft">
+                    {#if okButton}
+                    <ux-button class="ux-modal-btn"  on-click={this.close(true)} value="{okButton === true ? '确定' : okButton}" />
+                    {/if}
+                    {#if cancelButton}
+                    <ux-button class="ux-modal-btn" state="primary" on-click={this.close(false)} value="{cancelButton === true ? '取消' : cancelButton}" />
+                    {/if}
+                </div>
+            </div>{/if}
+        </div>
+        {#if contentTemplate}
+        <div class="ux-modal_ft">
+            {#if okButton}
+            <ux-button class="ux-modal-btn" on-click={this.close(true)} value="{okButton === true ? '确定' : okButton}" />
+            {/if}
+            {#if cancelButton}
+            <ux-button class="ux-modal-btn" state="primary" on-click={this.close(false)} value="{cancelButton === true ? '取消' : cancelButton}"/>
+            {/if}
+        </div>
+        {/if}
+    </div>
+</div>

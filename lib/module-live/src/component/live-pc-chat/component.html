@@ -1,0 +1,84 @@
+{#if this.isBrowserSupport}
+<div class="ux-live-pc-chat {class}">
+    {#if !this.isChatAvaliable}
+    <div class="ux-live-pc-chat_tips">
+        <div class="ux-live-pc-chat_tips-content">
+            <img class="ux-live-pc-chat_tips-img" src="http://nos.netease.com/edu-image/ba3847fb-e533-45f7-8a4a-04d306ee0d783.jpg?imageView&quality=100" alt="">
+            <p>
+                聊天室不存在或者已关闭~
+            </p>
+        </div>
+    </div>
+    {#else}
+    <!--正在观看-->
+    <div class="ux-live-pc-chat_overview">
+        <div class="ux-live-pc-chat_num">
+            <strong class="ux-live-pc-chat_num-strong">{onlineMemberNum}</strong>人正在观看
+        </div>
+    </div>
+    <!--消息列表-->
+    <div class="ux-live-pc-chat_scroll" ref="chatScroll">
+        <div class="ux-live-pc-chat_list" ref="chatScrollList" on-scroll={this.updateTouchmoveTime()}>
+            {#if this.items.length == 0}
+            <div class="ux-live-pc-chat_list-tips">还没有人发言，赶紧抢占沙发～</div>
+            {#elseif this.items.length > 10}
+            <div class="ux-live-pc-chat_list-tips">－ 没有更多内容了 －</div>
+            {/if}
+            <div class="ux-live-pc-chat_list-content">
+                {#if this.items.length > 0}
+                {#list this.items as item}
+                {#if item.text}
+                <div class="ux-live-pc-chat_item {item.from|highlight}">
+                    <div class="ux-live-pc-chat_item-info">
+                        {#if item.fromAvatar}
+                            <img class="ux-live-pc-chat_item-img" src="{item.fromAvatar}" alt="" />
+                        {#else}
+                            <img class="ux-live-pc-chat_item-img" src="http://nos.netease.com/edu-image/59528ffa-d99b-4bb8-9f66-2882d9904aa2a.png?imageView&quality=100" alt="" />
+                        {/if}
+                        <span class="ux-live-pc-chat_item-nickname">{item.from|formatLectorTitle}{item.fromNick}</span>
+                        <span class="ux-live-pc-chat_item-time">{item.time|formatTime}</span>
+                    </div>
+                    <p class="ux-live-pc-chat_item-msg">
+                        {item.text}
+                    </p>
+                </div>
+                {/if}
+                {/list}
+                {/if}
+            </div>
+        </div>
+    </div>
+    {#if isSendMsgCreate}
+    <!--假的输入框模块-->
+    <div class="ux-live-pc-chat_send" r-hide={isUserLogin}>
+        <div class="ux-live-pc-chat_send-content">
+            登录或注册后才能发言
+        </div>
+        <a class="ux-live-pc-chat_send-btn" href="javascript:void(0)" on-click="{goToLogin()}">登录/注册</a>
+    </div>
+    <!-- <div class="ux-live-pc-chat_send" r-hide={!isUserLogin}>
+        <div class="ux-live-pc-chat_send-content" on-click="{this.toggleWriteModel()}">
+            我要发言
+        </div>
+    </div> -->
+    <!--真的输入框模块-->
+    <div class="ux-live-pc-chat_write" r-hide={!isUserLogin}>
+        <!-- <div class="ux-live-pc-chat_write-mask" on-touchstart="{this.toggleWriteModel()}">
+        </div> -->
+        <div class="ux-live-pc-chat_write-content">
+            <div class="ux-live-pc-chat_write-box">
+                <form action="javascript:void(0)" method="post" style="height:100%;">
+                    <input ref="writeInput" class="ux-live-pc-chat_write-input" placeholder="我要发言" autocomplete="off" type="text" name="name" r-model={this.inputValue} on-propertychange={this.onInput(this.inputValue)} on-input={this.onInput(this.inputValue)} on-keypress={this.onKeypress($event,this.inputValue)}>
+                    <a class="ux-live-pc-chat_write-btn" href="javascript:void(0)" on-click="{this.sendMsg(this.inputValue)}">发送</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    {/if}
+    {/if}
+</div>
+{#else}
+    <div class="ux-live-pc-chat">
+        <p class="ux-live-pc-chat_tips">暂不支持ie8、9浏览器，建议使用chrome、火狐浏览器、Safari浏览器及IE10、IE11。</p>
+    </div>
+{/if}

@@ -1,0 +1,45 @@
+// Name:            Button
+// Author:          hzshaoyy(hzshaoyy@corp.netease.com)
+// ========================================================================
+
+
+
+// Component:       `ux-btn`
+// ========================================================================
+
+.ux-btn {
+    // - Correct inability to style clickable `input` types in iOS.
+    -webkit-appearance: none;
+    margin: 0;
+    overflow: visible;
+    text-transform: none;
+    text-decoration: none;
+    cursor: pointer;
+    @include box-sizing(border-box);
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+
+    padding: 0 12px;
+    @include line-height($height-base);
+
+    background: $color-base;
+    border: 1px solid $color-base;
+    color: $color-white;
+    font-size: $font-size-base;
+
+    @include border-radius($border-radius-base);
+}
+
+/* Hover */
+.ux-btn:hover,
+.ux-btn:focus { // - Apply hover style also to focus state
+    // - Remove default focus style
+    outline: none;
+    // - Required for `a` elements
+    text-decoration: none;
+
+    color: $color-white;
+    background: $color-button-hover;
+    border-color: $color-button-hover;
+}

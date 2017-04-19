@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>教育产品组件开发文档 Source: dropdown-group/web/component.js</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cosmo.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">教育产品组件开发文档</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="module-pool_component-dropdown_src_cascade_component.html">pool/component-dropdown/src/cascade/component</a></li><li><a href="module-pool_component-dropdown_src_cascade_setting.html">pool/component-dropdown/src/cascade/setting</a></li><li><a href="module-pool_component-dropdown_src_cascade_ui.html">pool/component-dropdown/src/cascade/ui</a></li><li><a href="module-pool_component-dropdown_src_dropdown-check_component.html">pool/component-dropdown/src/dropdown-check/component</a></li><li><a href="module-pool_component-dropdown_src_dropdown-check_ui.html">pool/component-dropdown/src/dropdown-check/ui</a></li><li><a href="module-pool_component-dropdown_src_dropdown-group_component.html">pool/component-dropdown/src/dropdown-group/component</a></li><li><a href="module-pool_component-dropdown_src_dropdown-group_ui.html">pool/component-dropdown/src/dropdown-group/ui</a></li><li><a href="module-pool_component-dropdown_src_dropdown_component.html">pool/component-dropdown/src/dropdown/component</a></li><li><a href="module-pool_component-dropdown_src_dropdown_ui.html">pool/component-dropdown/src/dropdown/ui</a></li><li><a href="module-pool_component-dropdown_src_dropdown_web_component.html">pool/component-dropdown/src/dropdown/web/component</a></li><li><a href="module-pool_component-dropdown_src_suggest_component.html">pool/component-dropdown/src/suggest/component</a></li><li><a href="module-pool_component-dropdown_src_suggest_ui.html">pool/component-dropdown/src/suggest/ui</a></li><li><a href="module-pool_component-dropdown_src_suggest_wap_component.html">pool/component-dropdown/src/suggest/wap/component</a></li><li><a href="module-pool_component-dropdown_src_suggest_wap_ui.html">pool/component-dropdown/src/suggest/wap/ui</a></li><li><a href="module-pool_component-dropdown_src_suggest_web_component.html">pool/component-dropdown/src/suggest/web/component</a></li><li><a href="module-pool_component-dropdown_src_suggest_web_ui.html">pool/component-dropdown/src/suggest/web/ui</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="module-pool_component-dropdown_src_cascade_component.Cascade.html">pool/component-dropdown/src/cascade/component.Cascade</a></li><li><a href="module-pool_component-dropdown_src_cascade_ui.CascadeUI.html">pool/component-dropdown/src/cascade/ui.CascadeUI</a></li><li><a href="module-pool_component-dropdown_src_dropdown-check_component.DropdownCheck.html">pool/component-dropdown/src/dropdown-check/component.DropdownCheck</a></li><li><a href="module-pool_component-dropdown_src_dropdown-check_ui.DropdownCheckUI.html">pool/component-dropdown/src/dropdown-check/ui.DropdownCheckUI</a></li><li><a href="module-pool_component-dropdown_src_dropdown-group_component.DropdownGroup.html">pool/component-dropdown/src/dropdown-group/component.DropdownGroup</a></li><li><a href="module-pool_component-dropdown_src_dropdown-group_ui.DropdownGroup.html">pool/component-dropdown/src/dropdown-group/ui.DropdownGroup</a></li><li><a href="module-pool_component-dropdown_src_dropdown_component.Dropdown.html">pool/component-dropdown/src/dropdown/component.Dropdown</a></li><li><a href="module-pool_component-dropdown_src_dropdown_ui.DropdownUI.html">pool/component-dropdown/src/dropdown/ui.DropdownUI</a></li><li><a href="module-pool_component-dropdown_src_dropdown_web_component.Dropdown.html">pool/component-dropdown/src/dropdown/web/component.Dropdown</a></li><li><a href="module-pool_component-dropdown_src_suggest_component.Suggest.html">pool/component-dropdown/src/suggest/component.Suggest</a></li><li><a href="module-pool_component-dropdown_src_suggest_ui.SuggestUI.html">pool/component-dropdown/src/suggest/ui.SuggestUI</a></li><li><a href="module-pool_component-dropdown_src_suggest_wap_component.Suggest.html">pool/component-dropdown/src/suggest/wap/component.Suggest</a></li><li><a href="module-pool_component-dropdown_src_suggest_wap_ui.SuggestUI.html">pool/component-dropdown/src/suggest/wap/ui.SuggestUI</a></li><li><a href="module-pool_component-dropdown_src_suggest_web_component.Suggest.html">pool/component-dropdown/src/suggest/web/component.Suggest</a></li><li><a href="module-pool_component-dropdown_src_suggest_web_ui.SuggestUI.html">pool/component-dropdown/src/suggest/web/ui.SuggestUI</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="module-pool_component-dropdown_src_dropdown-check_component.DropdownCheck.html#event:open">pool/component-dropdown/src/dropdown-check/component.DropdownCheck#event:open</a></li><li><a href="module-pool_component-dropdown_src_dropdown-check_component.DropdownCheck.html#event:select">pool/component-dropdown/src/dropdown-check/component.DropdownCheck#event:select</a></li><li><a href="module-pool_component-dropdown_src_dropdown-check_component.DropdownCheck.html#event:toggle">pool/component-dropdown/src/dropdown-check/component.DropdownCheck#event:toggle</a></li><li><a href="module-pool_component-dropdown_src_dropdown-group_component.DropdownGroup.html#event:change">pool/component-dropdown/src/dropdown-group/component.DropdownGroup#event:change</a></li><li><a href="module-pool_component-dropdown_src_dropdown-group_component.DropdownGroup.html#event:select">pool/component-dropdown/src/dropdown-group/component.DropdownGroup#event:select</a></li><li><a href="module-pool_component-dropdown_src_dropdown_component.Dropdown.html#event:change">pool/component-dropdown/src/dropdown/component.Dropdown#event:change</a></li><li><a href="module-pool_component-dropdown_src_dropdown_component.Dropdown.html#event:open">pool/component-dropdown/src/dropdown/component.Dropdown#event:open</a></li><li><a href="module-pool_component-dropdown_src_dropdown_component.Dropdown.html#event:select">pool/component-dropdown/src/dropdown/component.Dropdown#event:select</a></li><li><a href="module-pool_component-dropdown_src_dropdown_component.Dropdown.html#event:toggle">pool/component-dropdown/src/dropdown/component.Dropdown#event:toggle</a></li><li><a href="module-pool_component-dropdown_src_dropdown_web_component.Dropdown.html#event:change">pool/component-dropdown/src/dropdown/web/component.Dropdown#event:change</a></li><li><a href="module-pool_component-dropdown_src_dropdown_web_component.Dropdown.html#event:open">pool/component-dropdown/src/dropdown/web/component.Dropdown#event:open</a></li><li><a href="module-pool_component-dropdown_src_dropdown_web_component.Dropdown.html#event:select">pool/component-dropdown/src/dropdown/web/component.Dropdown#event:select</a></li><li><a href="module-pool_component-dropdown_src_dropdown_web_component.Dropdown.html#event:toggle">pool/component-dropdown/src/dropdown/web/component.Dropdown#event:toggle</a></li><li><a href="module-pool_component-dropdown_src_suggest_component.Suggest.html#event:empty">pool/component-dropdown/src/suggest/component.Suggest#event:empty</a></li><li><a href="module-pool_component-dropdown_src_suggest_component.Suggest.html#event:keyup">pool/component-dropdown/src/suggest/component.Suggest#event:keyup</a></li><li><a href="module-pool_component-dropdown_src_suggest_component.Suggest.html#event:select">pool/component-dropdown/src/suggest/component.Suggest#event:select</a></li><li><a href="module-pool_component-dropdown_src_suggest_component.Suggest.html#event:show">pool/component-dropdown/src/suggest/component.Suggest#event:show</a></li><li><a href="module-pool_component-dropdown_src_suggest_component.Suggest.html#event:toggle">pool/component-dropdown/src/suggest/component.Suggest#event:toggle</a></li><li><a href="module-pool_component-dropdown_src_suggest_wap_component.Suggest.html#event:empty">pool/component-dropdown/src/suggest/wap/component.Suggest#event:empty</a></li><li><a href="module-pool_component-dropdown_src_suggest_wap_component.Suggest.html#event:keyup">pool/component-dropdown/src/suggest/wap/component.Suggest#event:keyup</a></li><li><a href="module-pool_component-dropdown_src_suggest_wap_component.Suggest.html#event:select">pool/component-dropdown/src/suggest/wap/component.Suggest#event:select</a></li><li><a href="module-pool_component-dropdown_src_suggest_wap_component.Suggest.html#event:show">pool/component-dropdown/src/suggest/wap/component.Suggest#event:show</a></li><li><a href="module-pool_component-dropdown_src_suggest_wap_component.Suggest.html#event:toggle">pool/component-dropdown/src/suggest/wap/component.Suggest#event:toggle</a></li><li><a href="module-pool_component-dropdown_src_suggest_web_component.Suggest.html#event:empty">pool/component-dropdown/src/suggest/web/component.Suggest#event:empty</a></li><li><a href="module-pool_component-dropdown_src_suggest_web_component.Suggest.html#event:keyup">pool/component-dropdown/src/suggest/web/component.Suggest#event:keyup</a></li><li><a href="module-pool_component-dropdown_src_suggest_web_component.Suggest.html#event:select">pool/component-dropdown/src/suggest/web/component.Suggest#event:select</a></li><li><a href="module-pool_component-dropdown_src_suggest_web_component.Suggest.html#event:show">pool/component-dropdown/src/suggest/web/component.Suggest#event:show</a></li><li><a href="module-pool_component-dropdown_src_suggest_web_component.Suggest.html#event:toggle">pool/component-dropdown/src/suggest/web/component.Suggest#event:toggle</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-12">
+	
+		<div id="main">
+			
+
+		<h1 class="page-title">Source: dropdown-group/web/component.js</h1>
+    
+<section>
+    <article>
+        <pre
+            class="sunlight-highlight-javascript linenums">/**
+ * dropdown-group 组件实现文件 - （RegularUI-select2Group-搬迁）
+ *
+ * @version  1.0
+ * @author   hzlixinxin &lt;hzlixinxin@corp.netease.com>
+ * @module   pool/component-dropdown/src/dropdown-group/component
+ */
+NEJ.define([
+    'pool/component-base/src/base',
+    'pool/component-base/src/util',
+    '../dropdown/ui.js'
+],function(
+    Component,
+    util
+){
+    /**
+     * DropdownGroup 组件
+     *
+     * @class   module:pool/component-dropdown/src/dropdown-group/component.DropdownGroup
+     * @extends module:pool/component-base/src/base.Component
+     *
+     * @param {Object} options      - 组件构造参数
+     * @param {Object}                  [options.service]                       数据服务
+     * @param {Object} options.data - 与视图关联的数据模型
+     * @param {Object[]}                [options.data.sources=[]               数据源
+     * @param {String}                  [options.data.source.name ]             每项的内容
+     * @param {Object[]}                [options.data.source.children=[]]       每项的子内容
+     * @param {Boolean}                 [options.data.source.disabled=false]    禁用此项
+     * @param {Boolean}                 [options.data.source.divider=false]     设置此项为分隔线
+     * @param {Number}                  [options.data.depth=1]                  控制层级数
+     * @param {Object}                  [options.data.selected                  最后一级的选择项
+     * @param {Object[]}                [options.data.selecteds=[]]             所有的选择项
+     * @param {String[]|Number[]}       [options.data.values=[]]                所有的选择值
+     * @param {String}                  [options.data.key='id']                 数据项的键
+     * @param {String[]}                [options.data.placeholders=[]]          默认项的文字
+     * @param {Boolean}                 [options.data.readonly=false]           是否只读
+     * @param {Boolean}                 [options.data.disabled=false]           是否禁用
+     * @param {Boolean}                 [options.data.visible=true]             是否显示
+     * @param {String}                  [options.data.class='']                 补充class 
+     */
+    
+    /**
+     * 最后的选择项改变时触发
+     * 
+     * @event module:pool/component-dropdown/src/dropdown-group/component.DropdownGroup#change
+     * @param {Object} event - 事件
+     * @param {Object} event.sender 事件发送对象
+     * @param {Object} event.selected 最后的选择项
+     * @param {Object[]} event.selecteds 所有的选择项
+     * @param {String} event.key 数据项的键
+     * @param {String[]|Number[]} event.values 所有的选择值
+     */
+    
+    /**
+     * 选择某一项时触发
+     * 
+     * @event module:pool/component-dropdown/src/dropdown-group/component.DropdownGroup#select
+     * @param {Object} event - 事件
+     * @param {Object} event.sender 事件发送对象
+     * @param {Object} event.selected 当前选择项
+     * @param {Object[]} event.selecteds 当前所有的选择项
+     * @param {Number} event.level 当前选择的层级
+     */
+    var DropdownGroup = Component.$extends({
+        /**
+         * 模板编译前用来初始化参数
+         *
+         * @protected
+         * @method  module:pool/component-dropdown/src/dropdown-group/component.DropdownGroup#config
+         * @returns {void}
+         */
+        config: function () {
+            //设置组件视图模型的默认值
+            util.extend(this.data, {
+                /**
+                 * 层级数
+                 * 
+                 * @member {Number} module:pool/component-dropdown/src/dropdown-group/component.DropdownGroup#depth
+                 */
+                depth: 1,
+                /**
+                 * 数据源
+                 * 
+                 * @member {Object[]} module:pool/component-dropdown/src/dropdown-group/component.DropdownGroup#sources
+                 */
+                sources: [],
+                /**
+                 * 最后的选择项
+                 * 
+                 * @member {Object} module:pool/component-dropdown/src/dropdown-group/component.DropdownGroup#selected
+                 */
+                selected: undefined,
+                /**
+                 * 所有的选择项
+                 * 
+                 * @member {Object[]} module:pool/component-dropdown/src/dropdown-group/component.DropdownGroup#selecteds
+                 */
+                selecteds: [],
+                /**
+                 * 数据项的键
+                 * 
+                 * @member {String} module:pool/component-dropdown/src/dropdown-group/component.DropdownGroup#key
+                 */
+                key: 'id',
+                /**
+                 * 所有的选择值
+                 * 
+                 * @member {String[]|Number[]} module:pool/component-dropdown/src/dropdown-group/component.DropdownGroup#values
+                 */
+                values: [],
+                /**
+                 * 默认项的文字
+                 * 
+                 * @member {String[]} module:pool/component-dropdown/src/dropdown-group/component.DropdownGroup#placeholders
+                 */
+                placeholders: []
+            });
+            this.supr();
+        
+            this.$watch('selected', function (newValue) {
+                
+                this.$emit('change', {
+                    sender: this,
+                    selected: newValue,
+                    selecteds: this.data.selecteds,
+                    key: this.data.key,
+                    values: this.data.values
+                });
+            });
+            if(this.data.source){
+                this.data.sources[0] = this.data.source;
+            }
+        },
+
+        /**
+         * onChange处理
+         *
+         * @method  module:pool/component-dropdown/src/dropdown-group/component.DropdownGroup#onChange
+         * @param {Object} item 选中的item
+         * @param {Number} level 第几层级,从0开始
+         * @returns {Void}
+         */
+        onChange: function (item, level) {
+
+            //改变下一层级的内容
+            if (level !== this.data.depth - 1){
+                this.data.sources[level + 1] = item ? item.children : undefined;
+            }
+            //改变下一层级之后的内容
+            for (var i = level + 2; i &lt; this.data.depth; i++)
+                this.data.sources[i] = undefined;
+            //选中的已经是最后一级
+            if (level === this.data.depth - 1){
+                this.data.selected = item;
+            }
+            this.data.selecteds[level] = item;
+            this.data.values[level] = (item ? item[this.data.key] : undefined);
+
+            this.validate();
+
+            this.$emit('select', {
+                sender: this,
+                selected: item,
+                selecteds: this.data.selecteds,
+                level: level
+            });
+            this.$update();
+        },
+
+        /**
+         * 校验
+         * @method module:pool/component-dropdown/src/dropdown.Dropdown#validate
+         * @public
+         * @param  {Void}
+         * @return {Boolean} 校验结果
+         */
+        validate: function () {
+            if(!this.$refs.validation) return;
+            return this.$refs.validation.validate(this.data.selecteds ? this.data.selecteds : null);
+        }
+    });
+
+    return DropdownGroup;
+});
+</pre>
+    </article>
+</section>
+
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+	<span class="copyright">
+	网易教育产品部 前端组
+	</span>
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a>
+	
+		on Fri Dec 16th 2016
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>

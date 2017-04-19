@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>教育产品组件开发文档 Source: uploader/util.js</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cosmo.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">教育产品组件开发文档</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="module-pool_component-upload_src_custom_file_upload_ui.html">pool/component-upload/src/custom_file_upload/ui</a></li><li><a href="module-pool_component-upload_src_muti_file_upload_ui.html">pool/component-upload/src/muti_file_upload/ui</a></li><li><a href="module-pool_component-upload_src_progress_upload_percent_modal_ui.html">pool/component-upload/src/progress/upload_percent_modal/ui</a></li><li><a href="module-pool_component-upload_src_progress_upload_progress_ui.html">pool/component-upload/src/progress/upload_progress/ui</a></li><li><a href="module-pool_component-upload_src_simple-img-upload_ui.html">pool/component-upload/src/simple-img-upload/ui</a></li><li><a href="module-pool_component-upload_src_upload_component.html">pool/component-upload/src/upload/component</a></li><li><a href="module-pool_component-upload_src_upload_ui.html">pool/component-upload/src/upload/ui</a></li><li><a href="pool_component-upload_src_custom_file_upload_component%250A----------------------------------------------------------module_.html">pool/component-upload/src/custom_file_upload/component
+----------------------------------------------------------</a></li><li><a href="pool_component-upload_src_muti-file-upload_component%250A----------------------------------------------------------module_.html">pool/component-upload/src/muti-file-upload/component
+----------------------------------------------------------</a></li><li><a href="pool_component-upload_src_progress_upload_percent_modal_component%250A----------------------------------------------------------module_.html">pool/component-upload/src/progress/upload_percent_modal/component
+----------------------------------------------------------</a></li><li><a href="pool_component-upload_src_progress_upload_progress_component%250A----------------------------------------------------------module_.html">pool/component-upload/src/progress/upload_progress/component
+----------------------------------------------------------</a></li><li><a href="pool_component-upload_src_simple_img_upload_component%250A----------------------------------------------------------module_.html">pool/component-upload/src/simple_img_upload/component
+----------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_constant%250A----------------------------------------------------------------module_.html">pool/component-upload/src/uploader/constant
+----------------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_customImgUploader%250A----------------------------------------------------------------module_.html">pool/component-upload/src/uploader/customImgUploader
+----------------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_defaultConfig%250A----------------------------------------------------------------module_.html">pool/component-upload/src/uploader/defaultConfig
+----------------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_fileUploader2%250A----------------------------------------------------------------module_.html">pool/component-upload/src/uploader/fileUploader2
+----------------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_flashUploader%250A----------------------------------------------------------------module_.html">pool/component-upload/src/uploader/flashUploader
+----------------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_formUploader%250A----------------------------------------------------------------module_.html">pool/component-upload/src/uploader/formUploader
+----------------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_mutiFileUploader%250A----------------------------------------------------------------module_.html">pool/component-upload/src/uploader/mutiFileUploader
+----------------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_mutiFormUploader%250A----------------------------------------------------------------module_.html">pool/component-upload/src/uploader/mutiFormUploader
+----------------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_uploaderBase%250A----------------------------------------------------------------module_.html">pool/component-upload/src/uploader/uploaderBase
+----------------------------------------------------------------</a></li><li><a href="pool_component-upload_src_uploader_uploadUtil%250A---------------------------------------------------------module_.html">pool/component-upload/src/uploader/uploadUtil
+---------------------------------------------------------</a></li><li><a href="pool_component-upload_src_util_verifyFile%250A----------------------------------------------------------module_.html">pool/component-upload/src/util/verifyFile
+----------------------------------------------------------</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="classes.list.html" class="dropdown-toggle" data-toggle="dropdown">Classes<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="module-pool_component-upload_src_custom_file_upload_ui.CustomFileUploadUI.html">pool/component-upload/src/custom_file_upload/ui.CustomFileUploadUI</a></li><li><a href="module-pool_component-upload_src_muti_file_upload_ui.MutiFileUploadUI.html">pool/component-upload/src/muti_file_upload/ui.MutiFileUploadUI</a></li><li><a href="module-pool_component-upload_src_progress_upload_percent_modal_ui.UploadPercentModalUI.html">pool/component-upload/src/progress/upload_percent_modal/ui.UploadPercentModalUI</a></li><li><a href="module-pool_component-upload_src_progress_upload_progress_ui.uploadProgressUI.html">pool/component-upload/src/progress/upload_progress/ui.uploadProgressUI</a></li><li><a href="module-pool_component-upload_src_simple-img-upload_ui.SimpleImgUploadUI.html">pool/component-upload/src/simple-img-upload/ui.SimpleImgUploadUI</a></li><li><a href="module-pool_component-upload_src_ui.UploadUI.html">pool/component-upload/src/ui.UploadUI</a></li><li><a href="module-pool_component-upload_src_upload_upload.Upload.html">pool/component-upload/src/upload/upload.Upload</a></li>
+				</ul>
+			</li>
+			
+			<li class="dropdown">
+				<a href="events.list.html" class="dropdown-toggle" data-toggle="dropdown">Events<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="pool_component-upload_src_uploader_mutiFormUploader%250A----------------------------------------------------------------module_.html#~event:uploadStart%25E4%25B8%258A%25E4%25BC%25A0%25E5%25BC%2580%25E5%25A7%258B">event:uploadStart 上传开始</a></li><li><a href="module-pool_component-upload_src_custom_file_upload_component.Upload.html#event:beginUpload">pool/component-upload/src/custom_file_upload/component.Upload#event:beginUpload</a></li><li><a href="module-pool_component-upload_src_custom_file_upload_component.Upload.html#event:finishUpload">pool/component-upload/src/custom_file_upload/component.Upload#event:finishUpload</a></li><li><a href="module-pool_component-upload_src_custom_file_upload_component.Upload.html#event:updateProgress">pool/component-upload/src/custom_file_upload/component.Upload#event:updateProgress</a></li><li><a href="module-pool_component-upload_src_custom_file_upload_component.Upload.html#event:uploadError">pool/component-upload/src/custom_file_upload/component.Upload#event:uploadError</a></li><li><a href="module-pool_component-upload_src_muti_file_upload_component.Upload.html#event:beginUpload">pool/component-upload/src/muti_file_upload/component.Upload#event:beginUpload</a></li><li><a href="module-pool_component-upload_src_muti_file_upload_component.Upload.html#event:finishUpload">pool/component-upload/src/muti_file_upload/component.Upload#event:finishUpload</a></li><li><a href="module-pool_component-upload_src_muti_file_upload_component.Upload.html#event:maxCount">pool/component-upload/src/muti_file_upload/component.Upload#event:maxCount</a></li><li><a href="module-pool_component-upload_src_muti_file_upload_component.Upload.html#event:updateProgress">pool/component-upload/src/muti_file_upload/component.Upload#event:updateProgress</a></li><li><a href="module-pool_component-upload_src_muti_file_upload_component.Upload.html#event:uploadError">pool/component-upload/src/muti_file_upload/component.Upload#event:uploadError</a></li><li><a href="module-pool_component-upload_src_simple_img_upload_component.Upload.html#event:beginUpload">pool/component-upload/src/simple_img_upload/component.Upload#event:beginUpload</a></li><li><a href="module-pool_component-upload_src_simple_img_upload_component.Upload.html#event:finishUpload">pool/component-upload/src/simple_img_upload/component.Upload#event:finishUpload</a></li><li><a href="module-pool_component-upload_src_simple_img_upload_component.Upload.html#event:updateProgress">pool/component-upload/src/simple_img_upload/component.Upload#event:updateProgress</a></li><li><a href="module-pool_component-upload_src_simple_img_upload_component.Upload.html#event:uploadError">pool/component-upload/src/simple_img_upload/component.Upload#event:uploadError</a></li><li><a href="module-pool_component-upload_src_upload_upload.Upload.html#event:beginUpload">pool/component-upload/src/upload/upload.Upload#event:beginUpload</a></li><li><a href="module-pool_component-upload_src_upload_upload.Upload.html#event:finishUpload">pool/component-upload/src/upload/upload.Upload#event:finishUpload</a></li><li><a href="module-pool_component-upload_src_upload_upload.Upload.html#event:updateProgress">pool/component-upload/src/upload/upload.Upload#event:updateProgress</a></li><li><a href="module-pool_component-upload_src_upload_upload.Upload.html#event:uploadError">pool/component-upload/src/upload/upload.Upload#event:uploadError</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-12">
+	
+		<div id="main">
+			
+
+		<h1 class="page-title">Source: uploader/util.js</h1>
+    
+<section>
+    <article>
+        <pre
+            class="sunlight-highlight-javascript linenums">/**
+ * ---------文件上传工具类处理------------------------------
+ * 
+ * @version 1.0
+ * @author tangtianliang(tangtianliang@corp.netease.com)
+ * @module   pool/component-upload/src/uploader/uploadUtil
+ * ---------------------------------------------------------
+ */
+
+NEJ.define([
+    'base/util',
+    'base/element',
+    'util/template/tpl',
+    './constant.js',
+    'util/ajax/xdr'
+], function(
+    _u,
+    _e,
+    _t,
+    _constant,
+    _j,
+    _util){
+
+    var _g = window;
+    var _cache = {};
+
+    /**
+     * 判断是否可以使用分块上传功能
+     * @param {Void}
+     *
+     * @return {Boolean}
+     */
+    _util._$canUseFileUploadByBlobs = (function() {
+        var _canCutUpload = !!_g.XMLHttpRequest &amp;&amp; !!_g.Blob &amp;&amp; !!Blob.prototype.hasOwnProperty("slice");
+
+        return function() {
+            return _canCutUpload;
+        }
+    })();
+
+    /**
+     * 分块上传文件
+     * @param {Object} _options 支持的选项如下
+     *        {FileObject} file 待上传的文件对象
+     *        {Node}    form 
+     *        {Number}  mode 请求代理模式
+     *        {String}  bucket
+     *        {String}  nosKey
+     *        {String}  xNosToken 
+     *        {Function} onload 上传成功的回调
+     *        {Function} onuploading    progress回调
+     *        {Function} onerror 上传失败的回调
+     *
+     * @return {String} 这次上传的id，用于终止上传
+     */
+    _util._$fileUploadByBlobs = function(_options) {
+        var _file = _options.file;
+            
+        if (!_file) return;
+            
+        if (!_options.key) { // 如果有key说明是更新
+            _options.key = _u._$randNumberString(); 
+        };
+
+        // 保存或者更新
+        _cache[_options.key] = _cache[_options.key] || {};
+        _cache[_options.key].options = _options; // 更新数据
+
+        var _data = {
+            'fileName' : encodeURIComponent(_options.fileName),
+            'fileSize' : _file.size,
+            'fileGmtModifiedTime' : _util._$getFileLastModifiedTime(_file), 
+            'eduUploaderToken' : _options.eduUploaderToken,
+            '_t' : (new Date()).getTime()
+        }
+
+        // 获取断点续传初始信息
+        _j._$request(_constant.GET_UPLOAD_PROGRESS_URL, {
+            type: 'json',
+            method: 'GET',
+            query : _data,
+            mode: _options.mode,
+            cookie: false,
+            onload: function(_options, _data) {
+                if (_data.code != 0) { // 错误
+                    _options.onerror &amp;&amp; _options.onerror(_data);
+                }else{
+                    var _res = _data.result; // result里面包含了context和offset
+
+                    if (!_u._$isObject(_res)) {
+                        _res = {};
+                        _res.context = '';
+                        _res.offset = 0;
+                    }
+
+                    // 请求回来之前就被abort了
+                    if (!_cache[_options.key]) return;
+
+                    if (_res.offset >= _file.size - 1) { // 上传已经完成
+                        delete _cache[_options.key];
+
+                        !!_options.onload &amp;&amp; _options.onload();
+                        return;
+                    }
+
+                    _res.initOffset = _res.offset; // 第一次的偏移
+
+                    _cache[_options.key].data = _res;
+
+                    _util.__uploadBlob(_options.key);
+                }
+
+            }._$bind(this, _options)
+        });
+
+        return _options.key;
+    };
+
+    // 分割文件
+    _util.__blobSlice = function (_file, _offset, _len) {
+        var _end = Math.min(_offset + _len, _file.size);
+        return _file.slice(_offset, _end);
+    }
+
+    // 上传分块
+    _util.__uploadBlob = function (_key) {
+        var _obj = _cache[_key];
+            
+        if (!_obj) return; // 不存在可能是已经abort了
+
+        // 新的blob
+        var _op = _obj.options,
+            _nosKey = _op.nosKey,
+            _bucket = _op.bucket,
+            _xNosToken = _op.xNosToken;
+
+        _obj.blob = _util.__blobSlice(_op.file, _obj.data.offset, _constant.BLOBSIZE);
+
+        var _complete = (_obj.data.offset + _obj.blob.size >= _op.file.size); // 是否是最后一块
+
+        _op.form.action = _op.ip + '/' + _bucket + '/' + _nosKey + '?' +
+                        'offset=' + _obj.data.offset + 
+                        '&amp;complete=' + _complete + 
+                        (_obj.data.context ? '&amp;context=' + _obj.data.context : '') + // 第一次可能没有context
+                        '&amp;version=1.0';
+            
+        var _uploading = function(_obj, _data) {
+            var _proData = {
+                timeStamp : (new Date()).getTime(), //_data.timeStamp,  // 时间戳
+                loaded : _obj.data.offset + _data.loaded,
+                total : _op.file.size,
+                initOffset : _obj.data.initOffset
+            }
+
+            _op.onuploading(_proData);
+        }
+
+        var _onload = function(_obj, _data) {
+            // 检查是否结束
+            if (_data.errMsg) { // nos上传出错
+                _op.onerror(_data);
+            }else if (_obj.data.offset + _obj.blob.size >= _op.file.size) {
+                // 完成上传
+                delete _cache[_key];
+
+                // 调用云课堂接口清空context和进度
+                _obj.data.offset = 0;
+                _obj.data.context = '';
+
+                _util.__saveUploadProgress(_obj, function(_op, _data){
+                    _op.onload(_data);
+                }._$bind(this, _op, _data));
+                
+            } else {
+                // 缓存进度
+                _obj.data.offset = _obj.data.offset + _obj.blob.size; // 或者直接用_data.offset
+                _obj.data.context = _data.context;
+
+                // 调用云课堂接口保存上传进度
+                _util.__saveUploadProgress(_obj, function(){
+                    // 继续上传
+                    _util.__uploadBlob(_key);
+                })
+            }
+        }
+
+        var _onerror = function(_data) {
+            _op.onerror(_data);
+        }
+
+        var _options = {
+            type: 'json',
+            mode: _obj.options.mode,
+            method: 'POST',
+            timeout: 30 * 60 * 1000, // 超时：30分钟
+            cookie: false,
+            headers: {
+                'Content-Type' : 'multipart/form-data',
+                'x-nos-token' : _xNosToken
+            },
+            data: _obj.blob,
+            onuploading: _uploading._$bind(this, _obj),
+            onload: _onload._$bind(this, _obj),
+            onerror: _onerror._$bind(this)
+        }
+
+        _cache[_key].reqId = _j._$request(_op.form.action, _options);
+
+    }
+
+    // 保存文件上传的进度
+    _util.__saveUploadProgress = function(_obj, _callBack){
+        var _options = _obj.options;
+
+        var _data = {
+            'fileName' : encodeURIComponent(_options.fileName),
+            'fileSize' : _options.file.size,
+            'context' : _obj.data.context,
+            'offset' : _obj.data.offset,
+            'fileGmtModifiedTime' : _util._$getFileLastModifiedTime(_options.file),
+            'eduUploaderToken' : _options.eduUploaderToken,
+            '_t' : (new Date()).getTime()
+        }
+
+        // 保存断点续传上传进度
+        _j._$request(_constant.SAVE_UPLOAD_PROGRESS_URL, {
+            type: 'json',
+            method: 'GET',
+            query : _data,
+            mode: _options.mode,
+            cookie: false,
+            onload: function(_obj, _callBack, _data) {
+                if (_data.code != 0) { // 错误
+                    _options.onerror &amp;&amp; _options.onerror(_data); 
+                }else{
+                    _callBack &amp;&amp; _callBack();
+                }
+
+            }._$bind(this, _obj, _callBack)
+        });
+
+    }
+
+    /**
+     * 终止分块上传文件
+     * @param {String} _key 上传id
+     *
+     * @return {Void}
+     */
+    _util._$abortFileUploadByBlobs = function(_key) {
+        if (!!_cache[_key]) {
+            _j._$abort(_cache[_key].reqId);
+
+            _cache[_key] = null;
+        }
+    };
+
+    // 获取文件大小
+    _util._$getFileSize = function(_fileNode){
+        if (!_fileNode.files) {
+            return '';
+        };
+
+        if (!_fileNode.files[0]) {
+            return '';
+        };
+
+        return _fileNode.files[0].size || '';
+        
+    }
+
+    // 获取文件最后修改时间
+    _util._$getFileLastModifiedTime = function(_fileNode){
+        if (!_fileNode.files) {
+            return '';
+        };
+
+        var _fileObj = _fileNode.files[0];
+
+        if (!_fileObj) {
+            return '';
+        };
+
+        if (_fileObj.lastModified) {
+            return _fileObj.lastModified;
+        }else if (_fileObj.lastModifiedDate) {
+            return _fileObj.lastModifiedDate.getTime();
+        }else{
+            return '';
+        }
+    }
+
+    return _util;
+});
+</pre>
+    </article>
+</section>
+
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+	<span class="copyright">
+	网易教育产品部 前端组
+	</span>
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a>
+	
+		on Sun Sep 18th 2016
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>

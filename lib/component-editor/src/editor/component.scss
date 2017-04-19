@@ -1,0 +1,14 @@
+//@import '../lib/component-base/src/scss/var';
+//@import '../lib/component-base/src/scss/bourbon/bourbon';
+@import '../../lib/res-base/scss/var';
+@import "../../lib/res-base/scss/bourbon/bourbon";
+@import './eduEditor/scss/eduEditor/iframe';
+@import './eduEditor/scss/eduEditor/ueditor';
+
+
+.ux-editor{
+    .ux-tip-error{
+        margin-top: 8px;
+        margin-left: -3px;
+    }
+}

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>教育产品组件开发文档 Source: textUtil.js</title>
+
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link type="text/css" rel="stylesheet" href="styles/sunlight.default.css">
+
+	<link type="text/css" rel="stylesheet" href="styles/site.cosmo.css">
+
+</head>
+
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<div class="container">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="index.html">教育产品组件开发文档</a>
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#topNavigation">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+        </button>
+	</div>
+	<div class="navbar-collapse collapse" id="topNavigation">
+		<ul class="nav navbar-nav">
+			
+			<li class="dropdown">
+				<a href="modules.list.html" class="dropdown-toggle" data-toggle="dropdown">Modules<b class="caret"></b></a>
+				<ul class="dropdown-menu inline">
+					<li><a href="module-arrayUtil.html">arrayUtil</a></li><li><a href="module-cashUtil.html">cashUtil</a></li><li><a href="module-criteoUtil.html">criteoUtil</a></li><li><a href="module-domUtil.html">domUtil</a></li><li><a href="module-emailUtil.html">emailUtil</a></li><li><a href="module-encodeUtil.html">encodeUtil</a></li><li><a href="module-extend.html">extend</a></li><li><a href="module-flashUtil.html">flashUtil</a></li><li><a href="module-gaUtil.html">gaUtil</a></li><li><a href="module-imageUtil.html">imageUtil</a></li><li><a href="module-jsbridgeUtil.html">jsbridgeUtil</a></li><li><a href="module-mobileUtil.html">mobileUtil</a></li><li><a href="module-numUtil.html">numUtil</a></li><li><a href="module-objectUtil.html">objectUtil</a></li><li><a href="module-promise.html">promise</a></li><li><a href="module-regUtil.html">regUtil</a></li><li><a href="module-shareUtil.html">shareUtil</a></li><li><a href="module-textUtil.html">textUtil</a></li><li><a href="module-timeUtil.html">timeUtil</a></li><li><a href="module-urlUtil.html">urlUtil</a></li><li><a href="module-userUtil.html">userUtil</a></li><li><a href="module-versionUtil.html">versionUtil</a></li>
+				</ul>
+			</li>
+			
+		</ul>
+        
+            <div class="col-sm-3 col-md-3">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search" name="q" id="search-input">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" id="search-submit"><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        
+	</div>
+
+</div>
+</div>
+
+
+<div class="container" id="toc-content">
+<div class="row">
+
+	
+	<div class="col-md-12">
+	
+		<div id="main">
+			
+
+		<h1 class="page-title">Source: textUtil.js</h1>
+    
+<section>
+    <article>
+        <pre
+            class="sunlight-highlight-javascript linenums">/**
+ * -------------textUtil模块对象，用于获取或修改字符串信息----------------
+ * 
+ * @module textUtil
+ * @version  1.0
+ * @author   tangtianliang(tangtianliang@corp.netease.com)
+ * @path     eutil/textUtil
+ * --------------------------------------------------------
+ */
+
+NEJ.define(['./adapter/nej.js'], function (_adapter) {
+  
+  
+  var _module = {},
+      g = (function(){return this;})();
+
+  /**
+   * 去掉回车换行tab,将多于的空格变成一个空格
+   * @method _$removeNRNBSP
+   * @param {String} _text 字符串
+   * @return {String} 去掉空格之后的字符串
+   */
+  _module._$removeNRNBSP = function(_text){
+    return (_text || '').replace(/[\t\r\n]+/gi,' ').replace(/[ ]+/gi,' ');
+  };
+
+
+  /**
+   * 过滤富文本标签得方法
+   * @method _$filterText
+   * @param {String} _richText 带标签的富文本
+   * @return {String} 转化为字符串的富文本
+   */
+  _module._$filterText = function(_richText){
+    var _div = document.createElement('div');
+    _div.innerHTML = _richText;
+    return _module._$removeNRNBSP(_div.innerText);
+  };
+  
+  /**
+   * 获取字符串长度，中文是长度是2
+   * @method _$getStringLength
+   * @param  {String} _string 输入的字符串
+   * @return {Number}         字符串长度
+   */
+  _module._$getStringLength = function(_string){
+    _string = _string || '';
+    _string = _string.replace(/^\n+|\n+$/g, ""); //将富文本中\n过滤
+    var _entryLen0 = _string.length,
+      _entryLen = 0;
+    var _cnChar = _string.match(/[^\x00-\x80]/g); //利用match方法检索出中文字符并返回一个存放中文的数组 
+    if (!!_cnChar &amp;&amp; _cnChar.length > 0)
+      _entryLen = _cnChar.length || 0; //算出实际的字符长度
+    return _entryLen0 + _entryLen;
+  }
+
+  /**
+   * 截断字符串，处理中英文情况
+   * @method _$sliceStrByLength
+   * @param  {String} _string    输入的字符串
+   * @param  {Number} _maxLength 需要截断的长度, 实际的长度，中文算两个，则传入的_maxLength为*2
+   * @return {String}            返回截断后的字符串
+   */
+  _module._$sliceStrByLength = function(_string, _maxLength){
+    _string = _string || '';
+    var _ret = '',
+      _length = _string.length,
+      _string = _string.split(''),
+      _readLength = 0;
+    for (var i = 0; i &lt; _length; i++) {
+      var _char = _string[i];
+      var _arr = _char.match(/[^\x00-\x80]/g);
+      if (!!_arr &amp;&amp; _arr.length > 0) {
+        _readLength += 2; //中文字符
+      } else {
+        _readLength += 1; //英文字符
+      }
+      if (_readLength > _maxLength) {
+        break;
+      }
+      _ret += _char;
+    }
+    return _ret;
+  }
+
+  /**
+   * 截断字符串，如果超出字数限制，追加... 
+   * @method _$ellipsisStrByLength
+   * @param  {String} _string    输入的字符串
+   * @param  {Number} _maxLength 需要截断的长度
+   * @return {String}            返回截断后的字符串，如果超出字数限制，追加... 
+   */
+  _module._$ellipsisStrByLength = function(_string, _maxLength){
+    var _str = _string;
+    if(_module._$getStringLength(_str) > _maxLength){
+        _str = _module._$sliceStrByLength(_str, _maxLength) + '...';
+    }
+    return _str;
+  };
+
+
+  return _module;
+});
+
+</pre>
+    </article>
+</section>
+
+
+
+
+
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+
+	
+
+</div>
+</div>
+
+
+    <div class="modal fade" id="searchResults">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title">Search results</h4>
+          </div>
+          <div class="modal-body"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+
+<footer>
+
+
+	<span class="copyright">
+	网易教育产品部 前端组
+	</span>
+
+<span class="jsdoc-message">
+	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.1</a>
+	
+		on Wed Dec 28th 2016
+	
+	using the <a href="https://github.com/docstrap/docstrap">DocStrap template</a>.
+</span>
+</footer>
+
+<script src="scripts/docstrap.lib.js"></script>
+<script src="scripts/toc.js"></script>
+
+    <script type="text/javascript" src="scripts/fulltext-search-ui.js"></script>
+
+
+<script>
+$( function () {
+	$( "[id*='$']" ).each( function () {
+		var $this = $( this );
+
+		$this.attr( "id", $this.attr( "id" ).replace( "$", "__" ) );
+	} );
+
+	$( ".tutorial-section pre, .readme-section pre, pre.prettyprint.source" ).each( function () {
+		var $this = $( this );
+
+		var example = $this.find( "code" );
+		exampleText = example.html();
+		var lang = /{@lang (.*?)}/.exec( exampleText );
+		if ( lang && lang[1] ) {
+			exampleText = exampleText.replace( lang[0], "" );
+			example.html( exampleText );
+			lang = lang[1];
+		} else {
+			var langClassMatch = example.parent()[0].className.match(/lang\-(\S+)/);
+			lang = langClassMatch ? langClassMatch[1] : "javascript";
+		}
+
+		if ( lang ) {
+
+			$this
+			.addClass( "sunlight-highlight-" + lang )
+			.addClass( "linenums" )
+			.html( example.html() );
+
+		}
+	} );
+
+	Sunlight.highlightAll( {
+		lineNumbers : true,
+		showMenu : true,
+		enableDoclinks : true
+	} );
+
+	$.catchAnchorLinks( {
+        navbarOffset: 10
+	} );
+	$( "#toc" ).toc( {
+		anchorName  : function ( i, heading, prefix ) {
+			return $( heading ).attr( "id" ) || ( prefix + i );
+		},
+		selectors   : "#toc-content h1,#toc-content h2,#toc-content h3,#toc-content h4",
+		showAndHide : false,
+		smoothScrolling: true
+	} );
+
+	$( "#main span[id^='toc']" ).addClass( "toc-shim" );
+	$( '.dropdown-toggle' ).dropdown();
+
+    $( "table" ).each( function () {
+      var $this = $( this );
+      $this.addClass('table');
+    } );
+
+} );
+</script>
+
+
+
+<!--Navigation and Symbol Display-->
+
+
+<!--Google Analytics-->
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            SearcherDisplay.init();
+        });
+    </script>
+
+
+</body>
+</html>

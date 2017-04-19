@@ -1,0 +1,62 @@
+@charset "UTF-8";
+/* em-base */
+/* Height */
+/* Font Size */
+/* Padding */
+/* Border Radius */
+/* Brand Colors */
+/* Gray Colors */
+/* Base Colors */
+/* Shadow */
+/* dropdown */
+/* Dimensions */
+/* Colors */
+/* Form Control Item */
+/* Font Family */
+/* 衬线字体 */
+/* 非衬线字体 */
+.ux-editor-rich-content {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: left;
+  word-break: break-word;
+  word-wrap: break-word;
+  font-family: "Arial","Hiragino Sans GB", "微软雅黑", "Helvetica", "sans-serif"; }
+  .ux-editor-rich-content em {
+    font-style: italic; }
+  .ux-editor-rich-content p {
+    margin: 0;
+    padding: 0;
+    color: #666; }
+  .ux-editor-rich-content div {
+    margin: 10px 0;
+    padding: 0; }
+  .ux-editor-rich-content blockquote {
+    border-left: 3px solid #D0E5F2;
+    font-style: normal;
+    padding: 0 0 0 10px;
+    vertical-align: baseline;
+    margin: 0;
+    font-size: 14px; }
+  .ux-editor-rich-content img {
+    max-height: 520px;
+    max-width: 520px; }
+  .ux-editor-rich-content a {
+    text-decoration: underline; }
+  .ux-editor-rich-content ul li {
+    list-style: disc; }
+  .ux-editor-rich-content ol li {
+    list-style: decimal; }
+  .ux-editor-rich-content table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #E4E4E4; }
+  .ux-editor-rich-content table th, .ux-editor-rich-content table td {
+    border: 1px solid #E4E4E4;
+    padding: 5px; }
+  .ux-editor-rich-content .edui-upload-audio {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 0 auto; }

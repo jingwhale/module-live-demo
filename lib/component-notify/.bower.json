@@ -1,0 +1,47 @@
+{
+  "name": "component-notify",
+  "version": "0.0.37",
+  "authors": [
+    "hzlixinxin <hzlixinxin@corp.netease.com>"
+  ],
+  "description": "component notify project",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "module",
+    "component",
+    "notify"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "docs",
+    "test",
+    "tutorials"
+  ],
+  "dependencies": {
+    "nej": "git+https://g.hz.netease.com/edu-front-vendor/nej.git#0.4.0",
+    "regularjs": "git+https://g.hz.netease.com/edu-front-vendor/regularjs.git#0.5.1",
+    "res-base": "git+https://g.hz.netease.com/edu-frontend/res-base.git#0.0.19",
+    "component-base": "git+https://g.hz.netease.com/edu-frontend/component-base.git#0.0.36",
+    "component-button": "git+https://g.hz.netease.com/edu-frontend/component-button.git#0.0.37"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2",
+    "chai": "^3.5.0"
+  },
+  "components": [
+    "notify"
+  ],
+  "token": "05075a1e1c3f058d8565d53011d811",
+  "_release": "0.0.37",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.37",
+    "commit": "789326915a2c9b36e4b2aa2007db0c4aec816c65"
+  },
+  "_source": "https://g.hz.netease.com/edu-frontend/component-notify.git",
+  "_target": "0.0.37",
+  "_originalSource": "git+https://g.hz.netease.com/edu-frontend/component-notify.git"
+}
